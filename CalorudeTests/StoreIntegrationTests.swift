@@ -17,7 +17,7 @@ import XCTest
     XCTAssertEqual(
       service.products.first { $0.id == StoreProducts.yearly }?.price, Decimal(string: "599"))
     XCTAssertEqual(
-      service.products.first { $0.id == StoreProducts.lifetime }?.price, Decimal(string: "799.99"))
+      service.products.first { $0.id == StoreProducts.lifetime }?.price, Decimal(string: "1799"))
     for (country, locale, currency) in [
       ("TUR", "tr_TR", "TRY"), ("USA", "en_US", "USD"), ("TUR", "en_US", "TRY"),
     ] {

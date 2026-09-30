@@ -40,7 +40,7 @@ python3 Scripts/validate_resources.py
 
 The tests cover BMR/TDEE/macros, quantities, target limits, goal validation, streak tolerance and gaps, weekly averages, time-aware coach rules, bilingual libraries, SwiftData save/cascade, verified entitlement policy and actual StoreKit test purchases/expiration/lifetime. Story tests render all templates in both languages and attach the PNGs. UI tests complete onboarding, add rice/chicken/yogurt in one meal session, save, reopen, edit portions, remove a food, cancel an edit, open progress, switch languages and change appearance. Meal repository tests cover atomic validation, historical nutrition/target preservation, derived-summary updates, other meal/date isolation and stale-edit rejection. UI tests use an isolated in-memory store only in Debug; they never erase a normal installation's data.
 
-`Development.storekit` is a **local StoreKit test configuration**, not live App Store pricing. The scheme uses it for local Run. The default test storefront is Türkiye (TUR), locale tr_TR, using the brief’s Turkish planning values: monthly 79, yearly 599 and lifetime 799.99 TRY. When testing another region, change both storefront and numeric test prices in Xcode’s StoreKit editor; the local file does not simulate App Store Connect regional price schedules. UI prices always come from StoreKit products.
+`Development.storekit` is a **local StoreKit test configuration**, not live App Store pricing. The scheme uses it for local Run. The default test storefront is Türkiye (TUR), locale tr_TR, using the brief’s Turkish planning values: monthly 79, yearly 599 and lifetime 1799 TRY. When testing another region, change both storefront and numeric test prices in Xcode’s StoreKit editor; the local file does not simulate App Store Connect regional price schedules. UI prices always come from StoreKit products.
 
 ## Before App Store release
 
@@ -54,7 +54,7 @@ Product identifiers:
 | Yearly PRO | Auto-renewable, same group/level | `com.yemeboluum.pro.yearly` |
 | Founder Lifetime | Non-consumable | `com.yemeboluum.pro.founder` |
 
-Configure regional prices in App Store Connect: Türkiye 79 / 599 / 799.99 TRY; US 4.99 / 29.99 / 49.99 USD; Eurozone 4.99 / 29.99 / 49.99 EUR (monthly/yearly/lifetime). These are planning targets, not UI strings or exchange-rate conversions. Founder is displayed only when StoreKit returns that product. Removing it from sale is controlled by App Store Connect and subject to Apple's availability/cache behavior; existing verified lifetime access stays valid.
+Configure regional prices in App Store Connect: Türkiye 79 / 599 / 1799 TRY; US 3.49 / 24.99 / 74.99 USD; Eurozone 3.49 / 24.99 / 74.99 EUR (monthly/yearly/lifetime). These are planning targets, not UI strings or exchange-rate conversions. Founder is displayed only when StoreKit returns that product. Removing it from sale is controlled by App Store Connect and subject to Apple's availability/cache behavior; existing verified lifetime access stays valid.
 
 The bundled food values are explicitly estimates, not a licensed or clinically validated composition database. Validate recipes/serving weights and the calculation policy with a nutrition professional before a public health-focused launch. The app excludes minors/pregnancy/breastfeeding/eating-disorder treatment from its automatic onboarding plan. Its calorie floors are product guardrails, not personal safety guarantees.
 
