@@ -1,0 +1,227 @@
+{
+  "turkey": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "05220",
+    "description": "TURKEY,BREAST,FROM WHL BIRD,MEAT ONLY,RSTD",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "tuna": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "15121",
+    "description": "FISH,TUNA,LT,CND IN H2O,DRND SOL",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "eggwhite": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "01124",
+    "description": "EGG,WHITE,RAW,FRESH",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "strainedyogurt": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "01256",
+    "description": "YOGURT,GREEK,PLN,NONFAT",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "wholebread": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "18075",
+    "description": "BREAD,WHOLE-WHEAT,COMM. PREPARED",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "brownrice": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "20037",
+    "description": "RICE,BROWN,LONG-GRAIN,CKD",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "greenlentils": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "16070",
+    "description": "LENTILS,MATURE SEEDS,CKD,BLD,WO/SALT",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "greenbeans": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "11053",
+    "description": "BEANS,SNAP,GRN,CKD,BLD,DRND,WO/SALT",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "spinach": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "11458",
+    "description": "SPINACH,CKD,BLD,DRND,WO/ SALT",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "zucchini": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "11478",
+    "description": "SQUASH,SMMR,ZUCCHINI,INCL SKN,CKD,BLD,DRND,WO/SALT",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "cauliflower": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "11136",
+    "description": "CAULIFLOWER,CKD,BLD,DRND,WO/SALT",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "carrot": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "11124",
+    "description": "CARROTS,RAW",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "lettuce": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "11251",
+    "description": "LETTUCE,COS OR ROMAINE,RAW",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "avocado": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "09037",
+    "description": "AVOCADOS,RAW,ALL COMM VAR",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "orange": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "09200",
+    "description": "ORANGES,RAW,ALL COMM VAR",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "strawberry": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "09316",
+    "description": "STRAWBERRIES,RAW",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "pear": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "09252",
+    "description": "PEARS,RAW",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "kiwi": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "09148",
+    "description": "KIWIFRUIT,GRN,RAW",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "driedapricot": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "09032",
+    "description": "APRICOTS,DRIED,SULFURED,UNCKD",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "dates": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "09087",
+    "description": "DATES,DEGLET NOOR",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "walnut": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "12155",
+    "description": "WALNUTS,ENGLISH",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "hazelnut": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "12120",
+    "description": "HAZELNUTS OR FILBERTS",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "peanuts": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "16390",
+    "description": "PEANUTS,ALL TYPES,DRY-ROASTED,WO/SALT",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "peanutbutter": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "16398",
+    "description": "PEANUT BUTTER,SMOOTH STYLE,WO/SALT",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "pumpkinseed": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "12014",
+    "description": "PUMPKIN&SQUASH SD KRNLS,DRIED",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "tahini": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "12166",
+    "description": "SESAME BUTTER,TAHINI,FROM RSTD&TSTD KRNLS (MOST COMMON TYPE)",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "olives": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "09193",
+    "description": "OLIVES,RIPE,CND (SMALL-EXTRA LRG)",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "ricecakes": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "19816",
+    "description": "RICE CAKES,BROWN RICE,PLN,UNSALTED",
+    "basis": "100 g edible portion",
+    "volumeAssumption": null
+  },
+  "blacktea": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "14355",
+    "description": "BEVERAGES,TEA,BLACK,BREWED,PREP W/ TAP H2O",
+    "basis": "100 g edible portion",
+    "volumeAssumption": "Approximate density 1 g/ml for plain brewed tea only"
+  },
+  "greentea": {
+    "dataset": "USDA SR28, revised May 2016",
+    "ndbNumber": "14278",
+    "description": "BEVERAGES,TEA,GRN,BREWED,REG",
+    "basis": "100 g edible portion",
+    "volumeAssumption": "Approximate density 1 g/ml for plain brewed tea only"
+  },
+  "turkishcoffee": {
+    "type": "estimate",
+    "note": "Rounded prepared black coffee estimate, excluding settled grounds, milk and sugar; preparation varies. Not dry powder nutrition.",
+    "reference": "https://fdc.nal.usda.gov/food-details/171890/nutrients"
+  },
+  "proteinmilk": {
+    "url": "https://www.icim.com.tr/urunler/sut/protein-sutu/",
+    "basis": "100 ml",
+    "retrieved": "2026-09-07"
+  },
+  "colazero": {
+    "url": "https://www.coca-cola.com/tr/tr/brands/coca-cola",
+    "basis": "100 ml",
+    "retrieved": "2026-09-07"
+  }
+}

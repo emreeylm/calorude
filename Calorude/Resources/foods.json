@@ -1,0 +1,2671 @@
+[
+  {
+    "id": "egg",
+    "localizedNameTR": "Yumurta",
+    "localizedNameEN": "Egg",
+    "category": "protein",
+    "servingName": "portion",
+    "servingAmount": 50.0,
+    "caloriesPer100g": 155.0,
+    "proteinPer100g": 13.0,
+    "carbsPer100g": 1.1,
+    "fatPer100g": 11.0,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 143.0,
+        "protein": 12.56,
+        "carbs": 0.72,
+        "fat": 9.51
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 155.0,
+        "protein": 13.0,
+        "carbs": 1.1,
+        "fat": 11.0
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "piece",
+        "titleKey": "portion.piece",
+        "amount": 50
+      }
+    ]
+  },
+  {
+    "id": "eggwhite",
+    "localizedNameTR": "Yumurta beyazı",
+    "localizedNameEN": "Egg white",
+    "category": "protein",
+    "servingName": "portion",
+    "servingAmount": 100,
+    "caloriesPer100g": 52.0,
+    "proteinPer100g": 10.9,
+    "carbsPer100g": 0.73,
+    "fatPer100g": 0.17,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 52.0,
+        "protein": 10.9,
+        "carbs": 0.73,
+        "fat": 0.17
+      }
+    ],
+    "selectedPreparation": "raw",
+    "portions": [
+      {
+        "id": "piece",
+        "titleKey": "portion.piece",
+        "amount": 33
+      }
+    ]
+  },
+  {
+    "id": "chicken",
+    "localizedNameTR": "Tavuk göğsü",
+    "localizedNameEN": "Chicken breast",
+    "category": "protein",
+    "servingName": "portion",
+    "servingAmount": 150.0,
+    "caloriesPer100g": 165.0,
+    "proteinPer100g": 31.0,
+    "carbsPer100g": 0.0,
+    "fatPer100g": 3.6,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 120.0,
+        "protein": 22.5,
+        "carbs": 0.0,
+        "fat": 2.62
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 165.0,
+        "protein": 31.0,
+        "carbs": 0.0,
+        "fat": 3.6
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150.0
+      }
+    ]
+  },
+  {
+    "id": "turkey",
+    "localizedNameTR": "Hindi göğsü",
+    "localizedNameEN": "Turkey breast",
+    "category": "protein",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "caloriesPer100g": 147.0,
+    "proteinPer100g": 30.13,
+    "carbsPer100g": 0.0,
+    "fatPer100g": 2.08,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 114.0,
+        "protein": 23.66,
+        "carbs": 0.14,
+        "fat": 1.48
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 147.0,
+        "protein": 30.13,
+        "carbs": 0.0,
+        "fat": 2.08
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "tuna",
+    "localizedNameTR": "Ton balığı (suda, süzülmüş)",
+    "localizedNameEN": "Tuna (in water, drained)",
+    "category": "protein",
+    "servingName": "portion",
+    "servingAmount": 100,
+    "caloriesPer100g": 86.0,
+    "proteinPer100g": 19.44,
+    "carbsPer100g": 0.0,
+    "fatPer100g": 0.96,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "id": "salmon",
+    "localizedNameTR": "Somon",
+    "localizedNameEN": "Salmon",
+    "category": "protein",
+    "servingName": "portion",
+    "servingAmount": 150.0,
+    "caloriesPer100g": 206.0,
+    "proteinPer100g": 22.0,
+    "carbsPer100g": 0.0,
+    "fatPer100g": 12.0,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 208.0,
+        "protein": 20.42,
+        "carbs": 0.0,
+        "fat": 13.42
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 206.0,
+        "protein": 22.0,
+        "carbs": 0.0,
+        "fat": 12.0
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150.0
+      }
+    ]
+  },
+  {
+    "id": "beef",
+    "localizedNameTR": "Dana eti",
+    "localizedNameEN": "Beef",
+    "category": "protein",
+    "servingName": "portion",
+    "servingAmount": 150.0,
+    "caloriesPer100g": 250.0,
+    "proteinPer100g": 26.0,
+    "carbsPer100g": 0.0,
+    "fatPer100g": 15.0,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 201.0,
+        "protein": 20.3,
+        "carbs": 0.0,
+        "fat": 12.71
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 250.0,
+        "protein": 26.0,
+        "carbs": 0.0,
+        "fat": 15.0
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150.0
+      }
+    ]
+  },
+  {
+    "id": "oats",
+    "localizedNameTR": "Yulaf",
+    "localizedNameEN": "Oats",
+    "category": "grain",
+    "servingName": "portion",
+    "servingAmount": 50.0,
+    "caloriesPer100g": 389.0,
+    "proteinPer100g": 17.0,
+    "carbsPer100g": 66.0,
+    "fatPer100g": 7.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "spoon",
+        "titleKey": "portion.tablespoon",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "id": "rice",
+    "localizedNameTR": "Pirinç",
+    "localizedNameEN": "Rice",
+    "category": "grain",
+    "servingName": "portion",
+    "servingAmount": 150.0,
+    "caloriesPer100g": 170.0,
+    "proteinPer100g": 3.0,
+    "carbsPer100g": 28.0,
+    "fatPer100g": 5.0,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 365.0,
+        "protein": 7.13,
+        "carbs": 79.95,
+        "fat": 0.66
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.pilaf",
+        "calories": 170.0,
+        "protein": 3.0,
+        "carbs": 28.0,
+        "fat": 5.0
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "spoon",
+        "titleKey": "portion.tablespoon",
+        "amount": 15
+      }
+    ]
+  },
+  {
+    "id": "bulgur",
+    "localizedNameTR": "Bulgur",
+    "localizedNameEN": "Bulgur",
+    "category": "grain",
+    "servingName": "portion",
+    "servingAmount": 150.0,
+    "caloriesPer100g": 120.0,
+    "proteinPer100g": 3.1,
+    "carbsPer100g": 20.0,
+    "fatPer100g": 3.1,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 342.0,
+        "protein": 12.29,
+        "carbs": 75.87,
+        "fat": 1.33
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.pilaf",
+        "calories": 120.0,
+        "protein": 3.1,
+        "carbs": 20.0,
+        "fat": 3.1
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "spoon",
+        "titleKey": "portion.tablespoon",
+        "amount": 15
+      }
+    ]
+  },
+  {
+    "id": "brownrice",
+    "localizedNameTR": "Esmer pirinç",
+    "localizedNameEN": "Brown rice",
+    "category": "grain",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "caloriesPer100g": 123.0,
+    "proteinPer100g": 2.74,
+    "carbsPer100g": 25.58,
+    "fatPer100g": 0.97,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 367.0,
+        "protein": 7.54,
+        "carbs": 76.25,
+        "fat": 3.2
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 123.0,
+        "protein": 2.74,
+        "carbs": 25.58,
+        "fat": 0.97
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "spoon",
+        "titleKey": "portion.tablespoon",
+        "amount": 15
+      }
+    ]
+  },
+  {
+    "id": "pasta",
+    "localizedNameTR": "Makarna",
+    "localizedNameEN": "Pasta",
+    "category": "grain",
+    "servingName": "portion",
+    "servingAmount": 200.0,
+    "caloriesPer100g": 158.0,
+    "proteinPer100g": 5.8,
+    "carbsPer100g": 31.0,
+    "fatPer100g": 0.9,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 371.0,
+        "protein": 13.04,
+        "carbs": 74.67,
+        "fat": 1.51
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 158.0,
+        "protein": 5.8,
+        "carbs": 31.0,
+        "fat": 0.9
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "spoon",
+        "titleKey": "portion.tablespoon",
+        "amount": 15
+      }
+    ]
+  },
+  {
+    "id": "wholebread",
+    "localizedNameTR": "Tam buğday ekmeği",
+    "localizedNameEN": "Whole wheat bread",
+    "category": "grain",
+    "servingName": "portion",
+    "servingAmount": 60,
+    "caloriesPer100g": 252.0,
+    "proteinPer100g": 12.45,
+    "carbsPer100g": 42.71,
+    "fatPer100g": 3.5,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "slice",
+        "titleKey": "portion.slice",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "id": "bread",
+    "localizedNameTR": "Ekmek",
+    "localizedNameEN": "Bread",
+    "category": "grain",
+    "servingName": "portion",
+    "servingAmount": 30.0,
+    "caloriesPer100g": 265.0,
+    "proteinPer100g": 9.0,
+    "carbsPer100g": 49.0,
+    "fatPer100g": 3.2,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "slice",
+        "titleKey": "portion.slice",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "id": "lor",
+    "localizedNameTR": "Lor peyniri",
+    "localizedNameEN": "Curd cheese",
+    "category": "dairy",
+    "servingName": "portion",
+    "servingAmount": 100.0,
+    "caloriesPer100g": 100.0,
+    "proteinPer100g": 17.0,
+    "carbsPer100g": 3.0,
+    "fatPer100g": 2.2,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 100.0
+      }
+    ]
+  },
+  {
+    "id": "yogurt",
+    "localizedNameTR": "Yoğurt",
+    "localizedNameEN": "Yogurt",
+    "category": "dairy",
+    "servingName": "portion",
+    "servingAmount": 200.0,
+    "caloriesPer100g": 61.0,
+    "proteinPer100g": 3.5,
+    "carbsPer100g": 4.7,
+    "fatPer100g": 3.3,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "bowl",
+        "titleKey": "portion.bowl",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "strainedyogurt",
+    "localizedNameTR": "Süzme yoğurt (yağsız)",
+    "localizedNameEN": "Strained yogurt (nonfat)",
+    "category": "dairy",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "caloriesPer100g": 59.0,
+    "proteinPer100g": 10.19,
+    "carbsPer100g": 3.6,
+    "fatPer100g": 0.39,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "bowl",
+        "titleKey": "portion.bowl",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "feta",
+    "localizedNameTR": "Beyaz peynir",
+    "localizedNameEN": "White cheese",
+    "category": "dairy",
+    "servingName": "portion",
+    "servingAmount": 30.0,
+    "caloriesPer100g": 264.0,
+    "proteinPer100g": 14.0,
+    "carbsPer100g": 4.0,
+    "fatPer100g": 21.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "slice",
+        "titleKey": "portion.slice",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "id": "kasar",
+    "localizedNameTR": "Kaşar peyniri",
+    "localizedNameEN": "Kashar cheese",
+    "category": "dairy",
+    "servingName": "portion",
+    "servingAmount": 30.0,
+    "caloriesPer100g": 350.0,
+    "proteinPer100g": 25.0,
+    "carbsPer100g": 2.0,
+    "fatPer100g": 27.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "slice",
+        "titleKey": "portion.slice",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "id": "lentil",
+    "localizedNameTR": "Mercimek çorbası",
+    "localizedNameEN": "Lentil soup",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 250.0,
+    "caloriesPer100g": 70.0,
+    "proteinPer100g": 3.5,
+    "carbsPer100g": 10.0,
+    "fatPer100g": 2.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "bowl",
+        "titleKey": "portion.bowl",
+        "amount": 250
+      }
+    ]
+  },
+  {
+    "id": "beans",
+    "localizedNameTR": "Kuru fasulye",
+    "localizedNameEN": "White bean stew",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 200.0,
+    "caloriesPer100g": 130.0,
+    "proteinPer100g": 7.0,
+    "carbsPer100g": 18.0,
+    "fatPer100g": 3.5,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 200.0
+      }
+    ]
+  },
+  {
+    "id": "chickpea",
+    "localizedNameTR": "Nohut",
+    "localizedNameEN": "Chickpeas",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 150.0,
+    "caloriesPer100g": 164.0,
+    "proteinPer100g": 8.9,
+    "carbsPer100g": 27.4,
+    "fatPer100g": 2.6,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 378.0,
+        "protein": 20.47,
+        "carbs": 62.95,
+        "fat": 6.04
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 164.0,
+        "protein": 8.9,
+        "carbs": 27.4,
+        "fat": 2.6
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150.0
+      }
+    ]
+  },
+  {
+    "id": "greenlentils",
+    "localizedNameTR": "Mercimek",
+    "localizedNameEN": "Lentils",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "caloriesPer100g": 116.0,
+    "proteinPer100g": 9.02,
+    "carbsPer100g": 20.13,
+    "fatPer100g": 0.38,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 352.0,
+        "protein": 24.63,
+        "carbs": 63.35,
+        "fat": 1.06
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 116.0,
+        "protein": 9.02,
+        "carbs": 20.13,
+        "fat": 0.38
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "banana",
+    "localizedNameTR": "Muz",
+    "localizedNameEN": "Banana",
+    "category": "fruit",
+    "servingName": "portion",
+    "servingAmount": 120.0,
+    "caloriesPer100g": 89.0,
+    "proteinPer100g": 1.1,
+    "carbsPer100g": 23.0,
+    "fatPer100g": 0.3,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "piece",
+        "titleKey": "portion.piece",
+        "amount": 120
+      }
+    ]
+  },
+  {
+    "id": "apple",
+    "localizedNameTR": "Elma",
+    "localizedNameEN": "Apple",
+    "category": "fruit",
+    "servingName": "portion",
+    "servingAmount": 150.0,
+    "caloriesPer100g": 52.0,
+    "proteinPer100g": 0.3,
+    "carbsPer100g": 14.0,
+    "fatPer100g": 0.2,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "piece",
+        "titleKey": "portion.piece",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "simit",
+    "localizedNameTR": "Simit",
+    "localizedNameEN": "Simit",
+    "category": "grain",
+    "servingName": "portion",
+    "servingAmount": 100.0,
+    "caloriesPer100g": 340.0,
+    "proteinPer100g": 10.0,
+    "carbsPer100g": 55.0,
+    "fatPer100g": 9.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "piece",
+        "titleKey": "portion.piece",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "id": "potato",
+    "localizedNameTR": "Patates",
+    "localizedNameEN": "Potato",
+    "category": "vegetable",
+    "servingName": "portion",
+    "servingAmount": 150.0,
+    "caloriesPer100g": 87.0,
+    "proteinPer100g": 1.9,
+    "carbsPer100g": 20.0,
+    "fatPer100g": 0.1,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 77.0,
+        "protein": 2.05,
+        "carbs": 17.49,
+        "fat": 0.09
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 87.0,
+        "protein": 1.9,
+        "carbs": 20.0,
+        "fat": 0.1
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150.0
+      }
+    ]
+  },
+  {
+    "id": "broccoli",
+    "localizedNameTR": "Brokoli",
+    "localizedNameEN": "Broccoli",
+    "category": "vegetable",
+    "servingName": "portion",
+    "servingAmount": 150.0,
+    "caloriesPer100g": 34.0,
+    "proteinPer100g": 2.8,
+    "carbsPer100g": 7.0,
+    "fatPer100g": 0.4,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 34.0,
+        "protein": 2.8,
+        "carbs": 7.0,
+        "fat": 0.4
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 35.0,
+        "protein": 2.38,
+        "carbs": 7.18,
+        "fat": 0.41
+      }
+    ],
+    "selectedPreparation": "raw",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150.0
+      }
+    ]
+  },
+  {
+    "id": "oliveoil",
+    "localizedNameTR": "Zeytinyağı",
+    "localizedNameEN": "Olive oil",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 10.0,
+    "caloriesPer100g": 884.0,
+    "proteinPer100g": 0.0,
+    "carbsPer100g": 0.0,
+    "fatPer100g": 100.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "spoon",
+        "titleKey": "portion.tablespoon",
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "id": "almond",
+    "localizedNameTR": "Badem",
+    "localizedNameEN": "Almonds",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 30.0,
+    "caloriesPer100g": 579.0,
+    "proteinPer100g": 21.0,
+    "carbsPer100g": 22.0,
+    "fatPer100g": 50.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "handful",
+        "titleKey": "portion.handful",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "id": "tomato",
+    "localizedNameTR": "Domates",
+    "localizedNameEN": "Tomato",
+    "category": "vegetable",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "caloriesPer100g": 19,
+    "proteinPer100g": 0.89,
+    "carbsPer100g": 2.86,
+    "fatPer100g": 0.2,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "cucumber",
+    "localizedNameTR": "Salatalık",
+    "localizedNameEN": "Cucumber",
+    "category": "vegetable",
+    "servingName": "portion",
+    "servingAmount": 100,
+    "caloriesPer100g": 16,
+    "proteinPer100g": 0.37,
+    "carbsPer100g": 2.75,
+    "fatPer100g": 0.32,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "id": "omelette",
+    "localizedNameTR": "Omlet (sade)",
+    "localizedNameEN": "Plain omelette",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 100,
+    "caloriesPer100g": 199.2,
+    "proteinPer100g": 13.0,
+    "carbsPer100g": 1.1,
+    "fatPer100g": 16.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "id": "cheeseomelette",
+    "localizedNameTR": "Peynirli omlet",
+    "localizedNameEN": "Cheese omelette",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 130,
+    "caloriesPer100g": 214.15,
+    "proteinPer100g": 13.23,
+    "carbsPer100g": 1.77,
+    "fatPer100g": 17.15,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 130
+      }
+    ]
+  },
+  {
+    "id": "menemen",
+    "localizedNameTR": "Menemen (soğansız)",
+    "localizedNameEN": "Menemen (without onion)",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 104.22,
+    "proteinPer100g": 5.47,
+    "carbsPer100g": 2.53,
+    "fatPer100g": 7.93,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "cheesetoast",
+    "localizedNameTR": "Kaşarlı tost",
+    "localizedNameEN": "Toasted cheese sandwich",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 115,
+    "caloriesPer100g": 306.09,
+    "proteinPer100g": 14.96,
+    "carbsPer100g": 34.78,
+    "fatPer100g": 11.62,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 115
+      }
+    ]
+  },
+  {
+    "id": "chickensandwich",
+    "localizedNameTR": "Tavuklu sandviç",
+    "localizedNameEN": "Chicken sandwich",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 220,
+    "caloriesPer100g": 174.82,
+    "proteinPer100g": 17.53,
+    "carbsPer100g": 18.34,
+    "fatPer100g": 2.84,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 220
+      }
+    ]
+  },
+  {
+    "id": "cheesesandwich",
+    "localizedNameTR": "Beyaz peynirli sandviç",
+    "localizedNameEN": "White cheese sandwich",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 190,
+    "caloriesPer100g": 173.68,
+    "proteinPer100g": 6.98,
+    "carbsPer100g": 22.51,
+    "fatPer100g": 5.86,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 190
+      }
+    ]
+  },
+  {
+    "id": "chickenrice",
+    "localizedNameTR": "Tavuklu pilav",
+    "localizedNameEN": "Chicken rice pilaf",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 280,
+    "caloriesPer100g": 168.21,
+    "proteinPer100g": 13.0,
+    "carbsPer100g": 18.0,
+    "fatPer100g": 4.5,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 280
+      }
+    ]
+  },
+  {
+    "id": "chickpearice",
+    "localizedNameTR": "Nohutlu pilav",
+    "localizedNameEN": "Chickpea rice pilaf",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 260,
+    "caloriesPer100g": 168.15,
+    "proteinPer100g": 4.82,
+    "carbsPer100g": 27.82,
+    "fatPer100g": 4.26,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 260
+      }
+    ]
+  },
+  {
+    "id": "chickensote",
+    "localizedNameTR": "Domatesli tavuk sote",
+    "localizedNameEN": "Chicken sauté with tomato",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 240,
+    "caloriesPer100g": 140.51,
+    "proteinPer100g": 19.75,
+    "carbsPer100g": 1.19,
+    "fatPer100g": 5.67,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 240
+      }
+    ]
+  },
+  {
+    "id": "beefsote",
+    "localizedNameTR": "Domatesli et sote",
+    "localizedNameEN": "Beef sauté with tomato",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 240,
+    "caloriesPer100g": 182.58,
+    "proteinPer100g": 16.62,
+    "carbsPer100g": 1.19,
+    "fatPer100g": 11.54,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 240
+      }
+    ]
+  },
+  {
+    "id": "meatbeans",
+    "localizedNameTR": "Etli kuru fasulye",
+    "localizedNameEN": "White bean stew with beef",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 240,
+    "caloriesPer100g": 160.0,
+    "proteinPer100g": 11.75,
+    "carbsPer100g": 13.5,
+    "fatPer100g": 6.38,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 240
+      }
+    ]
+  },
+  {
+    "id": "tomatopasta",
+    "localizedNameTR": "Domates soslu makarna",
+    "localizedNameEN": "Pasta with tomato sauce",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 280,
+    "caloriesPer100g": 144.9,
+    "proteinPer100g": 4.46,
+    "carbsPer100g": 23.16,
+    "fatPer100g": 3.57,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 280
+      }
+    ]
+  },
+  {
+    "id": "yogurtpasta",
+    "localizedNameTR": "Yoğurtlu makarna",
+    "localizedNameEN": "Pasta with yogurt",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 300,
+    "caloriesPer100g": 125.67,
+    "proteinPer100g": 5.03,
+    "carbsPer100g": 22.23,
+    "fatPer100g": 1.7,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 300
+      }
+    ]
+  },
+  {
+    "id": "cheesepasta",
+    "localizedNameTR": "Peynirli makarna",
+    "localizedNameEN": "Pasta with cheese",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 245,
+    "caloriesPer100g": 190.12,
+    "proteinPer100g": 7.02,
+    "carbsPer100g": 25.96,
+    "fatPer100g": 6.2,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 245
+      }
+    ]
+  },
+  {
+    "id": "cacik",
+    "localizedNameTR": "Cacık",
+    "localizedNameEN": "Cacık yogurt and cucumber",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 34.5,
+    "proteinPer100g": 1.84,
+    "carbsPer100g": 3.04,
+    "fatPer100g": 1.73,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "bowl",
+        "titleKey": "portion.bowl",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "tomatocucumbersalad",
+    "localizedNameTR": "Domates salatalık salatası (zeytinyağlı)",
+    "localizedNameEN": "Tomato cucumber salad with olive oil",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 51.12,
+    "proteinPer100g": 0.66,
+    "carbsPer100g": 2.71,
+    "fatPer100g": 4.08,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "chickensalad",
+    "localizedNameTR": "Tavuklu salata (zeytinyağlı)",
+    "localizedNameEN": "Chicken salad with olive oil",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 305,
+    "caloriesPer100g": 80.07,
+    "proteinPer100g": 10.58,
+    "carbsPer100g": 1.84,
+    "fatPer100g": 2.99,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 305
+      }
+    ]
+  },
+  {
+    "id": "potatoyogurt",
+    "localizedNameTR": "Yoğurtlu patates",
+    "localizedNameEN": "Potatoes with yogurt",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 91.54,
+    "proteinPer100g": 2.39,
+    "carbsPer100g": 14.66,
+    "fatPer100g": 2.79,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "bananaoatbowl",
+    "localizedNameTR": "Muzlu yoğurtlu yulaf",
+    "localizedNameEN": "Banana yogurt oats",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 290,
+    "caloriesPer100g": 115.9,
+    "proteinPer100g": 4.53,
+    "carbsPer100g": 19.47,
+    "fatPer100g": 2.78,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 290
+      }
+    ]
+  },
+  {
+    "id": "greenbeans",
+    "localizedNameTR": "Taze fasulye",
+    "localizedNameEN": "Green beans",
+    "category": "vegetable",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "caloriesPer100g": 35.0,
+    "proteinPer100g": 1.89,
+    "carbsPer100g": 7.88,
+    "fatPer100g": 0.28,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 31.0,
+        "protein": 1.83,
+        "carbs": 6.97,
+        "fat": 0.22
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 35.0,
+        "protein": 1.89,
+        "carbs": 7.88,
+        "fat": 0.28
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "spinach",
+    "localizedNameTR": "Ispanak",
+    "localizedNameEN": "Spinach",
+    "category": "vegetable",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "caloriesPer100g": 23.0,
+    "proteinPer100g": 2.97,
+    "carbsPer100g": 3.75,
+    "fatPer100g": 0.26,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 23.0,
+        "protein": 2.86,
+        "carbs": 3.63,
+        "fat": 0.39
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 23.0,
+        "protein": 2.97,
+        "carbs": 3.75,
+        "fat": 0.26
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "zucchini",
+    "localizedNameTR": "Kabak",
+    "localizedNameEN": "Zucchini",
+    "category": "vegetable",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "caloriesPer100g": 15.0,
+    "proteinPer100g": 1.14,
+    "carbsPer100g": 2.69,
+    "fatPer100g": 0.36,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 17.0,
+        "protein": 1.21,
+        "carbs": 3.11,
+        "fat": 0.32
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 15.0,
+        "protein": 1.14,
+        "carbs": 2.69,
+        "fat": 0.36
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "cauliflower",
+    "localizedNameTR": "Karnabahar",
+    "localizedNameEN": "Cauliflower",
+    "category": "vegetable",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "caloriesPer100g": 23.0,
+    "proteinPer100g": 1.84,
+    "carbsPer100g": 4.11,
+    "fatPer100g": 0.45,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 25.0,
+        "protein": 1.92,
+        "carbs": 4.97,
+        "fat": 0.28
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 23.0,
+        "protein": 1.84,
+        "carbs": 4.11,
+        "fat": 0.45
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "carrot",
+    "localizedNameTR": "Havuç",
+    "localizedNameEN": "Carrot",
+    "category": "vegetable",
+    "servingName": "portion",
+    "servingAmount": 100,
+    "caloriesPer100g": 41.0,
+    "proteinPer100g": 0.93,
+    "carbsPer100g": 9.58,
+    "fatPer100g": 0.24,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 41.0,
+        "protein": 0.93,
+        "carbs": 9.58,
+        "fat": 0.24
+      }
+    ],
+    "selectedPreparation": "raw",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "id": "lettuce",
+    "localizedNameTR": "Marul",
+    "localizedNameEN": "Romaine lettuce",
+    "category": "vegetable",
+    "servingName": "portion",
+    "servingAmount": 100,
+    "caloriesPer100g": 17.0,
+    "proteinPer100g": 1.23,
+    "carbsPer100g": 3.29,
+    "fatPer100g": 0.3,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 17.0,
+        "protein": 1.23,
+        "carbs": 3.29,
+        "fat": 0.3
+      }
+    ],
+    "selectedPreparation": "raw",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "id": "avocado",
+    "localizedNameTR": "Avokado",
+    "localizedNameEN": "Avocado",
+    "category": "fruit",
+    "servingName": "portion",
+    "servingAmount": 100,
+    "caloriesPer100g": 160.0,
+    "proteinPer100g": 2.0,
+    "carbsPer100g": 8.53,
+    "fatPer100g": 14.66,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "id": "orange",
+    "localizedNameTR": "Portakal",
+    "localizedNameEN": "Orange",
+    "category": "fruit",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "caloriesPer100g": 47.0,
+    "proteinPer100g": 0.94,
+    "carbsPer100g": 11.75,
+    "fatPer100g": 0.12,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "piece",
+        "titleKey": "portion.piece",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "strawberry",
+    "localizedNameTR": "Çilek",
+    "localizedNameEN": "Strawberry",
+    "category": "fruit",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "caloriesPer100g": 32.0,
+    "proteinPer100g": 0.67,
+    "carbsPer100g": 7.68,
+    "fatPer100g": 0.3,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "pear",
+    "localizedNameTR": "Armut",
+    "localizedNameEN": "Pear",
+    "category": "fruit",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "caloriesPer100g": 57.0,
+    "proteinPer100g": 0.36,
+    "carbsPer100g": 15.23,
+    "fatPer100g": 0.14,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "piece",
+        "titleKey": "portion.piece",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "kiwi",
+    "localizedNameTR": "Kivi",
+    "localizedNameEN": "Kiwi",
+    "category": "fruit",
+    "servingName": "portion",
+    "servingAmount": 100,
+    "caloriesPer100g": 61.0,
+    "proteinPer100g": 1.14,
+    "carbsPer100g": 14.66,
+    "fatPer100g": 0.52,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "piece",
+        "titleKey": "portion.piece",
+        "amount": 75
+      }
+    ]
+  },
+  {
+    "id": "driedapricot",
+    "localizedNameTR": "Kuru kayısı",
+    "localizedNameEN": "Dried apricot",
+    "category": "fruit",
+    "servingName": "portion",
+    "servingAmount": 30,
+    "caloriesPer100g": 241.0,
+    "proteinPer100g": 3.39,
+    "carbsPer100g": 62.64,
+    "fatPer100g": 0.51,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "id": "dates",
+    "localizedNameTR": "Hurma (kuru)",
+    "localizedNameEN": "Dates (dried)",
+    "category": "fruit",
+    "servingName": "portion",
+    "servingAmount": 30,
+    "caloriesPer100g": 282.0,
+    "proteinPer100g": 2.45,
+    "carbsPer100g": 75.03,
+    "fatPer100g": 0.39,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "id": "walnut",
+    "localizedNameTR": "Ceviz içi",
+    "localizedNameEN": "Walnut kernels",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 30,
+    "caloriesPer100g": 654.0,
+    "proteinPer100g": 15.23,
+    "carbsPer100g": 13.71,
+    "fatPer100g": 65.21,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "handful",
+        "titleKey": "portion.handful",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "id": "hazelnut",
+    "localizedNameTR": "Fındık",
+    "localizedNameEN": "Hazelnuts",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 30,
+    "caloriesPer100g": 628.0,
+    "proteinPer100g": 14.95,
+    "carbsPer100g": 16.7,
+    "fatPer100g": 60.75,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "handful",
+        "titleKey": "portion.handful",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "id": "peanuts",
+    "localizedNameTR": "Yer fıstığı",
+    "localizedNameEN": "Peanuts",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 30,
+    "caloriesPer100g": 587.0,
+    "proteinPer100g": 24.35,
+    "carbsPer100g": 21.26,
+    "fatPer100g": 49.66,
+    "amountUnit": "g",
+    "preparations": [
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 587.0,
+        "protein": 24.35,
+        "carbs": 21.26,
+        "fat": 49.66
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "handful",
+        "titleKey": "portion.handful",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "id": "peanutbutter",
+    "localizedNameTR": "Fıstık ezmesi (tuzsuz)",
+    "localizedNameEN": "Peanut butter (unsalted)",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 20,
+    "caloriesPer100g": 598.0,
+    "proteinPer100g": 22.21,
+    "carbsPer100g": 22.31,
+    "fatPer100g": 51.36,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "spoon",
+        "titleKey": "portion.tablespoon",
+        "amount": 15
+      }
+    ]
+  },
+  {
+    "id": "pumpkinseed",
+    "localizedNameTR": "Kabak çekirdeği içi",
+    "localizedNameEN": "Pumpkin seed kernels",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 30,
+    "caloriesPer100g": 559.0,
+    "proteinPer100g": 30.23,
+    "carbsPer100g": 10.71,
+    "fatPer100g": 49.05,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "handful",
+        "titleKey": "portion.handful",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "id": "tahini",
+    "localizedNameTR": "Tahin",
+    "localizedNameEN": "Tahini",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 20,
+    "caloriesPer100g": 595.0,
+    "proteinPer100g": 17.0,
+    "carbsPer100g": 21.19,
+    "fatPer100g": 53.76,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "spoon",
+        "titleKey": "portion.tablespoon",
+        "amount": 15
+      }
+    ]
+  },
+  {
+    "id": "olives",
+    "localizedNameTR": "Siyah zeytin (çekirdeksiz ölçüm)",
+    "localizedNameEN": "Black olives (weighed without stones)",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 30,
+    "caloriesPer100g": 115.0,
+    "proteinPer100g": 0.84,
+    "carbsPer100g": 6.26,
+    "fatPer100g": 10.68,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 30
+      }
+    ]
+  },
+  {
+    "id": "ricecakes",
+    "localizedNameTR": "Pirinç patlağı (sade, tuzsuz)",
+    "localizedNameEN": "Rice cakes (plain, unsalted)",
+    "category": "grain",
+    "servingName": "portion",
+    "servingAmount": 20,
+    "caloriesPer100g": 387.0,
+    "proteinPer100g": 8.2,
+    "carbsPer100g": 81.5,
+    "fatPer100g": 2.8,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "piece",
+        "titleKey": "portion.piece",
+        "amount": 9
+      }
+    ]
+  },
+  {
+    "id": "fries",
+    "localizedNameTR": "Patates kızartması",
+    "localizedNameEN": "French fries",
+    "category": "fastFood",
+    "servingName": "portion",
+    "servingAmount": 150.0,
+    "caloriesPer100g": 312.0,
+    "proteinPer100g": 3.4,
+    "carbsPer100g": 41.0,
+    "fatPer100g": 15.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150.0
+      }
+    ]
+  },
+  {
+    "id": "burger",
+    "localizedNameTR": "Burger",
+    "localizedNameEN": "Burger",
+    "category": "fastFood",
+    "servingName": "portion",
+    "servingAmount": 200.0,
+    "caloriesPer100g": 250.0,
+    "proteinPer100g": 13.0,
+    "carbsPer100g": 30.0,
+    "fatPer100g": 9.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 200.0
+      }
+    ]
+  },
+  {
+    "id": "pizza",
+    "localizedNameTR": "Pizza",
+    "localizedNameEN": "Pizza",
+    "category": "fastFood",
+    "servingName": "portion",
+    "servingAmount": 150.0,
+    "caloriesPer100g": 266.0,
+    "proteinPer100g": 11.0,
+    "carbsPer100g": 33.0,
+    "fatPer100g": 10.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150.0
+      }
+    ]
+  },
+  {
+    "id": "lahmacun",
+    "localizedNameTR": "Lahmacun",
+    "localizedNameEN": "Lahmacun",
+    "category": "fastFood",
+    "servingName": "portion",
+    "servingAmount": 150.0,
+    "caloriesPer100g": 220.0,
+    "proteinPer100g": 10.0,
+    "carbsPer100g": 26.0,
+    "fatPer100g": 8.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150.0
+      }
+    ]
+  },
+  {
+    "id": "pide",
+    "localizedNameTR": "Kıymalı pide",
+    "localizedNameEN": "Minced beef pide",
+    "category": "fastFood",
+    "servingName": "portion",
+    "servingAmount": 250.0,
+    "caloriesPer100g": 260.0,
+    "proteinPer100g": 11.0,
+    "carbsPer100g": 32.0,
+    "fatPer100g": 10.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 250.0
+      }
+    ]
+  },
+  {
+    "id": "baklava",
+    "localizedNameTR": "Baklava",
+    "localizedNameEN": "Baklava",
+    "category": "sweet",
+    "servingName": "portion",
+    "servingAmount": 40.0,
+    "caloriesPer100g": 430.0,
+    "proteinPer100g": 6.0,
+    "carbsPer100g": 52.0,
+    "fatPer100g": 22.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 40.0
+      }
+    ]
+  },
+  {
+    "id": "chocolate",
+    "localizedNameTR": "Sütlü çikolata",
+    "localizedNameEN": "Milk chocolate",
+    "category": "sweet",
+    "servingName": "portion",
+    "servingAmount": 25.0,
+    "caloriesPer100g": 535.0,
+    "proteinPer100g": 7.6,
+    "carbsPer100g": 59.0,
+    "fatPer100g": 30.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 25.0
+      }
+    ]
+  },
+  {
+    "id": "chips",
+    "localizedNameTR": "Patates cipsi",
+    "localizedNameEN": "Potato chips",
+    "category": "fastFood",
+    "servingName": "portion",
+    "servingAmount": 30.0,
+    "caloriesPer100g": 536.0,
+    "proteinPer100g": 7.0,
+    "carbsPer100g": 53.0,
+    "fatPer100g": 35.0,
+    "amountUnit": "g",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 30.0
+      }
+    ]
+  },
+  {
+    "id": "ayran",
+    "localizedNameTR": "Ayran",
+    "localizedNameEN": "Ayran",
+    "category": "dairy",
+    "servingName": "portion",
+    "servingAmount": 200.0,
+    "caloriesPer100g": 35.0,
+    "proteinPer100g": 2.0,
+    "carbsPer100g": 2.8,
+    "fatPer100g": 1.8,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "cola",
+    "localizedNameTR": "Kola",
+    "localizedNameEN": "Cola",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 330.0,
+    "caloriesPer100g": 42.0,
+    "proteinPer100g": 0.0,
+    "carbsPer100g": 10.6,
+    "fatPer100g": 0.0,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "milk",
+    "localizedNameTR": "Süt · İçim Organik",
+    "localizedNameEN": "Milk · İçim Organic",
+    "category": "dairy",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 58,
+    "proteinPer100g": 3,
+    "carbsPer100g": 4.7,
+    "fatPer100g": 3,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "lactosefree",
+    "localizedNameTR": "Laktozsuz süt · İçim Rahat",
+    "localizedNameEN": "Lactose-free milk · İçim Rahat",
+    "category": "dairy",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 44,
+    "proteinPer100g": 3,
+    "carbsPer100g": 4.7,
+    "fatPer100g": 1.5,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "kefir",
+    "localizedNameTR": "Sade kefir · Pınar",
+    "localizedNameEN": "Plain kefir · Pınar",
+    "category": "dairy",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 54.3,
+    "proteinPer100g": 2.8,
+    "carbsPer100g": 4.7,
+    "fatPer100g": 2.7,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "strawberrykefir",
+    "localizedNameTR": "Çilekli kefir · Pınar",
+    "localizedNameEN": "Strawberry kefir · Pınar",
+    "category": "dairy",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 70.4,
+    "proteinPer100g": 2.7,
+    "carbsPer100g": 9.5,
+    "fatPer100g": 2.4,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "orangejuice",
+    "localizedNameTR": "Portakal suyu · DİMES %100",
+    "localizedNameEN": "Orange juice · DİMES 100%",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 44,
+    "proteinPer100g": 0,
+    "carbsPer100g": 10,
+    "fatPer100g": 0,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "applejuice",
+    "localizedNameTR": "Elma suyu · DİMES %100",
+    "localizedNameEN": "Apple juice · DİMES 100%",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 48,
+    "proteinPer100g": 0.5,
+    "carbsPer100g": 11.5,
+    "fatPer100g": 0,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "fanta",
+    "localizedNameTR": "Portakallı gazoz · Fanta",
+    "localizedNameEN": "Orange soda · Fanta",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 330,
+    "caloriesPer100g": 30,
+    "proteinPer100g": 0,
+    "carbsPer100g": 7.3,
+    "fatPer100g": 0,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "sprite",
+    "localizedNameTR": "Limonlu gazoz · Sprite",
+    "localizedNameEN": "Lemon soda · Sprite",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 330,
+    "caloriesPer100g": 13,
+    "proteinPer100g": 0,
+    "carbsPer100g": 3.1,
+    "fatPer100g": 0,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "spritezero",
+    "localizedNameTR": "Şekersiz gazoz · Sprite",
+    "localizedNameEN": "Sugar-free soda · Sprite",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 330,
+    "caloriesPer100g": 0.6,
+    "proteinPer100g": 0,
+    "carbsPer100g": 0,
+    "fatPer100g": 0,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "water",
+    "localizedNameTR": "Su",
+    "localizedNameEN": "Water",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 250,
+    "caloriesPer100g": 0,
+    "proteinPer100g": 0,
+    "carbsPer100g": 0,
+    "fatPer100g": 0,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "mineralwater",
+    "localizedNameTR": "Sade maden suyu",
+    "localizedNameEN": "Plain mineral water",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 0,
+    "proteinPer100g": 0,
+    "carbsPer100g": 0,
+    "fatPer100g": 0,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "blackcoffee",
+    "localizedNameTR": "Filtre kahve (şekersiz)",
+    "localizedNameEN": "Filter coffee (unsweetened)",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 1,
+    "proteinPer100g": 0.12,
+    "carbsPer100g": 0,
+    "fatPer100g": 0.02,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      },
+      {
+        "id": "cup",
+        "titleKey": "portion.cup",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "latte",
+    "localizedNameTR": "Sütlü kahve (şekersiz)",
+    "localizedNameEN": "Milky coffee (unsweetened)",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 43.75,
+    "proteinPer100g": 2.28,
+    "carbsPer100g": 3.52,
+    "fatPer100g": 2.25,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      },
+      {
+        "id": "cup",
+        "titleKey": "portion.cup",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "blacktea",
+    "localizedNameTR": "Siyah çay (demlenmiş, şekersiz)",
+    "localizedNameEN": "Black tea (brewed, unsweetened)",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "caloriesPer100g": 1.0,
+    "proteinPer100g": 0.0,
+    "carbsPer100g": 0.3,
+    "fatPer100g": 0.0,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      },
+      {
+        "id": "teaglass",
+        "titleKey": "portion.teaglass",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "id": "greentea",
+    "localizedNameTR": "Yeşil çay (demlenmiş, şekersiz)",
+    "localizedNameEN": "Green tea (brewed, unsweetened)",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "caloriesPer100g": 1.0,
+    "proteinPer100g": 0.22,
+    "carbsPer100g": 0.0,
+    "fatPer100g": 0.0,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      },
+      {
+        "id": "teaglass",
+        "titleKey": "portion.teaglass",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "id": "turkishcoffee",
+    "localizedNameTR": "Türk kahvesi (sade, telvesiz içim)",
+    "localizedNameEN": "Turkish coffee (unsweetened, grounds excluded)",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 60,
+    "caloriesPer100g": 2,
+    "proteinPer100g": 0.2,
+    "carbsPer100g": 0,
+    "fatPer100g": 0,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      },
+      {
+        "id": "cup",
+        "titleKey": "portion.cup",
+        "amount": 60
+      }
+    ]
+  },
+  {
+    "id": "proteinmilk",
+    "localizedNameTR": "Proteinli süt · İçim Fit kakaolu",
+    "localizedNameEN": "Protein milk · İçim Fit cocoa",
+    "category": "dairy",
+    "servingName": "portion",
+    "servingAmount": 400,
+    "caloriesPer100g": 47,
+    "proteinPer100g": 6.5,
+    "carbsPer100g": 5,
+    "fatPer100g": 0.1,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "colazero",
+    "localizedNameTR": "Şekersiz kola · Coca-Cola Zero",
+    "localizedNameEN": "Sugar-free cola · Coca-Cola Zero",
+    "category": "drink",
+    "servingName": "portion",
+    "servingAmount": 330,
+    "caloriesPer100g": 0.2,
+    "proteinPer100g": 0,
+    "carbsPer100g": 0,
+    "fatPer100g": 0,
+    "amountUnit": "ml",
+    "portions": [
+      {
+        "id": "glass",
+        "titleKey": "portion.glass",
+        "amount": 200
+      }
+    ]
+  },
+  {
+    "id": "seabass",
+    "localizedNameTR": "Levrek",
+    "localizedNameEN": "Sea bass",
+    "category": "protein",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "amountUnit": "g",
+    "caloriesPer100g": 124.0,
+    "proteinPer100g": 23.63,
+    "carbsPer100g": 0.0,
+    "fatPer100g": 2.56,
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 97.0,
+        "protein": 18.43,
+        "carbs": 0.0,
+        "fat": 2.0
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 124.0,
+        "protein": 23.63,
+        "carbs": 0.0,
+        "fat": 2.56
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "trout",
+    "localizedNameTR": "Alabalık",
+    "localizedNameEN": "Trout",
+    "category": "protein",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "amountUnit": "g",
+    "caloriesPer100g": 150.0,
+    "proteinPer100g": 22.92,
+    "carbsPer100g": 0.0,
+    "fatPer100g": 5.82,
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 119.0,
+        "protein": 20.48,
+        "carbs": 0.0,
+        "fat": 3.46
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 150.0,
+        "protein": 22.92,
+        "carbs": 0.0,
+        "fat": 5.82
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "peas",
+    "localizedNameTR": "Bezelye",
+    "localizedNameEN": "Peas",
+    "category": "vegetable",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "amountUnit": "g",
+    "caloriesPer100g": 84.0,
+    "proteinPer100g": 5.36,
+    "carbsPer100g": 15.63,
+    "fatPer100g": 0.22,
+    "preparations": [
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 84.0,
+        "protein": 5.36,
+        "carbs": 15.63,
+        "fat": 0.22
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "barbunya",
+    "localizedNameTR": "Barbunya",
+    "localizedNameEN": "Borlotti beans",
+    "category": "meal",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "amountUnit": "g",
+    "caloriesPer100g": 136.0,
+    "proteinPer100g": 9.34,
+    "carbsPer100g": 24.46,
+    "fatPer100g": 0.46,
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 335.0,
+        "protein": 23.03,
+        "carbs": 60.05,
+        "fat": 1.23
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 136.0,
+        "protein": 9.34,
+        "carbs": 24.46,
+        "fat": 0.46
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "wholepasta",
+    "localizedNameTR": "Tam buğday makarna",
+    "localizedNameEN": "Whole wheat pasta",
+    "category": "grain",
+    "servingName": "portion",
+    "servingAmount": 200,
+    "amountUnit": "g",
+    "caloriesPer100g": 149.0,
+    "proteinPer100g": 5.99,
+    "carbsPer100g": 30.07,
+    "fatPer100g": 1.71,
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 352.0,
+        "protein": 13.87,
+        "carbs": 73.37,
+        "fat": 2.93
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 149.0,
+        "protein": 5.99,
+        "carbs": 30.07,
+        "fat": 1.71
+      }
+    ],
+    "selectedPreparation": "cooked",
+    "portions": [
+      {
+        "id": "spoon",
+        "titleKey": "portion.tablespoon",
+        "amount": 15
+      }
+    ]
+  },
+  {
+    "id": "mushroom",
+    "localizedNameTR": "Mantar",
+    "localizedNameEN": "Mushroom",
+    "category": "vegetable",
+    "servingName": "portion",
+    "servingAmount": 100,
+    "amountUnit": "g",
+    "caloriesPer100g": 22.0,
+    "proteinPer100g": 3.09,
+    "carbsPer100g": 3.26,
+    "fatPer100g": 0.34,
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 22.0,
+        "protein": 3.09,
+        "carbs": 3.26,
+        "fat": 0.34
+      }
+    ],
+    "selectedPreparation": "raw",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 100
+      }
+    ]
+  },
+  {
+    "id": "anchovy",
+    "localizedNameTR": "Hamsi",
+    "localizedNameEN": "Anchovy",
+    "category": "protein",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "amountUnit": "g",
+    "caloriesPer100g": 131.0,
+    "proteinPer100g": 20.35,
+    "carbsPer100g": 0.0,
+    "fatPer100g": 4.84,
+    "preparations": [
+      {
+        "id": "raw",
+        "titleKey": "prep.raw",
+        "calories": 131.0,
+        "protein": 20.35,
+        "carbs": 0.0,
+        "fat": 4.84
+      },
+      {
+        "id": "cooked",
+        "titleKey": "prep.cooked",
+        "calories": 163.75,
+        "protein": 25.44,
+        "carbs": 0.0,
+        "fat": 6.05
+      }
+    ],
+    "selectedPreparation": "raw",
+    "portions": [
+      {
+        "id": "serving",
+        "titleKey": "portion.serving",
+        "amount": 150
+      }
+    ]
+  },
+  {
+    "id": "meatballs",
+    "localizedNameTR": "Izgara köfte",
+    "localizedNameEN": "Grilled meatballs",
+    "category": "protein",
+    "servingName": "portion",
+    "servingAmount": 150,
+    "amountUnit": "g",
+    "caloriesPer100g": 252.88,
+    "proteinPer100g": 22.39,
+    "carbsPer100g": 5.1,
+    "fatPer100g": 14.88,
+    "portions": [
+      {
+        "id": "piece",
+        "titleKey": "portion.piece",
+        "amount": 30
+      }
+    ]
+  }
+]

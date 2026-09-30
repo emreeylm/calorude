@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E537F3851B7B72ADF95F324 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282E951A82E714F7C7FA367 /* NotificationService.swift */; };
+		108388AD521107E25B91838A /* MealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E5C688DD2A30293A0B492 /* MealRepository.swift */; };
+		12F7BED636F2BB4DFE88E0CE /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A05B879F6219FCD0570584E /* PreviewData.swift */; };
+		149D18F8CBB5C1445F888C7A /* MealReactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F4A49E899BB15815163AD /* MealReactionTests.swift */; };
+		1DE3D5D9EC33BD5187843734 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 111B7ED704E2C750E0D16B3E /* PrivacyInfo.xcprivacy */; };
+		1EF2EBCB0C2C206D31D91D34 /* AppLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4FC384B0CF8CED93F8CA5 /* AppLocalization.swift */; };
+		2063E60544EF4674AE9910C5 /* EditPlanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7E099FC5CDAE7A8F538345 /* EditPlanView.swift */; };
+		209FB5A6ED689610C9B2243C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846594EDC24CD6DDC45E9815 /* Theme.swift */; };
+		32850A98EDD154EB10D81581 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FDD4D8FA13F240875FBC2 /* PaywallView.swift */; };
+		3D1639F2D27BAEA624C3F566 /* StoreIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D5665D6AB7AB8DBA738D34 /* StoreIntegrationTests.swift */; };
+		41EE434473679270B580AB25 /* Development.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 78C8C09E13416D99B5D461B4 /* Development.storekit */; };
+		4B1E6E8B4234D9017AB030B9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A871F77835C292323D142A71 /* SettingsView.swift */; };
+		5923BBE47DF86353D9049714 /* NutritionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13397ADBFCF4A53DA97E2B /* NutritionCalculator.swift */; };
+		5B93D6F5C6911B79317CAF98 /* TrackingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE71CA983FD51986997C6B0 /* TrackingCoordinator.swift */; };
+		6BDFAE504AE90A61A451A861 /* FlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE9FB9FEF4F8310DED0ABF6 /* FlowTests.swift */; };
+		6C53C53564095E21C5F58520 /* ProgressScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075D03329CDCA350A072524 /* ProgressScreen.swift */; };
+		6E85B049A8517EF283A086E7 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D275C0B74C162D861A628A /* DashboardView.swift */; };
+		711B4F77362F566E54514289 /* ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FE544C41E89C0811EA548 /* ShareCardView.swift */; };
+		76A9DD9BC401784707242469 /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D9CB9228DBF3DEA64992C /* CoreTests.swift */; };
+		787C5E0BCD9A5044FCA6B460 /* CustomFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA476E182903F0719E91B926 /* CustomFoodView.swift */; };
+		7AC2DE9A1276F79C995B30CF /* MealEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197F3D8E76936E14707ED9E /* MealEditorTests.swift */; };
+		7F2D133E74093D94439054E7 /* RoastEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E536B0C4711E169C8F60FB /* RoastEngine.swift */; };
+		82F4AEC6715004E50060FF35 /* CoachCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C484099DE9CB78641659487 /* CoachCard.swift */; };
+		85B8D82EE8E4D91929446AFB /* CalorudeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76F8774042397EB169E8F5B /* CalorudeApp.swift */; };
+		8A265A0E2B71D0BEA3420F50 /* FoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2706C86440FBD293B398403 /* FoodRepository.swift */; };
+		8D7B00851B89290B46B218B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DD9597131CEC89AF1057B7 /* Assets.xcassets */; };
+		97D16437137089E9F443FE7B /* AchievementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AABB4F3671375A0C418B1 /* AchievementService.swift */; };
+		AE3AEFB7D32E20A5E0AAF708 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C3776BFE5C3303E869867E /* OnboardingViewModel.swift */; };
+		B0A2CF6F24F783E0E7997D01 /* PortionEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1B25E870ACB8D2DF6AFB5 /* PortionEditorView.swift */; };
+		B539C1A25E0F4917A7365D3D /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 41AB2421F29A100CF11C233A /* Localizable.xcstrings */; };
+		C674D1B24C9D62F79FC89E9D /* roasts.json in Resources */ = {isa = PBXBuildFile; fileRef = C170FA7C41B279A7F58433BD /* roasts.json */; };
+		CD40EECCA42F8AF0EC16975F /* MealReactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E837C2BAF14FD27236654A /* MealReactionView.swift */; };
+		D7F2FAEEADE0A0C6A60FBC79 /* FoodLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2967053CDCBBCA9E8AEA3F3D /* FoodLogView.swift */; };
+		D85B50C75CD2FA3A491DCCE7 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CE65761B322C623F0783A /* Models.swift */; };
+		E383F35D4698917C690E39B1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7267303B90B1B242E5A4D8 /* OnboardingView.swift */; };
+		F12504894A0242502A11F2CB /* StoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1824B3A7664F3FCE815E0A /* StoreService.swift */; };
+		F16E7AE3C4D96EDFAE3DFB33 /* WeeklyRateNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3822246158BFB08FAB0D5 /* WeeklyRateNote.swift */; };
+		F175F20F7E33EACD7AF2FD7B /* MealReactionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08830513B2AA4E9BD8A11659 /* MealReactionEngine.swift */; };
+		F90F9F7F836F128AB81972D5 /* ProgressService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF05430E4D7388F257B410 /* ProgressService.swift */; };
+		FA8D1C74F6D01ACFCAEEFE0D /* MealEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0460569CE08834EC45106D /* MealEditorViewModel.swift */; };
+		FB963CA229FEA29FDE517B17 /* foods.json in Resources */ = {isa = PBXBuildFile; fileRef = BC1E7DE9D4F594BA1A463E16 /* foods.json */; };
+		FD7BDC97573E0F0EA3BE671F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FBD18020F7277FF860AECAA /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B1B18CF8C05015E0BA1DD93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC4679CBC17006573E1F3872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3509C6BD3614C2C1B7840724;
+			remoteInfo = Calorude;
+		};
+		854B7B1F3E077CF533238088 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC4679CBC17006573E1F3872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3509C6BD3614C2C1B7840724;
+			remoteInfo = Calorude;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008D9CB9228DBF3DEA64992C /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
+		08830513B2AA4E9BD8A11659 /* MealReactionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReactionEngine.swift; sourceTree = "<group>"; };
+		0BE9FB9FEF4F8310DED0ABF6 /* FlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTests.swift; sourceTree = "<group>"; };
+		111B7ED704E2C750E0D16B3E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		13A1B25E870ACB8D2DF6AFB5 /* PortionEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionEditorView.swift; sourceTree = "<group>"; };
+		1B13397ADBFCF4A53DA97E2B /* NutritionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCalculator.swift; sourceTree = "<group>"; };
+		1B7267303B90B1B242E5A4D8 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		2967053CDCBBCA9E8AEA3F3D /* FoodLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogView.swift; sourceTree = "<group>"; };
+		41AB2421F29A100CF11C233A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		4282E951A82E714F7C7FA367 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		5075D03329CDCA350A072524 /* ProgressScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressScreen.swift; sourceTree = "<group>"; };
+		547E5C688DD2A30293A0B492 /* MealRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRepository.swift; sourceTree = "<group>"; };
+		63550E2E659D3D7C4967DC38 /* CalorudeUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CalorudeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		697028489CBD5AC066311492 /* Calorude.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Calorude.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		72B4FC384B0CF8CED93F8CA5 /* AppLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocalization.swift; sourceTree = "<group>"; };
+		72E837C2BAF14FD27236654A /* MealReactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReactionView.swift; sourceTree = "<group>"; };
+		78C8C09E13416D99B5D461B4 /* Development.storekit */ = {isa = PBXFileReference; path = Development.storekit; sourceTree = "<group>"; };
+		7A0460569CE08834EC45106D /* MealEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealEditorViewModel.swift; sourceTree = "<group>"; };
+		7C484099DE9CB78641659487 /* CoachCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachCard.swift; sourceTree = "<group>"; };
+		7E1824B3A7664F3FCE815E0A /* StoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreService.swift; sourceTree = "<group>"; };
+		7F7E099FC5CDAE7A8F538345 /* EditPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlanView.swift; sourceTree = "<group>"; };
+		801F4A49E899BB15815163AD /* MealReactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReactionTests.swift; sourceTree = "<group>"; };
+		846594EDC24CD6DDC45E9815 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		85F3822246158BFB08FAB0D5 /* WeeklyRateNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyRateNote.swift; sourceTree = "<group>"; };
+		89275D59058D48760037020B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8E3CE65761B322C623F0783A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		8EE71CA983FD51986997C6B0 /* TrackingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingCoordinator.swift; sourceTree = "<group>"; };
+		98B4BC66E87BD6326EBC5FEA /* CalorudeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CalorudeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A05B879F6219FCD0570584E /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		A50A2C29D5C037455B288D38 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5C3776BFE5C3303E869867E /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		A871F77835C292323D142A71 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AA3FDD4D8FA13F240875FBC2 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		B2706C86440FBD293B398403 /* FoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRepository.swift; sourceTree = "<group>"; };
+		B3CF05430E4D7388F257B410 /* ProgressService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressService.swift; sourceTree = "<group>"; };
+		B3DD9597131CEC89AF1057B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B76F8774042397EB169E8F5B /* CalorudeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorudeApp.swift; sourceTree = "<group>"; };
+		BC1E7DE9D4F594BA1A463E16 /* foods.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = foods.json; sourceTree = "<group>"; };
+		C170FA7C41B279A7F58433BD /* roasts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = roasts.json; sourceTree = "<group>"; };
+		D197F3D8E76936E14707ED9E /* MealEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealEditorTests.swift; sourceTree = "<group>"; };
+		DA476E182903F0719E91B926 /* CustomFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFoodView.swift; sourceTree = "<group>"; };
+		E0D275C0B74C162D861A628A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		E3E536B0C4711E169C8F60FB /* RoastEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoastEngine.swift; sourceTree = "<group>"; };
+		EC4AABB4F3671375A0C418B1 /* AchievementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementService.swift; sourceTree = "<group>"; };
+		F5D5665D6AB7AB8DBA738D34 /* StoreIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreIntegrationTests.swift; sourceTree = "<group>"; };
+		FC2FE544C41E89C0811EA548 /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1200C5E9054C63898380BC86 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				78C8C09E13416D99B5D461B4 /* Development.storekit */,
+				7E1824B3A7664F3FCE815E0A /* StoreService.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		192F68C02066DE24ABE66EDF /* CalorudeTests */ = {
+			isa = PBXGroup;
+			children = (
+				008D9CB9228DBF3DEA64992C /* CoreTests.swift */,
+				D197F3D8E76936E14707ED9E /* MealEditorTests.swift */,
+				801F4A49E899BB15815163AD /* MealReactionTests.swift */,
+				F5D5665D6AB7AB8DBA738D34 /* StoreIntegrationTests.swift */,
+			);
+			path = CalorudeTests;
+			sourceTree = "<group>";
+		};
+		4E0B1B7643F0B4F619FD89D1 = {
+			isa = PBXGroup;
+			children = (
+				893A8529F5942BA4A29E9F8B /* Calorude */,
+				192F68C02066DE24ABE66EDF /* CalorudeTests */,
+				861BBE43077CF205637673C4 /* CalorudeUITests */,
+				FF44B84E123FEB94300BCF6D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		589CC8109D7647B7652B6617 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7A0460569CE08834EC45106D /* MealEditorViewModel.swift */,
+				A5C3776BFE5C3303E869867E /* OnboardingViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5CA3D2B785267D3019C3B02D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				7C484099DE9CB78641659487 /* CoachCard.swift */,
+				846594EDC24CD6DDC45E9815 /* Theme.swift */,
+				85F3822246158BFB08FAB0D5 /* WeeklyRateNote.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		861BBE43077CF205637673C4 /* CalorudeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0BE9FB9FEF4F8310DED0ABF6 /* FlowTests.swift */,
+			);
+			path = CalorudeUITests;
+			sourceTree = "<group>";
+		};
+		8844042F49A5A1ACB21792B2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B76F8774042397EB169E8F5B /* CalorudeApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		893A8529F5942BA4A29E9F8B /* Calorude */ = {
+			isa = PBXGroup;
+			children = (
+				8844042F49A5A1ACB21792B2 /* App */,
+				5CA3D2B785267D3019C3B02D /* Components */,
+				F24CB57711288C3FD05114B6 /* Localization */,
+				9E36AD2731FA45D2253C1B48 /* Models */,
+				D6822D71F07C59AF06CBE401 /* Notifications */,
+				AD406C8232DBDDBF1DF124BE /* Repositories */,
+				DCFBDB7235284AA28E6E5A7F /* Resources */,
+				ECC617B74AAE93A27125DE02 /* Services */,
+				E052E1B8CAF218FB34AFC883 /* Sharing */,
+				1200C5E9054C63898380BC86 /* Store */,
+				D503288AADA2EEEFB3725CEE /* Utilities */,
+				589CC8109D7647B7652B6617 /* ViewModels */,
+				ADDEADBFB37FEB0236E3D9D5 /* Views */,
+			);
+			path = Calorude;
+			sourceTree = "<group>";
+		};
+		9E36AD2731FA45D2253C1B48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E3CE65761B322C623F0783A /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AD406C8232DBDDBF1DF124BE /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				B2706C86440FBD293B398403 /* FoodRepository.swift */,
+				547E5C688DD2A30293A0B492 /* MealRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		ADDEADBFB37FEB0236E3D9D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA476E182903F0719E91B926 /* CustomFoodView.swift */,
+				E0D275C0B74C162D861A628A /* DashboardView.swift */,
+				7F7E099FC5CDAE7A8F538345 /* EditPlanView.swift */,
+				2967053CDCBBCA9E8AEA3F3D /* FoodLogView.swift */,
+				1B7267303B90B1B242E5A4D8 /* OnboardingView.swift */,
+				AA3FDD4D8FA13F240875FBC2 /* PaywallView.swift */,
+				13A1B25E870ACB8D2DF6AFB5 /* PortionEditorView.swift */,
+				5075D03329CDCA350A072524 /* ProgressScreen.swift */,
+				A871F77835C292323D142A71 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D503288AADA2EEEFB3725CEE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9A05B879F6219FCD0570584E /* PreviewData.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D6822D71F07C59AF06CBE401 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				4282E951A82E714F7C7FA367 /* NotificationService.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		DCFBDB7235284AA28E6E5A7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3DD9597131CEC89AF1057B7 /* Assets.xcassets */,
+				BC1E7DE9D4F594BA1A463E16 /* foods.json */,
+				111B7ED704E2C750E0D16B3E /* PrivacyInfo.xcprivacy */,
+				C170FA7C41B279A7F58433BD /* roasts.json */,
+				6FBD18020F7277FF860AECAA /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E052E1B8CAF218FB34AFC883 /* Sharing */ = {
+			isa = PBXGroup;
+			children = (
+				72E837C2BAF14FD27236654A /* MealReactionView.swift */,
+				FC2FE544C41E89C0811EA548 /* ShareCardView.swift */,
+			);
+			path = Sharing;
+			sourceTree = "<group>";
+		};
+		ECC617B74AAE93A27125DE02 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EC4AABB4F3671375A0C418B1 /* AchievementService.swift */,
+				08830513B2AA4E9BD8A11659 /* MealReactionEngine.swift */,
+				1B13397ADBFCF4A53DA97E2B /* NutritionCalculator.swift */,
+				B3CF05430E4D7388F257B410 /* ProgressService.swift */,
+				E3E536B0C4711E169C8F60FB /* RoastEngine.swift */,
+				8EE71CA983FD51986997C6B0 /* TrackingCoordinator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F24CB57711288C3FD05114B6 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				72B4FC384B0CF8CED93F8CA5 /* AppLocalization.swift */,
+				41AB2421F29A100CF11C233A /* Localizable.xcstrings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		FF44B84E123FEB94300BCF6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				697028489CBD5AC066311492 /* Calorude.app */,
+				98B4BC66E87BD6326EBC5FEA /* CalorudeTests.xctest */,
+				63550E2E659D3D7C4967DC38 /* CalorudeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AD7306D81C8B0B9116E5CAA /* CalorudeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57C7F71EAF6EAD7B393B94DD /* Build configuration list for PBXNativeTarget "CalorudeTests" */;
+			buildPhases = (
+				46A18433C5CECABDBC903839 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D145B04399890CC2C55321A0 /* PBXTargetDependency */,
+			);
+			name = CalorudeTests;
+			packageProductDependencies = (
+			);
+			productName = CalorudeTests;
+			productReference = 98B4BC66E87BD6326EBC5FEA /* CalorudeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3509C6BD3614C2C1B7840724 /* Calorude */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D8E4C97F42CFDF1B9F88B65 /* Build configuration list for PBXNativeTarget "Calorude" */;
+			buildPhases = (
+				82E60672351E3938E1EEE1F8 /* Sources */,
+				EA9B4DDBFEC484A54BB99E9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calorude;
+			packageProductDependencies = (
+			);
+			productName = Calorude;
+			productReference = 697028489CBD5AC066311492 /* Calorude.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A8EAB444521C8AE40C5E435 /* CalorudeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7419835D827FEA0304BF0312 /* Build configuration list for PBXNativeTarget "CalorudeUITests" */;
+			buildPhases = (
+				F084C986E3F45A35F9D0DE74 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99F354ACFBEE8C6FC1E57E3D /* PBXTargetDependency */,
+			);
+			name = CalorudeUITests;
+			packageProductDependencies = (
+			);
+			productName = CalorudeUITests;
+			productReference = 63550E2E659D3D7C4967DC38 /* CalorudeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC4679CBC17006573E1F3872 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2AD7306D81C8B0B9116E5CAA = {
+						DevelopmentTeam = P6V2HMX86R;
+						ProvisioningStyle = Automatic;
+					};
+					3509C6BD3614C2C1B7840724 = {
+						DevelopmentTeam = P6V2HMX86R;
+						ProvisioningStyle = Automatic;
+					};
+					4A8EAB444521C8AE40C5E435 = {
+						DevelopmentTeam = P6V2HMX86R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3509C6BD3614C2C1B7840724;
+					};
+				};
+			};
+			buildConfigurationList = AA64203E865A1F21DA429E87 /* Build configuration list for PBXProject "Calorude" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				tr,
+			);
+			mainGroup = 4E0B1B7643F0B4F619FD89D1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FF44B84E123FEB94300BCF6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3509C6BD3614C2C1B7840724 /* Calorude */,
+				2AD7306D81C8B0B9116E5CAA /* CalorudeTests */,
+				4A8EAB444521C8AE40C5E435 /* CalorudeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA9B4DDBFEC484A54BB99E9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D7B00851B89290B46B218B7 /* Assets.xcassets in Resources */,
+				41EE434473679270B580AB25 /* Development.storekit in Resources */,
+				FD7BDC97573E0F0EA3BE671F /* InfoPlist.strings in Resources */,
+				B539C1A25E0F4917A7365D3D /* Localizable.xcstrings in Resources */,
+				1DE3D5D9EC33BD5187843734 /* PrivacyInfo.xcprivacy in Resources */,
+				FB963CA229FEA29FDE517B17 /* foods.json in Resources */,
+				C674D1B24C9D62F79FC89E9D /* roasts.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46A18433C5CECABDBC903839 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76A9DD9BC401784707242469 /* CoreTests.swift in Sources */,
+				7AC2DE9A1276F79C995B30CF /* MealEditorTests.swift in Sources */,
+				149D18F8CBB5C1445F888C7A /* MealReactionTests.swift in Sources */,
+				3D1639F2D27BAEA624C3F566 /* StoreIntegrationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82E60672351E3938E1EEE1F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D16437137089E9F443FE7B /* AchievementService.swift in Sources */,
+				1EF2EBCB0C2C206D31D91D34 /* AppLocalization.swift in Sources */,
+				85B8D82EE8E4D91929446AFB /* CalorudeApp.swift in Sources */,
+				82F4AEC6715004E50060FF35 /* CoachCard.swift in Sources */,
+				787C5E0BCD9A5044FCA6B460 /* CustomFoodView.swift in Sources */,
+				6E85B049A8517EF283A086E7 /* DashboardView.swift in Sources */,
+				2063E60544EF4674AE9910C5 /* EditPlanView.swift in Sources */,
+				D7F2FAEEADE0A0C6A60FBC79 /* FoodLogView.swift in Sources */,
+				8A265A0E2B71D0BEA3420F50 /* FoodRepository.swift in Sources */,
+				FA8D1C74F6D01ACFCAEEFE0D /* MealEditorViewModel.swift in Sources */,
+				F175F20F7E33EACD7AF2FD7B /* MealReactionEngine.swift in Sources */,
+				CD40EECCA42F8AF0EC16975F /* MealReactionView.swift in Sources */,
+				108388AD521107E25B91838A /* MealRepository.swift in Sources */,
+				D85B50C75CD2FA3A491DCCE7 /* Models.swift in Sources */,
+				0E537F3851B7B72ADF95F324 /* NotificationService.swift in Sources */,
+				5923BBE47DF86353D9049714 /* NutritionCalculator.swift in Sources */,
+				E383F35D4698917C690E39B1 /* OnboardingView.swift in Sources */,
+				AE3AEFB7D32E20A5E0AAF708 /* OnboardingViewModel.swift in Sources */,
+				32850A98EDD154EB10D81581 /* PaywallView.swift in Sources */,
+				B0A2CF6F24F783E0E7997D01 /* PortionEditorView.swift in Sources */,
+				12F7BED636F2BB4DFE88E0CE /* PreviewData.swift in Sources */,
+				6C53C53564095E21C5F58520 /* ProgressScreen.swift in Sources */,
+				F90F9F7F836F128AB81972D5 /* ProgressService.swift in Sources */,
+				7F2D133E74093D94439054E7 /* RoastEngine.swift in Sources */,
+				4B1E6E8B4234D9017AB030B9 /* SettingsView.swift in Sources */,
+				711B4F77362F566E54514289 /* ShareCardView.swift in Sources */,
+				F12504894A0242502A11F2CB /* StoreService.swift in Sources */,
+				209FB5A6ED689610C9B2243C /* Theme.swift in Sources */,
+				5B93D6F5C6911B79317CAF98 /* TrackingCoordinator.swift in Sources */,
+				F16E7AE3C4D96EDFAE3DFB33 /* WeeklyRateNote.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F084C986E3F45A35F9D0DE74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BDFAE504AE90A61A451A861 /* FlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99F354ACFBEE8C6FC1E57E3D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3509C6BD3614C2C1B7840724 /* Calorude */;
+			targetProxy = 7B1B18CF8C05015E0BA1DD93 /* PBXContainerItemProxy */;
+		};
+		D145B04399890CC2C55321A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3509C6BD3614C2C1B7840724 /* Calorude */;
+			targetProxy = 854B7B1F3E077CF533238088 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6FBD18020F7277FF860AECAA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89275D59058D48760037020B /* en */,
+				A50A2C29D5C037455B288D38 /* tr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01192611661D1A4E0F691A52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yemeboluum.CalorudeUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Calorude;
+			};
+			name = Debug;
+		};
+		13BF5A278DFCCDC01D0DA29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = P6V2HMX86R;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Calorude;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1961D5B9FE60E1033AF371A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yemeboluum.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1B61831C4280CAE9FDB0256D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yemeboluum.CalorudeUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Calorude;
+			};
+			name = Release;
+		};
+		4AF506B3CC3CCC3EB8A9EEAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = P6V2HMX86R;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Calorude;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A0C2F1D274EABC5DD65960F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yemeboluum.CalorudeTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calorude.app/Calorude";
+			};
+			name = Release;
+		};
+		E9C4A44279234B1645995D97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yemeboluum.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F68AD8020468EDD821BE7568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yemeboluum.CalorudeTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calorude.app/Calorude";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57C7F71EAF6EAD7B393B94DD /* Build configuration list for PBXNativeTarget "CalorudeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F68AD8020468EDD821BE7568 /* Debug */,
+				A0C2F1D274EABC5DD65960F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6D8E4C97F42CFDF1B9F88B65 /* Build configuration list for PBXNativeTarget "Calorude" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1961D5B9FE60E1033AF371A2 /* Debug */,
+				E9C4A44279234B1645995D97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7419835D827FEA0304BF0312 /* Build configuration list for PBXNativeTarget "CalorudeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01192611661D1A4E0F691A52 /* Debug */,
+				1B61831C4280CAE9FDB0256D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AA64203E865A1F21DA429E87 /* Build configuration list for PBXProject "Calorude" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF506B3CC3CCC3EB8A9EEAD /* Debug */,
+				13BF5A278DFCCDC01D0DA29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC4679CBC17006573E1F3872 /* Project object */;
+}

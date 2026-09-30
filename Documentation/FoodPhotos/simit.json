@@ -1,0 +1,6 @@
+{
+  "id": "simit",
+  "prompt": "Use case: product-mockup. Asset type: single square food photo thumbnail for an offline Turkish nutrition catalog. Subject: Simit (Simit), a realistic typical serving, appetizing and unmistakable. Photorealistic studio food photography, three-quarter overhead view, soft natural upper-left light, plain charcoal #202020 backdrop, centered entire serving with 12% margin. Plain small white ceramic dish for foods or clear glass for drinks. No unrelated foods, garnish, hands, text, logos, packaging or watermark. Real food texture, not illustration, not emoji. One food or drink subject, square image. For a named recipe show all its characteristic ingredients together; for branded drinks show only the beverage in a glass, no packaging.",
+  "path": "/Users/emre/.codex/generated_images/01a07112-f3b1-7871-9740-a4ae7e58edcf/exec-04f89c28-8fb1-4171-8166-4431567bb3b7.png",
+  "method": "built-in image_gen"
+}

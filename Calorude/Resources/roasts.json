@@ -1,0 +1,1962 @@
+[
+  {
+    "id": "low.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.0",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "low.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.1",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "low.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.2",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "low.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.3",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "low.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.4",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "low.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.5",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "low.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.6",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "low.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.7",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "protein.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.0",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "protein.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.1",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "protein.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.2",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "protein.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.3",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "protein.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.4",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "protein.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.5",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "protein.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.6",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "protein.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.7",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "veryHigh.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.0",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "veryHigh.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.1",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "veryHigh.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.2",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "veryHigh.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.3",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "veryHigh.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.4",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "veryHigh.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.5",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "veryHigh.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.6",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "veryHigh.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.7",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "earlyHigh.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.0",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "earlyHigh.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.1",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "earlyHigh.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.2",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "earlyHigh.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.3",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "earlyHigh.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.4",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "earlyHigh.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.5",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "earlyHigh.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.6",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "earlyHigh.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.7",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "high.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.0",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "high.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.1",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "high.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.2",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "high.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.3",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "high.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.4",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "high.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.5",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "high.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.6",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "high.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.7",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "return.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.0",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "return.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.1",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "return.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.2",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "return.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.3",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "return.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.4",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "return.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.5",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "return.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.6",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "return.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.7",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "empty.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.0",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "empty.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.1",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "empty.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.2",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "empty.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.3",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "empty.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.4",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "empty.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.5",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "empty.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.6",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "empty.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.7",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "streak.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.0",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "streak.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.1",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "streak.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.2",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "streak.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.3",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "streak.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.4",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "streak.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.5",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "streak.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.6",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "streak.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.7",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "perfect.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.0",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "perfect.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.1",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "perfect.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.2",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "perfect.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.3",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "perfect.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.4",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "perfect.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.5",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "perfect.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.6",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "perfect.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.7",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "week.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.0",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "week.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.1",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "week.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.2",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "week.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.3",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "week.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.4",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "week.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.5",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "week.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.6",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "week.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.7",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "fast.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.0",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "fast.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.1",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "fast.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.2",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "fast.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.3",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "fast.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.4",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "fast.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.5",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "fast.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.6",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "fast.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.7",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "sweet.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.0",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "sweet.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.1",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "sweet.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.2",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "sweet.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.3",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "sweet.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.4",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "sweet.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.5",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "sweet.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.6",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "sweet.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.7",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "weight.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.0",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "weight.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.1",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "weight.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.2",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "weight.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.3",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "weight.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.4",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "weight.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.5",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "weight.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.6",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "weight.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.7",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "steady.0",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.0",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "steady.1",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.1",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "steady.2",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.2",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "steady.3",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.3",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "steady.4",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.4",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "steady.5",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.5",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "unhinged",
+    "pro": true
+  },
+  {
+    "id": "steady.6",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.6",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "normal",
+    "pro": false
+  },
+  {
+    "id": "steady.7",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.7",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "savage",
+    "pro": true
+  },
+  {
+    "id": "earlyHigh.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.8",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "earlyHigh.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.9",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "earlyHigh.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.10",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "empty.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.8",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "empty.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.9",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "empty.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.10",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "low.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.8",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "low.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.9",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "low.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.10",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "high.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.8",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "high.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.9",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "high.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.10",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "veryHigh.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.8",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "veryHigh.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.9",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "veryHigh.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.10",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "perfect.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.8",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "perfect.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.9",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "perfect.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.10",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "protein.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.8",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "protein.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.9",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "protein.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.10",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "streak.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.8",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "streak.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.9",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "streak.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.10",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "week.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.8",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "week.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.9",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "week.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.10",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "fast.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.8",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "fast.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.9",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "fast.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.10",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "sweet.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.8",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "sweet.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.9",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "sweet.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.10",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "return.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.8",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "return.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.9",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "return.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.10",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "steady.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.8",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "steady.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.9",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "steady.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.10",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "weight.8",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.8",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "weight.9",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.9",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "weight.10",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.10",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "optimistic",
+    "pro": true
+  },
+  {
+    "id": "earlyHigh.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.11",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "earlyHigh.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.12",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "earlyHigh.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.earlyHigh.13",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "earlyHigh",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "empty.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.11",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "empty.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.12",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "empty.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.empty.13",
+    "severity": "neutral",
+    "category": "meal",
+    "rule": "empty",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "low.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.11",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "low.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.12",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "low.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.low.13",
+    "severity": "warning",
+    "category": "calories",
+    "rule": "low",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "high.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.11",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "high.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.12",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "high.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.high.13",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "high",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "veryHigh.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.11",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "veryHigh.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.12",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "veryHigh.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.veryHigh.13",
+    "severity": "roast",
+    "category": "calories",
+    "rule": "veryHigh",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "perfect.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.11",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "perfect.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.12",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "perfect.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.perfect.13",
+    "severity": "positive",
+    "category": "calories",
+    "rule": "perfect",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "protein.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.11",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "protein.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.12",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "protein.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.protein.13",
+    "severity": "warning",
+    "category": "protein",
+    "rule": "protein",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "streak.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.11",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "streak.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.12",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "streak.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.streak.13",
+    "severity": "celebration",
+    "category": "streak",
+    "rule": "streak",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "week.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.11",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "week.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.12",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "week.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.week.13",
+    "severity": "celebration",
+    "category": "weekly",
+    "rule": "week",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "fast.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.11",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "fast.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.12",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "fast.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.fast.13",
+    "severity": "neutral",
+    "category": "fastFood",
+    "rule": "fast",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "sweet.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.11",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "sweet.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.12",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "sweet.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.sweet.13",
+    "severity": "neutral",
+    "category": "sweet",
+    "rule": "sweet",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "return.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.11",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "return.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.12",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "return.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.return.13",
+    "severity": "positive",
+    "category": "returningUser",
+    "rule": "return",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "steady.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.11",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "steady.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.12",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "steady.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.steady.13",
+    "severity": "neutral",
+    "category": "general",
+    "rule": "steady",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "weight.11",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.11",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "weight.12",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.12",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "nuclear",
+    "pro": true
+  },
+  {
+    "id": "weight.13",
+    "titleKey": "coach.title",
+    "messageKey": "roast.weight.13",
+    "severity": "neutral",
+    "category": "weight",
+    "rule": "weight",
+    "intensity": "nuclear",
+    "pro": true
+  }
+]

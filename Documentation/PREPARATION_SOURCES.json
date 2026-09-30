@@ -1,0 +1,222 @@
+{
+  "seabass": {
+    "defaultNDB": "15092",
+    "description": "SEA BASS,MXD SP,CKD,DRY HEAT",
+    "preparationNDB": {
+      "raw": "15091",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "trout": {
+    "defaultNDB": "15116",
+    "description": "TROUT,RAINBOW,WILD,CKD,DRY HEAT",
+    "preparationNDB": {
+      "raw": "15115",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "peas": {
+    "defaultNDB": "11305",
+    "description": "PEAS,GRN,CKD,BLD,DRND,WO/SALT",
+    "preparationNDB": {
+      "raw": null,
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "barbunya": {
+    "defaultNDB": "16020",
+    "description": "BEANS,CRANBERRY (ROMAN),MATURE SEEDS,CKD,BLD,WO/SALT",
+    "preparationNDB": {
+      "raw": "16019",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "wholepasta": {
+    "defaultNDB": "20125",
+    "description": "PASTA,WHOLE-WHEAT,CKD",
+    "preparationNDB": {
+      "raw": "20124",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "mushroom": {
+    "defaultNDB": "11260",
+    "description": "MUSHROOMS,WHITE,RAW",
+    "preparationNDB": {
+      "raw": null,
+      "cooked": null,
+      "default": "raw"
+    }
+  },
+  "anchovy": {
+    "defaultNDB": "15001",
+    "description": "ANCHOVY,EUROPEAN,RAW",
+    "preparationNDB": {
+      "raw": null,
+      "cooked": "estimateAnchovy",
+      "default": "raw"
+    }
+  },
+  "meatballs": {
+    "recipeEstimate": {
+      "beef": 80,
+      "bread": 10,
+      "egg": 5,
+      "tomato": 5,
+      "oliveoil": 2
+    },
+    "finalCookedYieldGrams": 100
+  },
+  "chicken": {
+    "preparationNDB": {
+      "raw": "05062",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "turkey": {
+    "preparationNDB": {
+      "raw": "05219",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "beef": {
+    "preparationNDB": {
+      "raw": "13929",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "salmon": {
+    "preparationNDB": {
+      "raw": "15236",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "rice": {
+    "preparationNDB": {
+      "raw": "20444",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "bulgur": {
+    "preparationNDB": {
+      "raw": "20012",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "pasta": {
+    "preparationNDB": {
+      "raw": "20420",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "brownrice": {
+    "preparationNDB": {
+      "raw": "20036",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "egg": {
+    "preparationNDB": {
+      "raw": "01123",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "chickpea": {
+    "preparationNDB": {
+      "raw": "16056",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "greenlentils": {
+    "preparationNDB": {
+      "raw": "16069",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "greenbeans": {
+    "preparationNDB": {
+      "raw": "11052",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "spinach": {
+    "preparationNDB": {
+      "raw": "11457",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "zucchini": {
+    "preparationNDB": {
+      "raw": "11477",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "cauliflower": {
+    "preparationNDB": {
+      "raw": "11135",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "potato": {
+    "preparationNDB": {
+      "raw": "11352",
+      "cooked": null,
+      "default": "cooked"
+    }
+  },
+  "broccoli": {
+    "preparationNDB": {
+      "raw": null,
+      "cooked": "11091",
+      "default": "raw"
+    }
+  },
+  "eggwhite": {
+    "preparationNDB": {
+      "raw": null,
+      "cooked": null,
+      "default": "raw"
+    }
+  },
+  "carrot": {
+    "preparationNDB": {
+      "raw": null,
+      "cooked": null,
+      "default": "raw"
+    }
+  },
+  "lettuce": {
+    "preparationNDB": {
+      "raw": null,
+      "cooked": null,
+      "default": "raw"
+    }
+  },
+  "peanuts": {
+    "preparationNDB": {
+      "raw": null,
+      "cooked": null,
+      "default": "cooked"
+    }
+  }
+}
