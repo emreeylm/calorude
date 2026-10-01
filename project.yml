@@ -12,7 +12,7 @@ settings:
     INFOPLIST_KEY_CFBundleDisplayName: Calorude
     INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
     MARKETING_VERSION: '1.0'
-    CURRENT_PROJECT_VERSION: '2'
+    CURRENT_PROJECT_VERSION: '3'
     INFOPLIST_KEY_UILaunchScreen_Generation: YES
     INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
     INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
@@ -49,4 +49,6 @@ schemes:
     run:
       storeKitConfiguration: Calorude/Store/Development.storekit
     test:
-      targets: [CalorudeTests, CalorudeUITests]
+      testPlans:
+        - path: Screens.xctestplan
+          defaultPlan: true

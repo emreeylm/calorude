@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E537F3851B7B72ADF95F324 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282E951A82E714F7C7FA367 /* NotificationService.swift */; };
+		0E64AEFD46580F81A53A8F99 /* StoreScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33281193174269A7F2F06452 /* StoreScreenshotTests.swift */; };
 		108388AD521107E25B91838A /* MealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E5C688DD2A30293A0B492 /* MealRepository.swift */; };
 		12F7BED636F2BB4DFE88E0CE /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A05B879F6219FCD0570584E /* PreviewData.swift */; };
 		149D18F8CBB5C1445F888C7A /* MealReactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F4A49E899BB15815163AD /* MealReactionTests.swift */; };
@@ -77,6 +78,7 @@
 		1B13397ADBFCF4A53DA97E2B /* NutritionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCalculator.swift; sourceTree = "<group>"; };
 		1B7267303B90B1B242E5A4D8 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		2967053CDCBBCA9E8AEA3F3D /* FoodLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogView.swift; sourceTree = "<group>"; };
+		33281193174269A7F2F06452 /* StoreScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreScreenshotTests.swift; sourceTree = "<group>"; };
 		41AB2421F29A100CF11C233A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		4282E951A82E714F7C7FA367 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		5075D03329CDCA350A072524 /* ProgressScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressScreen.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				0BE9FB9FEF4F8310DED0ABF6 /* FlowTests.swift */,
+				33281193174269A7F2F06452 /* StoreScreenshotTests.swift */,
 			);
 			path = CalorudeUITests;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BDFAE504AE90A61A451A861 /* FlowTests.swift in Sources */,
+				0E64AEFD46580F81A53A8F99 /* StoreScreenshotTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,7 +566,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = P6V2HMX86R;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -662,7 +666,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = P6V2HMX86R;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
