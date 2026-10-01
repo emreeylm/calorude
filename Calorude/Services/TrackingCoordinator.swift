@@ -37,6 +37,7 @@ struct TrackingFingerprint: Equatable {
   var entries: [FoodEntryFingerprint]
   var language: String
   var notifications: Bool
+  var intensity: CoachIntensity
   var pro: Bool
   var day: Date
 }

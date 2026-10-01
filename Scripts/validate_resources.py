@@ -24,7 +24,7 @@ assert all(r['pro'] == (r['intensity'] != 'normal') for r in roasts), 'only norm
 # Product boundary: coach messages mock behaviour and character, never body, weight or looks.
 banned = re.compile(r'şişman|göbek|obez|kilolu|tombul|çirkin|domuz|balina|obese|chubby|ugly|flab|belly|\bpig\b|lardy|\bwhale', re.I)
 for key, entry in catalog.items():
-    if key.startswith(('roast.', 'reaction.')):
+    if key.startswith(('roast.', 'reaction.', 'notif.')):
         for lang in ['tr', 'en']:
             assert not banned.search(entry['localizations'][lang]['stringUnit']['value']), (key, lang)
 foods = json.loads((root / 'Resources/foods.json').read_text())
@@ -53,6 +53,18 @@ for key, entry in catalog.items():
         for lang in ['tr', 'en']:
             found = set(re.findall(r'\{(\w+)\}', entry['localizations'][lang]['stringUnit']['value']))
             assert found <= {'kcal', 'target', 'over', 'left', 'protein', 'proteinTarget', 'proteinLeft', 'streak', 'days', 'weekDays', 'trend', 'carbs', 'fat'}, (key, lang, found)
+for kind in ['breakfast', 'lunch', 'dinner', 'emptyNoon', 'emptyEvening']:
+    for mode in ['optimistic', 'normal', 'savage', 'unhinged', 'nuclear']:
+        for i in range(3):
+            entry = catalog[f'notif.{kind}.{mode}.{i}']['localizations']
+            for lang in ['tr', 'en']:
+                assert '{' not in entry[lang]['stringUnit']['value'], (kind, mode, i, lang)
+# Notifications speak in the coach's voice; they never tell the user to log a meal.
+cta = re.compile(r'\b(gir|girin|girmeyi|girmeye|girmen|kaydet|kaydedip|kaydı|kayıt|yaz|yazmaya|yazmadın)\b|\blog(ged|ging|s)?\b|\bentry\b|\bentries\b', re.I)
+for key, entry in catalog.items():
+    if key.startswith('notif.'):
+        for lang in ['tr', 'en']:
+            assert not cta.search(entry['localizations'][lang]['stringUnit']['value']), (key, lang)
 print(f'PASS: {len(catalog)} bilingual strings, {len(roasts)} unique roasts per language, {len(foods)} foods.')
 
 # Every bundled food has its own offline thumbnail.

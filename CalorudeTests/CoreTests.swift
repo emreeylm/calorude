@@ -231,6 +231,63 @@ import XCTest
       XCTAssertEqual(pro.intensity, intensity)
     }
   }
+  // Fixed local time so slot arithmetic does not depend on when the suite runs.
+  func at(_ hour: Int, _ minute: Int = 0) throws -> Date {
+    try XCTUnwrap(
+      Calendar.current.date(from: DateComponents(year: 2026, month: 3, day: 10, hour: hour, minute: minute)))
+  }
+  func entry(_ meal: MealType, hour: Int) throws -> FoodEntry {
+    let food = try XCTUnwrap(FoodRepository.bundled?.foods.first)
+    return FoodEntry(
+      food: food, grams: 100, meal: meal, date: try at(hour), target: 2000, proteinTarget: 120)
+  }
+  func kinds(_ plan: [PlannedReminder], on day: Date) -> [ReminderKind] {
+    plan.filter { Calendar.current.isDate($0.date, inSameDayAs: day) }.map(\.kind)
+  }
+  @MainActor func testReminderPlanForAnEmptyDay() throws {
+    let plan = NotificationService.plan(entries: [], now: try at(8))
+    XCTAssertEqual(plan.count, 9)
+    XCTAssertEqual(kinds(plan, on: try at(8)), [.breakfast, .emptyNoon, .emptyEvening])
+    XCTAssertEqual(Set(plan.map(\.id)).count, plan.count)
+    XCTAssertEqual(plan.map(\.date), plan.map(\.date).sorted())
+    // Variants rotate day to day so the same line never repeats on consecutive mornings.
+    XCTAssertEqual(Set(plan.filter { $0.kind == .breakfast }.map(\.variant)).count, 3)
+  }
+  @MainActor func testLoggedMealsAreNotReminded() throws {
+    let now = try at(8)
+    XCTAssertEqual(
+      kinds(NotificationService.plan(entries: [try entry(.breakfast, hour: 7)], now: now), on: now),
+      [.lunch, .dinner])
+    let all = try [entry(.breakfast, hour: 7), entry(.lunch, hour: 7), entry(.dinner, hour: 7)]
+    let plan = NotificationService.plan(entries: all, now: now)
+    XCTAssertEqual(kinds(plan, on: now), [])
+    XCTAssertEqual(plan.count, 6)
+  }
+  @MainActor func testReminderDueSoonIsSkipped() throws {
+    let now = try at(13, 20)
+    XCTAssertEqual(
+      kinds(NotificationService.plan(entries: [], now: now, days: 1), on: now), [.emptyEvening])
+  }
+  @MainActor func testEveryReminderMessageExistsForEveryTierAndLanguage() {
+    for language in ["tr", "en"] {
+      let l = AppLocalization(language: language)
+      for kind in ReminderKind.allCases {
+        for tier in CoachIntensity.allCases {
+          for variant in 0..<NotificationService.variantCount {
+            let key = NotificationService.messageKey(
+              PlannedReminder(id: "x", date: .now, kind: kind, variant: variant), tier: tier)
+            XCTAssertNotEqual(l.text(key), key)
+            XCTAssertFalse(l.text(key).contains("{"), key)
+          }
+        }
+      }
+    }
+    let free = CoachIntensity.nuclear.available(isPro: false)
+    XCTAssertTrue(
+      NotificationService.messageKey(
+        PlannedReminder(id: "x", date: .now, kind: .lunch, variant: 0), tier: free
+      ).contains(".normal."))
+  }
   func testOnboardingValidation() {
     let vm = OnboardingViewModel()
     XCTAssertFalse(vm.valid)

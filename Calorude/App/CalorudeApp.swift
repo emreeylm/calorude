@@ -47,8 +47,8 @@ struct RootView: View {
   private var fingerprint: TrackingFingerprint {
     TrackingFingerprint(
       entries: entries.map(FoodEntryFingerprint.init), language: l.language,
-      notifications: preferences.first?.notificationsEnabled ?? false, pro: store.isPro,
-      day: refreshDay)
+      notifications: preferences.first?.notificationsEnabled ?? false,
+      intensity: profiles.first?.coachIntensity ?? .normal, pro: store.isPro, day: refreshDay)
   }
   var body: some View {
     Group {
