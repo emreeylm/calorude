@@ -2,7 +2,7 @@ import Foundation
 import SwiftData
 
 enum Sex: String, Codable, CaseIterable { case female, male }
-enum Goal: String, Codable, CaseIterable { case lose, maintain, gain }
+enum Goal: String, Codable, CaseIterable { case lose, muscle, gain, maintain }
 enum Activity: String, Codable, CaseIterable {
   case sedentary, light, moderate, active, intense
   var factor: Double {
@@ -16,12 +16,19 @@ enum Activity: String, Codable, CaseIterable {
   }
 }
 enum MealType: String, Codable, CaseIterable { case breakfast, lunch, dinner, snack, treat }
+// The raw value of `toxic` stays "nuclear" so profiles saved before the rename keep loading.
 enum CoachIntensity: String, Codable, CaseIterable {
-  case optimistic, normal, savage, unhinged, nuclear
+  case optimistic, normal, savage, unhinged
+  case toxic = "nuclear"
+  // Catalog key part.
+  var key: String { self == .toxic ? "toxic" : rawValue }
   // Only Normal is free; a lapsed subscription falls back to it.
   func available(isPro: Bool) -> CoachIntensity { isPro ? self : .normal }
 }
-enum Personality: String, Codable, CaseIterable { case standard, bro, sergeant, savage }
+// Characters were removed; the coach has one voice. Kept only so stored preferences still decode.
+enum Personality: String, Codable, CaseIterable {
+  case standard, bro, sergeant, savage
+}
 
 @Model final class UserProfile {
   @Attribute(.unique) var id: UUID

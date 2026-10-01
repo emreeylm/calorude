@@ -22,6 +22,10 @@ import SwiftUI
   func text(_ key: String) -> String {
     bundle?.localizedString(forKey: key, value: nil, table: nil) ?? key
   }
+  // True when the catalog has an entry for the key; used to probe optional context lines.
+  func has(_ key: String) -> Bool {
+    bundle?.localizedString(forKey: key, value: "\u{1}", table: nil) != "\u{1}"
+  }
   func number(_ value: Double, digits: Int = 0) -> String {
     value.formatted(.number.locale(locale).precision(.fractionLength(digits)))
   }

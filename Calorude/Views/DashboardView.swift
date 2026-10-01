@@ -10,7 +10,8 @@ struct DashboardView: View {
   @State private var mealEditor: MealEditorRoute?
   @State private var pendingReaction: MealReaction?
   @State private var reaction: MealReaction?
-  @AppStorage("coach.lastMealMessage") private var lastMealMessage = ""
+  // The last few meal comments, so the same line does not come back right away.
+  @AppStorage("coach.recentMealKeys") private var recentMealKeys = ""
   @State private var showShare = false
   @Environment(\.scenePhase) private var scenePhase
   @State private var selectedDate = Date.now
@@ -89,7 +90,7 @@ struct DashboardView: View {
             mealEditor = MealEditorRoute(meal: .lunch)
           }
           .accessibilityIdentifier("dashboard.add")
-          CoachCard(profile: profile, stats: stats, streak: streak, entries: entries)
+          CoachCard(profile: profile, stats: stats)
           HStack {
             Text(l.text("yourMeals")).font(.title2.bold())
             Spacer()
@@ -178,11 +179,11 @@ struct DashboardView: View {
         ) { route in
           FoodLogView(
             profile: profile, date: selectedDate, initialMeal: route.meal,
-            previousReactionKey: lastMealMessage
+            recentKeys: recentMealKeys.split(separator: ",").map(String.init)
           ) { result in
             pendingReaction = result
             if let result {
-              lastMealMessage = result.messageKey
+              remember(result.messageKey)
             }
           }
         }
@@ -213,6 +214,10 @@ extension DashboardView {
       }.disabled(Calendar.current.isDateInToday(selectedDate))
         .accessibilityLabel(l.text("day.next")).accessibilityIdentifier("day.next")
     }
+  }
+  private func remember(_ key: String) {
+    let kept = recentMealKeys.split(separator: ",").map(String.init).suffix(MealReactionEngine.recentLimit - 1)
+    recentMealKeys = (kept + [key]).joined(separator: ",")
   }
   private func shiftDay(by days: Int) {
     let calendar = Calendar.current

@@ -14,13 +14,18 @@ struct MealReactionView: View {
         VStack(alignment: .leading, spacing: 24) {
           Label(l.text("reaction.saved"), systemImage: "checkmark.circle.fill")
             .font(.subheadline.bold()).foregroundStyle(Theme.interactive)
-          Text(l.text("reaction.title." + reaction.verdict.rawValue))
+          Text(l.text("reaction.title." + reaction.state.rawValue))
             .font(.largeTitle.bold())
           Text(reaction.message(l)).font(.title2.weight(.semibold))
             .fixedSize(horizontal: false, vertical: true).accessibilityIdentifier(
               "reaction.message")
-          Text(l.text("reaction.action." + reaction.verdict.rawValue))
-            .foregroundStyle(.secondary)
+          Text(reaction.detail(l)).font(.subheadline.weight(.semibold))
+            .foregroundStyle(.secondary).accessibilityIdentifier("reaction.detail")
+          // A short safety note, only where over- or under-eating is the story.
+          if reaction.showsSafetyNote {
+            Text(l.text("reaction.note." + reaction.state.rawValue)).font(.footnote)
+              .foregroundStyle(.secondary).accessibilityIdentifier("reaction.note")
+          }
           HStack {
             Label(
               l.number(reaction.nutrition.calories) + " " + l.text("unit.kcal"),
@@ -59,6 +64,7 @@ struct MealReactionView: View {
 struct MealReactionStoryView: View {
   let reaction: MealReaction
   let l: AppLocalization
+  private var isHarsh: Bool { [.unbalancedWithin, .unbalancedOver].contains(reaction.state) }
   var body: some View {
     VStack(alignment: .leading, spacing: 18) {
       HStack {
@@ -69,12 +75,13 @@ struct MealReactionStoryView: View {
       }.font(.system(size: 14, weight: .black))
       Rectangle().frame(height: 2).opacity(0.4)
       Spacer(minLength: 0)
-      Text(l.text("reaction.title." + reaction.verdict.rawValue))
+      Text(l.text("reaction.title." + reaction.state.rawValue))
         .font(.system(size: 14, weight: .black)).textCase(.uppercase)
       Text(reaction.message(l)).font(.system(size: 30, weight: .black, design: .rounded))
         .lineLimit(9).minimumScaleFactor(0.75)
-      Text(l.text("reaction.action." + reaction.verdict.rawValue))
-        .font(.system(size: 15, weight: .medium)).fixedSize(horizontal: false, vertical: true)
+      // The numbers behind the quote stay secondary so the line itself is what gets shared.
+      Text(reaction.detail(l)).font(.system(size: 14, weight: .semibold)).opacity(0.8)
+        .fixedSize(horizontal: false, vertical: true)
       Spacer(minLength: 0)
       Rectangle().frame(height: 2).opacity(0.4)
       Text(reaction.meal.map { l.text("meal." + $0.rawValue) } ?? l.text("reaction.meals"))
@@ -92,8 +99,8 @@ struct MealReactionStoryView: View {
         Text(l.text("protein"))
       }.font(.system(size: 12))
     }.padding(30).frame(width: 360, height: 640)
-      .foregroundStyle(reaction.verdict == .snackHeavy ? Theme.accent : Theme.ink)
-      .background(reaction.verdict == .snackHeavy ? Theme.ink : Theme.accent)
+      .foregroundStyle(isHarsh ? Theme.accent : Theme.ink)
+      .background(isHarsh ? Theme.ink : Theme.accent)
       .environment(\.locale, l.locale).environment(\.sizeCategory, .large)
   }
 }

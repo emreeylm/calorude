@@ -62,7 +62,7 @@ struct SettingsView: View {
                     profile.coachIntensity = value
                   } else if !store.isPro {
                     showPaywall = true
-                  } else if value == .nuclear {
+                  } else if value == .toxic {
                     confirmNuclear = true
                   } else {
                     profile.coachIntensity = value
@@ -71,31 +71,14 @@ struct SettingsView: View {
             ) {
               ForEach(CoachIntensity.allCases, id: \.self) { intensity in
                 if store.isPro || intensity == .normal {
-                  Text(l.text("intensity." + intensity.rawValue)).tag(intensity)
+                  Text(l.text("intensity." + intensity.key)).tag(intensity)
                 } else {
-                  Label(l.text("intensity." + intensity.rawValue), systemImage: "lock.fill")
+                  Label(l.text("intensity." + intensity.key), systemImage: "lock.fill")
                     .tag(intensity)
                 }
               }
             }.accessibilityIdentifier("settings.intensity")
               .onChange(of: profile.coachIntensity) { save() }
-            Picker(
-              l.text("personality"),
-              selection: Binding(
-                get: { pref.personality },
-                set: { value in
-                  if store.isPro || value == .standard {
-                    pref.personality = value
-                    save()
-                  } else {
-                    showPaywall = true
-                  }
-                })
-            ) {
-              ForEach(Personality.allCases, id: \.self) {
-                Text(l.text("personality." + $0.rawValue)).tag($0)
-              }
-            }
             Toggle(
               l.text("notifications"),
               isOn: Binding(
@@ -132,13 +115,13 @@ struct SettingsView: View {
         .sheet(item: $legal) { LegalView(kind: $0.rawValue) }
         .manageSubscriptionsSheet(isPresented: $manage)
         .alert(l.text("error.save"), isPresented: $error) { Button(l.text("ok"), role: .cancel) {} }
-        .alert(l.text("nuclear.warning.title"), isPresented: $confirmNuclear) {
-          Button(l.text("nuclear.warning.confirm"), role: .destructive) {
-            profile.coachIntensity = .nuclear
+        .alert(l.text("toxic.warning.title"), isPresented: $confirmNuclear) {
+          Button(l.text("toxic.warning.confirm"), role: .destructive) {
+            profile.coachIntensity = .toxic
           }
           Button(l.text("cancel"), role: .cancel) {}
         } message: {
-          Text(l.text("nuclear.warning.body"))
+          Text(l.text("toxic.warning.body"))
         }
         .confirmationDialog(
           l.text("delete.confirm"), isPresented: $confirmDelete, titleVisibility: .visible
@@ -168,7 +151,7 @@ struct SettingsView: View {
       try context.delete(model: AppPreferences.self)
       try context.delete(model: UserProfile.self)
       try context.save()
-      UserDefaults.standard.removeObject(forKey: "coach.lastMealMessage")
+      UserDefaults.standard.removeObject(forKey: "coach.recentMealKeys")
       Task { await NotificationService.disable() }
     } catch {
       context.rollback()

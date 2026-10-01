@@ -11,16 +11,17 @@ final class StoreScreenshotTests: XCTestCase {
     let app = XCUIApplication()
     app.launchArguments = ["--uitesting", "-language", language]
     app.launch()
+    let next = app.buttons["onboarding.next"]
+    XCTAssertTrue(next.waitForExistence(timeout: 15))
+    next.tap()
     let name = app.textFields["onboarding.name"]
-    XCTAssertTrue(name.waitForExistence(timeout: 15))
-    app.switches["onboarding.eligibility"].tap()
+    XCTAssertTrue(name.waitForExistence(timeout: 5))
     name.tap()
     name.typeText("Deniz\n")
-    let next = app.buttons["onboarding.next"]
+    for _ in 0..<5 { next.tap() }
+    app.switches["onboarding.eligibility"].tap()
     next.tap()
-    next.tap()
-    next.tap()
-    XCTAssertTrue(app.staticTexts[tr ? "PLANIN HAZIR" : "YOUR PLAN IS READY"].waitForExistence(timeout: 5))
+    XCTAssertTrue(app.staticTexts["onboarding.result"].waitForExistence(timeout: 15))
     shot(language, "1-plan")
     next.tap()
 

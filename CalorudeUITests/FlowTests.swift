@@ -6,25 +6,28 @@ final class FlowTests: XCTestCase {
     let app = XCUIApplication()
     app.launchArguments = ["--uitesting", "-language", language]
     app.launch()
-    let name = app.textFields["onboarding.name"]
-    XCTAssertTrue(name.waitForExistence(timeout: 15))
+    let next = app.buttons["onboarding.next"]
+    XCTAssertTrue(next.waitForExistence(timeout: 15))
     attach(app, "\(language)-onboarding")
-    app.switches["onboarding.eligibility"].tap()
+    app.buttons["onboarding.goal.lose"].tap()
+    next.tap()
+    let name = app.textFields["onboarding.name"]
+    XCTAssertTrue(name.waitForExistence(timeout: 5))
     name.tap()
     name.typeText("Emre\n")
-    let next = app.buttons["onboarding.next"]
     next.tap()
-    XCTAssertTrue(
-      app.staticTexts[language == "tr" ? "ÖNCE\nGERÇEKLER." : "FIRST,\nTHE FACTS."]
-        .waitForExistence(timeout: 5))
+    XCTAssertTrue(app.staticTexts["onboarding.step.body"].waitForExistence(timeout: 5))
     next.tap()
-    XCTAssertTrue(
-      app.staticTexts[language == "tr" ? "PLANI\nKURALIM." : "MAKE\nA PLAN."].waitForExistence(
-        timeout: 5))
+    XCTAssertTrue(app.staticTexts["onboarding.step.lifestyle"].waitForExistence(timeout: 5))
     next.tap()
-    XCTAssertTrue(
-      app.staticTexts[language == "tr" ? "PLANIN HAZIR" : "YOUR PLAN IS READY"].waitForExistence(
-        timeout: 5))
+    XCTAssertTrue(app.staticTexts["onboarding.step.workouts"].waitForExistence(timeout: 5))
+    next.tap()
+    XCTAssertTrue(app.staticTexts["onboarding.step.habits"].waitForExistence(timeout: 5))
+    next.tap()
+    XCTAssertTrue(app.staticTexts["onboarding.step.safety"].waitForExistence(timeout: 5))
+    app.switches["onboarding.eligibility"].tap()
+    next.tap()
+    XCTAssertTrue(app.staticTexts["onboarding.result"].waitForExistence(timeout: 15))
     attach(app, "\(language)-plan")
     next.tap()
     let add = app.buttons["dashboard.add"]
@@ -58,8 +61,7 @@ final class FlowTests: XCTestCase {
     app.swipeDown()
     attach(app, "\(language)-meal-draft")
     save.tap()
-    closeReaction(
-      app, title: language == "tr" ? "Vay be. Beklemiyordum." : "Well. Didn’t see that coming.")
+    closeReaction(app, language: language)
     let edit = app.buttons["meal.edit.lunch"]
     reveal(edit, in: app)
     XCTAssertTrue(edit.waitForExistence(timeout: 5))
@@ -75,8 +77,7 @@ final class FlowTests: XCTestCase {
     remove.tap()
     attach(app, "\(language)-meal-edited")
     save.tap()
-    closeReaction(
-      app, title: language == "tr" ? "Koçun bir çift lafı var." : "Coach has a few words.")
+    closeReaction(app, language: language)
     reveal(edit, in: app)
     edit.tap()
     XCTAssertTrue(app.buttons["mealEditor.item.rice"].waitForExistence(timeout: 5))
@@ -99,7 +100,7 @@ final class FlowTests: XCTestCase {
     edit.tap()
     addFood(app, id: "chocolate", query: language == "tr" ? "çikolata" : "chocolate", grams: 200)
     save.tap()
-    closeReaction(app, title: language == "tr" ? "Yapma dostum." : "Bro. Come on.")
+    closeReaction(app, language: language)
     reveal(edit, in: app)
     edit.tap()
     let drinkSearch = app.textFields["food.search"]
@@ -125,7 +126,7 @@ final class FlowTests: XCTestCase {
     app.buttons["portion.330"].tap()
     app.buttons["portion.confirm"].tap()
     save.tap()
-    closeReaction(app, title: language == "tr" ? "Yapma dostum." : "Bro. Come on.")
+    closeReaction(app, language: language)
     XCTAssertTrue(app.staticTexts["330 ml"].exists)
     app.tabBars.buttons[language == "tr" ? "İlerleme" : "Progress"].tap()
     attach(app, "\(language)-progress")
@@ -139,11 +140,24 @@ final class FlowTests: XCTestCase {
     app.buttons[language == "tr" ? "Light" : "Açık"].tap()
     attach(app, "\(language)-light")
   }
-  @MainActor func closeReaction(_ app: XCUIApplication, title: String) {
+  // The headline depends on how the meal fits the day, so any of the six is acceptable.
+  @MainActor func closeReaction(_ app: XCUIApplication, language: String) {
+    let titles =
+      language == "tr"
+      ? [
+        "Bu öğün olmuş.", "Büyük ama yerinde.", "İçerik tamam, porsiyon büyük.",
+        "Hedefte ama dengesiz.", "Hem fazla hem dağınık.", "Kayıt kısa kalmış.",
+      ]
+      : [
+        "Now that is a meal.", "Big, but it fits.", "Good food, big portion.",
+        "On target, off balance.", "Too much and scattered.", "That entry is short.",
+      ]
     let close = app.buttons["reaction.close"]
     XCTAssertTrue(close.waitForExistence(timeout: 5))
-    XCTAssertTrue(app.staticTexts[title].exists)
+    let title = titles.first { app.staticTexts[$0].exists } ?? ""
+    XCTAssertFalse(title.isEmpty, "The popup shows one of the meal headlines")
     XCTAssertTrue(app.staticTexts["reaction.message"].exists)
+    XCTAssertTrue(app.staticTexts["reaction.detail"].exists)
     XCTAssertTrue(app.buttons["reaction.share"].exists)
     let message = app.staticTexts["reaction.message"].label
     attach(app, "meal-reaction-" + title)

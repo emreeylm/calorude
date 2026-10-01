@@ -16,10 +16,10 @@ struct EditPlanView: View {
     vm.sex = profile.sex
     vm.height = profile.height
     vm.weight = profile.currentWeight
+    // Goal first: changing it resets a target that does not fit, so the saved target goes last.
+    vm.goal = profile.goalType
     vm.target = profile.targetWeight
     vm.activity = profile.activityLevel
-    vm.goal = profile.goalType
-    vm.weekly = vm.weeklyOptions.contains(profile.weeklyGoal) ? profile.weeklyGoal : 0.5
     vm.eligible = true
     _vm = State(initialValue: vm)
   }
@@ -42,20 +42,14 @@ struct EditPlanView: View {
               Text(l.text("activity." + $0.rawValue)).tag($0)
             }
           }
-          if vm.goal != .maintain {
-            Picker(l.text("weeklyChange"), selection: $vm.weekly) {
-              ForEach(vm.weeklyOptions, id: \.self) {
-                Text(l.number($0, digits: 1) + " " + l.text("kg.week")).tag($0)
-              }
-            }
-          }
         }
         Section {
           if vm.valid {
             LabeledContent(
               l.text("dailyTarget"), value: l.number(vm.plan.calories) + " " + l.text("unit.kcal"))
           } else {
-            Text(l.text("validation.profile")).foregroundStyle(.red)
+            Text(l.text(vm.validationKey(for: .body) ?? "validation.profile"))
+              .foregroundStyle(.red)
           }
           if vm.valid { WeeklyRateNote(viewModel: vm) }
           Text(l.text("editPlan.note")).font(.footnote)
@@ -83,7 +77,7 @@ struct EditPlanView: View {
     profile.sex = vm.sex
     profile.height = vm.height
     profile.currentWeight = vm.weight
-    profile.targetWeight = vm.goal == .maintain ? vm.weight : vm.target
+    profile.targetWeight = vm.effectiveTarget
     profile.goalType = vm.goal
     profile.activityLevel = vm.activity
     profile.weeklyGoal = vm.goal == .maintain ? 0 : vm.weekly

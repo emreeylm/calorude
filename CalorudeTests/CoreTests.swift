@@ -26,25 +26,41 @@ import XCTest
         XCTAssertGreaterThan(p.calories, 2759)
         XCTAssertLessThanOrEqual(p.calories, 3109)
       }
+      if goal == .muscle {
+        XCTAssertGreaterThan(p.calories, 2759)
+        XCTAssertLessThanOrEqual(p.calories, 3059)
+        XCTAssertEqual(p.protein, 160)
+      }
       if goal == .maintain { XCTAssertEqual(p.calories, 2759) }
     }
     let extreme = NutritionCalculator.plan(
       weight: 45, height: 150, age: 70, sex: .female, activity: .sedentary, goal: .lose, weekly: 8)
     XCTAssertGreaterThanOrEqual(extreme.calories, 1200)
   }
-  func testWeeklyLossChoicesAndLimits() {
+  func testHealthyPaceIsChosenAutomatically() throws {
+    let rate = { (weight: Double, goal: Goal) in
+      NutritionCalculator.healthyWeeklyRate(weight: weight, height: 175, goal: goal)
+    }
+    XCTAssertEqual(rate(80, .lose), 0.6, accuracy: 0.001)  // BMI 26: 0.75 % of body weight
+    XCTAssertEqual(rate(65, .lose), 0.325, accuracy: 0.001)  // normal BMI: gentler 0.5 %
+    XCTAssertEqual(rate(200, .lose), 1.0)  // never above 1 kg a week
+    XCTAssertEqual(rate(80, .maintain), 0)
+    XCTAssertEqual(rate(80, .muscle), 0.2)
+    XCTAssertEqual(rate(80, .gain), 0.3)
     let vm = OnboardingViewModel()
-    XCTAssertEqual(vm.weekly, 0.5)
-    XCTAssertEqual(vm.weeklyOptions, [0.5, 1])
-    vm.weekly = 1
-    XCTAssertTrue(vm.isWeeklyChangeLimited)
-    XCTAssertLessThan(vm.estimatedWeeklyChange, 1)
-    vm.goal = .gain
-    XCTAssertEqual(vm.weeklyOptions, [0.25, 0.5])
-    XCTAssertEqual(vm.weekly, 0.5)
+    XCTAssertEqual(vm.weekly, 0.6, accuracy: 0.001)
+    XCTAssertEqual(vm.target, 75)
+    // The 20 % deficit cap slows the real pace below the ideal one, and the timeline follows it.
+    XCTAssertLessThan(vm.estimatedWeeklyChange, vm.weekly)
+    let weeks = try XCTUnwrap(vm.weeksToGoal)
+    XCTAssertTrue((5...20).contains(weeks))
     vm.goal = .maintain
+    XCTAssertNil(vm.weeksToGoal)
     XCTAssertEqual(vm.estimatedWeeklyChange, 0)
-    XCTAssertFalse(vm.isWeeklyChangeLimited)
+    vm.goal = .muscle
+    XCTAssertEqual(vm.target, 83)
+    XCTAssertNotNil(vm.weeksToGoal)
+    XCTAssertEqual(vm.plan.protein, 160)
 
     let half = NutritionCalculator.plan(
       weight: 150, height: 195, age: 30, sex: .male, activity: .intense, goal: .lose, weekly: 0.5)
@@ -92,44 +108,52 @@ import XCTest
   func context(calories: Double, hour: Int, meals: Int = 2, protein: Double = 140) -> RoastContext {
     RoastContext(
       calories: calories, target: 2500, protein: protein, proteinTarget: 150, hour: hour,
-      goal: .lose, streak: 0, weeklyAdherence: 0, weightTrend: nil, loggedMeals: meals,
-      daysSinceLastLog: 0)
+      loggedMeals: meals)
   }
-  func testDailyCoachUsesTotalsInsteadOfMealTypeOrHistory() {
-    var c = context(calories: 1800, hour: 20, protein: 40)
-    c.fastFood = true
-    c.sweet = true
-    c.streak = 7
-    c.weeklyAdherence = 1
-    c.daysSinceLastLog = 5
-    c.weightTrend = 2
-    XCTAssertEqual(RoastEngine.dailyRule(for: c), "protein")
-    c.protein = 150
-    c.calories = 2500
-    XCTAssertEqual(RoastEngine.dailyRule(for: c), "perfect")
-    c.calories = 3000
-    XCTAssertEqual(RoastEngine.dailyRule(for: c), "high")
-    c.calories = 700
-    XCTAssertEqual(RoastEngine.dailyRule(for: c), "low")
-    c.hour = 10
-    XCTAssertEqual(RoastEngine.dailyRule(for: c), "steady")
-    c.loggedMeals = 0
-    c.hour = 22
-    XCTAssertEqual(RoastEngine.dailyRule(for: c), "empty")
-    let message = RoastEngine().evaluate(
-      c, intensity: .normal, personality: .standard, isPro: false, seed: 0, dailyOnly: true)
-    XCTAssertEqual(message.rule, "empty")
+  func testDayStateUsesTotalsAndTimeOfDay() {
+    XCTAssertEqual(DayCoach.state(for: context(calories: 0, hour: 10, meals: 0)), .empty)
+    XCTAssertEqual(DayCoach.state(for: context(calories: 0, hour: 22, meals: 0)), .empty)
+    XCTAssertEqual(DayCoach.state(for: context(calories: 700, hour: 10)), .steady)
+    XCTAssertEqual(DayCoach.state(for: context(calories: 700, hour: 21)), .low)
+    XCTAssertEqual(DayCoach.state(for: context(calories: 2900, hour: 14)), .over)
+    XCTAssertEqual(DayCoach.state(for: context(calories: 2900, hour: 23)), .over)
+    XCTAssertEqual(DayCoach.state(for: context(calories: 4000, hour: 23)), .veryHigh)
+    XCTAssertEqual(DayCoach.state(for: context(calories: 2500, hour: 22)), .perfect)
+    XCTAssertEqual(
+      DayCoach.state(for: context(calories: 1800, hour: 20, protein: 40)), .protein)
+    // Past days are finished days: the time-of-day rules never fire on them.
+    let yesterday = DayStats(
+      day: Calendar.current.date(byAdding: .day, value: -1, to: .now)!, calories: 700, protein: 90,
+      carbs: 0, fat: 0, target: 2500, proteinTarget: 150, count: 2)
+    XCTAssertEqual(RoastContext(stats: yesterday).hour, 23)
   }
-  func testTimeAwareRoasts() {
-    XCTAssertEqual(RoastEngine.rule(for: context(calories: 700, hour: 10)), "steady")
-    XCTAssertEqual(RoastEngine.rule(for: context(calories: 700, hour: 21)), "low")
-    XCTAssertEqual(RoastEngine.rule(for: context(calories: 2900, hour: 14)), "earlyHigh")
-    XCTAssertEqual(RoastEngine.rule(for: context(calories: 2900, hour: 23)), "high")
-    XCTAssertEqual(RoastEngine.rule(for: context(calories: 4000, hour: 23)), "veryHigh")
-    XCTAssertEqual(RoastEngine.rule(for: context(calories: 2500, hour: 22)), "perfect")
-    XCTAssertEqual(RoastEngine.rule(for: context(calories: 1800, hour: 20, protein: 40)), "protein")
-    XCTAssertEqual(RoastEngine.rule(for: context(calories: 0, hour: 10, meals: 0)), "empty")
-    XCTAssertEqual(RoastEngine.rule(for: context(calories: 0, hour: 22, meals: 0)), "low")
+  func testLevelIsGatedAndOldSettingsStillLoad() throws {
+    XCTAssertEqual(CoachVoice(level: .toxic, isPro: false).level, .normal)
+    XCTAssertEqual(CoachVoice(level: .toxic, isPro: true).level, .toxic)
+    for intensity in CoachIntensity.allCases {
+      XCTAssertEqual(intensity.available(isPro: true), intensity)
+      XCTAssertEqual(intensity.available(isPro: false), .normal)
+    }
+    // Profiles saved before "Nükleer" became "Toksik" keep their stored value.
+    XCTAssertEqual(CoachIntensity(rawValue: "nuclear"), .toxic)
+    XCTAssertEqual(CoachIntensity.toxic.key, "toxic")
+    let old = try JSONDecoder().decode([CoachIntensity].self, from: Data(#"["nuclear","savage"]"#.utf8))
+    XCTAssertEqual(old, [.toxic, .savage])
+    // Characters are gone, but stored preferences that mention one still decode.
+    XCTAssertNotNil(try? JSONDecoder().decode(Personality.self, from: Data(#""sergeant""#.utf8)))
+  }
+  func testDayCommentIsStableUntilTheTotalsChange() {
+    let day = Calendar.current.startOfDay(for: .now)
+    let c = context(calories: 1500, hour: 15)
+    XCTAssertEqual(
+      DayCoach.variant(day: day, context: c), DayCoach.variant(day: day, context: c))
+    var seen = Set<Int>()
+    for step in 0..<10 {
+      seen.insert(
+        DayCoach.variant(day: day, context: context(calories: 1500 + Double(step) * 40, hour: 15)))
+    }
+    XCTAssertGreaterThan(seen.count, 1)
+    XCTAssertTrue(seen.allSatisfy { (0..<DayCoach.variants).contains($0) })
   }
   func testEntitlements() {
     let future = Date.now.addingTimeInterval(1000)
@@ -142,17 +166,9 @@ import XCTest
       EntitlementRecord(
         productID: StoreProducts.monthly, verified: true, revoked: false, expiration: past
       ).grantsAccess(at: .now))
-    XCTAssertTrue(
-      EntitlementRecord(
-        productID: StoreProducts.lifetime, verified: true, revoked: false, expiration: nil
-      ).grantsAccess(at: .now))
     XCTAssertFalse(
       EntitlementRecord(
-        productID: StoreProducts.lifetime, verified: false, revoked: false, expiration: nil
-      ).grantsAccess(at: .now))
-    XCTAssertFalse(
-      EntitlementRecord(
-        productID: StoreProducts.lifetime, verified: true, revoked: true, expiration: nil
+        productID: StoreProducts.yearly, verified: true, revoked: false, expiration: nil
       ).grantsAccess(at: .now))
     XCTAssertFalse(
       EntitlementRecord(productID: "unknown", verified: true, revoked: false, expiration: future)
@@ -166,70 +182,85 @@ import XCTest
       XCTAssertEqual(pixels.height, 256, food.id)
     }
   }
-  func testLibraryAndLocalization() throws {
-    let engine = RoastEngine()
-    XCTAssertGreaterThanOrEqual(engine.messages.count, 100)
-    XCTAssertEqual(Set(engine.messages.map(\.id)).count, engine.messages.count)
+  func testCoachLibraryIsCompleteInBothLanguages() {
+    let day = RoastContext(
+      calories: 3100, target: 2500, protein: 40, proteinTarget: 150, hour: 21, loggedMeals: 3)
+    let facts = MealFacts(mealCalories: 646, mealProtein: 70, dayTotal: 1800, target: 1900)
     for language in ["tr", "en"] {
       let l = AppLocalization(language: language)
       XCTAssertNotEqual(AppBrand.name(l), "brand.name")
-      for message in engine.messages {
-        XCTAssertNotEqual(l.text(message.messageKey), message.messageKey)
-        XCTAssertNotEqual(l.text(message.titleKey), message.titleKey)
+      XCTAssertNotEqual(l.text("coach.title"), "coach.title")
+      do {
+        for level in CoachIntensity.allCases {
+          for state in DayState.allCases {
+            for index in 0..<DayCoach.variants {
+              let voice = CoachVoice(level: level, isPro: true)
+              let key = DayCoach.key(state: state, voice: voice, variant: index)
+              let text = day.text(l.text(key), l: l)
+              XCTAssertNotEqual(text, key)
+              XCTAssertFalse(text.contains("{") || text.contains("}"), key)
+            }
+          }
+          for state in MealState.allCases {
+            for index in 0..<MealReactionEngine.variants {
+              let key = "coach.meal.\(state.rawValue).\(level.key).\(index)"
+              let reaction = MealReaction(
+                state: state, messageKey: key,
+                nutrition: NutritionPlan(calories: 646, protein: 70, carbs: 47, fat: 18),
+                facts: facts, meal: .lunch, date: .now)
+              XCTAssertNotEqual(l.text(key), key)
+              XCTAssertFalse(reaction.message(l).contains("{"), key)
+            }
+          }
+        }
       }
     }
-    for message in engine.messages {
-      let selected = engine.evaluate(
-        context(calories: 700, hour: 21), intensity: message.intensity, personality: .savage,
-        isPro: false, seed: -4)
-      XCTAssertFalse(selected.pro)
-      XCTAssertEqual(selected.rule, "low")
-    }
+    XCTAssertEqual(DayState.allCases.count, 7)
+    XCTAssertEqual(MealState.allCases.count, 6)
   }
-  func testEveryMessageQuotesRealNumbersAndLeavesNoPlaceholder() {
-    var c = context(calories: 3100, hour: 21)
-    c.streak = 7
-    c.daysSinceLastLog = 4
-    c.weeklyAdherence = 5.0 / 7
-    c.weightTrend = -0.6
+  func testStoryTextFitsTheCard() {
+    // The story card sets the quote at 30 pt in a 300 pt column and allows nine lines.
+    let font = UIFont.systemFont(ofSize: 30, weight: .black)
+    let rounded = font.fontDescriptor.withDesign(.rounded).map { UIFont(descriptor: $0, size: 30) } ?? font
+    let facts = MealFacts(mealCalories: 1292, mealProtein: 98, dayTotal: 2200, target: 1900)
+    let day = RoastContext(
+      calories: 3100, target: 2500, protein: 40, proteinTarget: 150, hour: 21, loggedMeals: 3)
+    var longest: CGFloat = 0
     for language in ["tr", "en"] {
       let l = AppLocalization(language: language)
-      for message in RoastEngine.bundled.messages {
-        let text = c.text(l.text(message.messageKey), l: l)
-        XCTAssertFalse(text.contains("{") || text.contains("}"), message.id)
+      do {
+        for level in CoachIntensity.allCases {
+          var texts: [String] = []
+          for state in DayState.allCases {
+            for index in 0..<DayCoach.variants {
+              let key = "coach.day.\(state.rawValue).\(level.key).\(index)"
+              texts.append(day.text(l.text(key), l: l))
+            }
+          }
+          for state in MealState.allCases {
+            for index in 0..<MealReactionEngine.variants {
+              let key = "coach.meal.\(state.rawValue).\(level.key).\(index)"
+              texts.append(
+                MealReaction(
+                  state: state, messageKey: key,
+                  nutrition: NutritionPlan(calories: 1292, protein: 98, carbs: 0, fat: 0),
+                  facts: facts, meal: .lunch, date: .now
+                ).message(l))
+            }
+          }
+          for text in texts {
+            let height = (text as NSString).boundingRect(
+              with: CGSize(width: 300, height: CGFloat.greatestFiniteMagnitude),
+              options: .usesLineFragmentOrigin, attributes: [.font: rounded], context: nil
+            ).height
+            let lines: CGFloat = height / rounded.lineHeight
+            longest = max(longest, lines)
+            XCTAssertLessThanOrEqual(lines.rounded(.up), 9, text)
+          }
+        }
       }
-      let over = c.text("{over}|{kcal}|{proteinLeft}|{weekDays}|{trend}", l: l)
-      XCTAssertEqual(
-        over, [l.number(600), l.number(3100), l.number(10), "5", l.number(0.6, digits: 1)].joined(separator: "|"))
     }
-  }
-  func testOnlyNormalIsFreeAndOtherTiersAreProGated() {
-    let messages = RoastEngine.bundled.messages
-    XCTAssertEqual(CoachIntensity.allCases.count, 5)
-    for rule in Set(messages.map(\.rule)) {
-      XCTAssertGreaterThanOrEqual(
-        messages.filter { $0.rule == rule && $0.intensity == .normal && !$0.pro }.count, 3, rule)
-      for intensity in CoachIntensity.allCases where intensity != .normal {
-        XCTAssertTrue(
-          messages.contains { $0.rule == rule && $0.intensity == intensity }, "\(rule) \(intensity)")
-      }
-    }
-    XCTAssertTrue(messages.filter { $0.intensity != .normal }.allSatisfy(\.pro))
-    XCTAssertTrue(messages.filter { $0.intensity == .normal }.allSatisfy { !$0.pro })
-    for intensity in CoachIntensity.allCases {
-      XCTAssertEqual(intensity.available(isPro: true), intensity)
-      XCTAssertEqual(intensity.available(isPro: false), .normal)
-    }
-    let c = context(calories: 3100, hour: 21)
-    for intensity in CoachIntensity.allCases {
-      let free = RoastEngine.bundled.evaluate(
-        c, intensity: intensity, personality: .standard, isPro: false, seed: 0)
-      XCTAssertEqual(free.intensity, .normal)
-      XCTAssertFalse(free.pro)
-      let pro = RoastEngine.bundled.evaluate(
-        c, intensity: intensity, personality: .standard, isPro: true, seed: 0)
-      XCTAssertEqual(pro.intensity, intensity)
-    }
+    XCTAssertGreaterThan(longest, 1)
   }
   // Fixed local time so slot arithmetic does not depend on when the suite runs.
   func at(_ hour: Int, _ minute: Int = 0) throws -> Date {
@@ -282,7 +313,7 @@ import XCTest
         }
       }
     }
-    let free = CoachIntensity.nuclear.available(isPro: false)
+    let free = CoachIntensity.toxic.available(isPro: false)
     XCTAssertTrue(
       NotificationService.messageKey(
         PlannedReminder(id: "x", date: .now, kind: .lunch, variant: 0), tier: free
@@ -302,6 +333,104 @@ import XCTest
     XCTAssertTrue(vm.valid)
     vm.eligible = false
     XCTAssertFalse(vm.valid)
+  }
+  func testStepFlowAndPerStepValidation() {
+    let vm = OnboardingViewModel()
+    XCTAssertEqual(vm.step, .goal)
+    vm.advance()
+    XCTAssertEqual(vm.step, .about)
+    vm.advance()
+    XCTAssertEqual(vm.step, .about)
+    XCTAssertEqual(vm.errorKey, "validation.name")
+    vm.name = "Ece"
+    vm.advance()
+    XCTAssertEqual(vm.step, .body)
+    vm.target = 90
+    vm.advance()
+    XCTAssertEqual(vm.step, .body)
+    XCTAssertEqual(vm.errorKey, "validation.target.lose")
+    vm.target = 75
+    for expected in [OnboardingStep.lifestyle, .workouts, .habits, .safety] {
+      vm.advance()
+      XCTAssertEqual(vm.step, expected)
+      XCTAssertNil(vm.errorKey)
+    }
+    vm.advance()
+    XCTAssertEqual(vm.step, .safety)
+    XCTAssertEqual(vm.errorKey, "validation.eligibility")
+    vm.eligible = true
+    vm.advance()
+    XCTAssertEqual(vm.step, .loading)
+    vm.advance()
+    XCTAssertEqual(vm.step, .result)
+    XCTAssertEqual(vm.progress.total, 7)
+
+    let keep = OnboardingViewModel()
+    keep.goal = .maintain
+    keep.name = "Ece"
+    XCTAssertEqual(keep.infoSteps.count, 6)
+    for _ in 0..<4 { keep.advance() }
+    XCTAssertEqual(keep.step, .workouts)
+    keep.advance()
+    XCTAssertEqual(keep.step, .safety)
+    keep.goBack()
+    XCTAssertEqual(keep.step, .workouts)
+  }
+  func testTargetFollowsGoalUntilTheUserTypesOne() {
+    let vm = OnboardingViewModel()
+    vm.goal = .gain
+    XCTAssertEqual(vm.target, 84)
+    vm.weight = 70
+    XCTAssertEqual(vm.target, 74)
+    vm.target = 78
+    vm.weight = 72
+    XCTAssertEqual(vm.target, 78)
+    // A typed target that no longer fits the new goal is replaced.
+    vm.goal = .lose
+    XCTAssertEqual(vm.target, 67)
+    let slim = OnboardingViewModel()
+    slim.height = 150
+    slim.weight = 45
+    slim.target = 40
+    XCTAssertEqual(slim.validationKey(for: .body), "validation.target.bmi")
+  }
+  func testActivityFromLifestyleAndWorkouts() {
+    XCTAssertEqual(Activity.from(life: .sitting, workouts: .none), .sedentary)
+    XCTAssertEqual(Activity.from(life: .sitting, workouts: .regular), .light)
+    XCTAssertEqual(Activity.from(life: .onFeet, workouts: .regular), .moderate)
+    XCTAssertEqual(Activity.from(life: .physical, workouts: .intense), .active)
+    let vm = OnboardingViewModel()
+    XCTAssertEqual(vm.activity, .light)
+    vm.lifestyle = .sitting
+    vm.workouts = .none
+    XCTAssertEqual(vm.activity, .sedentary)
+  }
+  func testEveryOnboardingStringExistsInBothLanguages() {
+    var keys = Set<String>()
+    for step in OnboardingStep.allCases where step != .loading {
+      keys.insert("ob.title." + step.name)
+      keys.insert("ob.sub." + step.name)
+    }
+    for goal in Goal.allCases {
+      keys.formUnion(["goal." + goal.rawValue, "ob.goal." + goal.rawValue])
+      keys.insert("coach.weight." + goal.rawValue)
+    }
+    for life in DailyLife.allCases { keys.formUnion(["ob.life.\(life)", "ob.life.\(life).sub"]) }
+    for frequency in WorkoutFrequency.allCases {
+      keys.formUnion(["ob.workouts.\(frequency)", "ob.workouts.\(frequency).sub"])
+    }
+    for challenge in EatingChallenge.allCases {
+      keys.formUnion(["ob.challenge." + challenge.rawValue, "ob.tip." + challenge.rawValue])
+    }
+    keys.insert("ob.tip.maintain")
+    keys.formUnion(["ob.loading.title", "ob.loading.1", "ob.loading.2", "ob.loading.3", "ob.loading.4"])
+    keys.formUnion(["ob.calculate", "ob.result.timeline", "ob.result.weeks", "ob.result.auto"])
+    keys.formUnion(["validation.name", "validation.age", "validation.body", "validation.eligibility"])
+    keys.formUnion(["validation.target.lose", "validation.target.gain", "validation.target.bmi", "validation.target.bmi.high"])
+    for language in ["tr", "en"] {
+      let l = AppLocalization(language: language)
+      for key in keys { XCTAssertNotEqual(l.text(key), key, "\(language) \(key)") }
+    }
   }
   @MainActor func testPersistenceAndSavedMealCascade() throws {
     let schema = Schema([

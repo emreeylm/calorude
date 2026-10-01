@@ -1,28 +1,35 @@
 {
-  "configurations" : [
+  "configurations": [
     {
-      "id" : "5A2F0C11-8B7E-4C1D-9E0A-7D6B3C2A1F00",
-      "name" : "Default",
-      "options" : {
-        "storeKitConfigurationFileReference" : {
-          "identifier" : "Calorude\/Store\/Development.storekit"
+      "id": "5A2F0C11-8B7E-4C1D-9E0A-7D6B3C2A1F00",
+      "name": "Default",
+      "options": {
+        "storeKitConfigurationFileReference": {
+          "identifier": "Calorude/Store/Development.storekit"
         }
       }
     }
   ],
-  "defaultOptions" : {
-    "storeKitConfigurationFileReference" : {
-      "identifier" : "Calorude\/Store\/Development.storekit"
+  "defaultOptions": {
+    "storeKitConfigurationFileReference": {
+      "identifier": "Calorude/Store/Development.storekit"
     }
   },
-  "testTargets" : [
+  "testTargets": [
     {
-      "target" : {
-        "containerPath" : "container:Calorude.xcodeproj",
-        "identifier" : "4A8EAB444521C8AE40C5E435",
-        "name" : "CalorudeUITests"
+      "target": {
+        "containerPath": "container:Calorude.xcodeproj",
+        "identifier": "2AD7306D81C8B0B9116E5CAA",
+        "name": "CalorudeTests"
+      }
+    },
+    {
+      "target": {
+        "containerPath": "container:Calorude.xcodeproj",
+        "identifier": "4A8EAB444521C8AE40C5E435",
+        "name": "CalorudeUITests"
       }
     }
   ],
-  "version" : 1
+  "version": 1
 }

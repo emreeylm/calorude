@@ -38,7 +38,6 @@
 		AE3AEFB7D32E20A5E0AAF708 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C3776BFE5C3303E869867E /* OnboardingViewModel.swift */; };
 		B0A2CF6F24F783E0E7997D01 /* PortionEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1B25E870ACB8D2DF6AFB5 /* PortionEditorView.swift */; };
 		B539C1A25E0F4917A7365D3D /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 41AB2421F29A100CF11C233A /* Localizable.xcstrings */; };
-		C674D1B24C9D62F79FC89E9D /* roasts.json in Resources */ = {isa = PBXBuildFile; fileRef = C170FA7C41B279A7F58433BD /* roasts.json */; };
 		CD40EECCA42F8AF0EC16975F /* MealReactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E837C2BAF14FD27236654A /* MealReactionView.swift */; };
 		D7F2FAEEADE0A0C6A60FBC79 /* FoodLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2967053CDCBBCA9E8AEA3F3D /* FoodLogView.swift */; };
 		D85B50C75CD2FA3A491DCCE7 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CE65761B322C623F0783A /* Models.swift */; };
@@ -109,7 +108,6 @@
 		B3DD9597131CEC89AF1057B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B76F8774042397EB169E8F5B /* CalorudeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorudeApp.swift; sourceTree = "<group>"; };
 		BC1E7DE9D4F594BA1A463E16 /* foods.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = foods.json; sourceTree = "<group>"; };
-		C170FA7C41B279A7F58433BD /* roasts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = roasts.json; sourceTree = "<group>"; };
 		D197F3D8E76936E14707ED9E /* MealEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealEditorTests.swift; sourceTree = "<group>"; };
 		DA476E182903F0719E91B926 /* CustomFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFoodView.swift; sourceTree = "<group>"; };
 		E0D275C0B74C162D861A628A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -261,7 +259,6 @@
 				B3DD9597131CEC89AF1057B7 /* Assets.xcassets */,
 				BC1E7DE9D4F594BA1A463E16 /* foods.json */,
 				111B7ED704E2C750E0D16B3E /* PrivacyInfo.xcprivacy */,
-				C170FA7C41B279A7F58433BD /* roasts.json */,
 				6FBD18020F7277FF860AECAA /* InfoPlist.strings */,
 			);
 			path = Resources;
@@ -422,7 +419,6 @@
 				B539C1A25E0F4917A7365D3D /* Localizable.xcstrings in Resources */,
 				1DE3D5D9EC33BD5187843734 /* PrivacyInfo.xcprivacy in Resources */,
 				FB963CA229FEA29FDE517B17 /* foods.json in Resources */,
-				C674D1B24C9D62F79FC89E9D /* roasts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,7 +562,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = P6V2HMX86R;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -666,7 +662,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 5;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = P6V2HMX86R;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;

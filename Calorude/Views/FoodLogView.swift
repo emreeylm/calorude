@@ -4,7 +4,7 @@ import SwiftUI
 struct FoodLogView: View {
   let profile: UserProfile
   let date: Date
-  let previousReactionKey: String?
+  let recentKeys: [String]
   var onCommitted: (MealReaction?) -> Void
   @Environment(AppLocalization.self) private var l
   @Environment(StoreService.self) private var store
@@ -29,12 +29,12 @@ struct FoodLogView: View {
 
   init(
     profile: UserProfile, date: Date, initialMeal: MealType = .lunch,
-    previousReactionKey: String? = nil,
+    recentKeys: [String] = [],
     onCommitted: @escaping (MealReaction?) -> Void = { _ in }
   ) {
     self.profile = profile
     self.date = date
-    self.previousReactionKey = previousReactionKey
+    self.recentKeys = recentKeys
     self.onCommitted = onCommitted
     _vm = State(initialValue: MealEditorViewModel(meal: initialMeal))
   }
@@ -370,13 +370,50 @@ struct FoodLogView: View {
       try MealRepository.commit(
         items: vm.items, originals: vm.originals, date: date, profile: profile, context: context)
       UINotificationFeedbackGenerator().notificationOccurred(.success)
-      onCommitted(
-        MealReactionEngine.reaction(
-          items: vm.items, originals: vm.originals, date: date,
-          intensity: profile.coachIntensity.available(isPro: store.isPro),
-          excluding: previousReactionKey))
+      onCommitted(reaction())
       dismiss()
     } catch { self.error = true }
+  }
+  // The coach judges the saved meal against that day's target, as it was set when logged.
+  private func reaction() -> MealReaction? {
+    let target =
+      recentEntries.first { Calendar.current.isDate($0.date, inSameDayAs: date) }?
+      .calorieTargetSnapshot ?? profile.dailyCalorieTarget
+    let voice = CoachVoice(level: profile.coachIntensity, isPro: store.isPro)
+    return MealReactionEngine.reaction(
+      items: vm.items, originals: vm.originals, date: date, target: target, voice: voice,
+      recentKeys: recentKeys, cravingDays: cravingDays(), overDays: overDays(), sex: profile.sex,
+      exists: { l.has($0) })
+  }
+  // Days of the last week with sweets or fast food, counting the day being saved when it has some.
+  private func cravingDays() -> Int {
+    let calendar = Calendar.current
+    guard let since = calendar.date(byAdding: .day, value: -6, to: calendar.startOfDay(for: date))
+    else { return 0 }
+    var days = Set(
+      recentEntries.filter {
+        $0.date >= since && $0.date < (calendar.date(byAdding: .day, value: 1, to: date) ?? date)
+          && ["sweet", "fastFood"].contains($0.category)
+      }.map { calendar.startOfDay(for: $0.date) })
+    if vm.items.contains(where: { ["sweet", "fastFood"].contains($0.food.category) }) {
+      days.insert(calendar.startOfDay(for: date))
+    }
+    return days.count
+  }
+  // Days of the last week over target; the day being saved uses the totals of the open editor.
+  private func overDays() -> Int {
+    let calendar = Calendar.current
+    guard let since = calendar.date(byAdding: .day, value: -6, to: calendar.startOfDay(for: date))
+    else { return 0 }
+    var totals: [Date: (calories: Double, target: Double)] = [:]
+    for entry in recentEntries where entry.date >= since && !calendar.isDate(entry.date, inSameDayAs: date) {
+      let day = calendar.startOfDay(for: entry.date)
+      totals[day] = ((totals[day]?.calories ?? 0) + entry.calories, entry.calorieTargetSnapshot)
+    }
+    var count = totals.values.filter { $0.calories > $0.target * 1.02 }.count
+    let today = vm.items.reduce(0) { $0 + $1.nutrition.calories }
+    if today > profile.dailyCalorieTarget * 1.02 { count += 1 }
+    return count
   }
   private func save() {
     do { try context.save() } catch {

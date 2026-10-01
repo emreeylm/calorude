@@ -5,8 +5,7 @@ import StoreKit
 enum StoreProducts {
   static let monthly = "com.yemeboluum.pro.monthly"
   static let yearly = "com.yemeboluum.pro.yearly"
-  static let lifetime = "com.yemeboluum.pro.founder"
-  static let all = [monthly, yearly, lifetime]
+  static let all = [monthly, yearly]
 }
 struct EntitlementRecord {
   var productID: String
@@ -16,7 +15,6 @@ struct EntitlementRecord {
   var graceExpiration: Date? = nil
   func grantsAccess(at now: Date) -> Bool {
     guard verified, !revoked, StoreProducts.all.contains(productID) else { return false }
-    if productID == StoreProducts.lifetime { return true }
     return (expiration.map { $0 > now } ?? false) || (graceExpiration.map { $0 > now } ?? false)
   }
 }

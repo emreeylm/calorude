@@ -16,15 +16,13 @@ import XCTest
       service.products.first { $0.id == StoreProducts.monthly }?.price, Decimal(string: "79"))
     XCTAssertEqual(
       service.products.first { $0.id == StoreProducts.yearly }?.price, Decimal(string: "599"))
-    XCTAssertEqual(
-      service.products.first { $0.id == StoreProducts.lifetime }?.price, Decimal(string: "1799"))
     for (country, locale, currency) in [
       ("TUR", "tr_TR", "TRY"), ("USA", "en_US", "USD"), ("TUR", "en_US", "TRY"),
     ] {
       session.storefront = country
       session.locale = Locale(identifier: locale)
       await service.loadProducts()
-      XCTAssertEqual(service.products.count, 3)
+      XCTAssertEqual(service.products.count, 2)
       for product in service.products {
         XCTAssertEqual(product.priceFormatStyle.currencyCode, currency)
         XCTAssertFalse(product.displayPrice.isEmpty)
@@ -38,14 +36,14 @@ import XCTest
       }
     }
   }
-  func testVerifiedPurchasesExpirationAndLifetime() async throws {
+  func testVerifiedPurchasesAndExpiration() async throws {
     let session = try SKTestSession(configurationFileNamed: "Development")
     session.disableDialogs = true
     session.clearTransactions()
     defer { session.clearTransactions() }
     let service = StoreService()
     await service.loadProducts()
-    XCTAssertEqual(service.products.count, 3)
+    XCTAssertEqual(service.products.count, 2)
     await service.refreshEntitlements()
     XCTAssertFalse(service.isPro)
     _ = try await session.buyProduct(identifier: StoreProducts.monthly)
@@ -62,7 +60,7 @@ import XCTest
       try await Task.sleep(for: .milliseconds(100))
     }
     XCTAssertFalse(service.isPro)
-    _ = try await session.buyProduct(identifier: StoreProducts.lifetime)
+    _ = try await session.buyProduct(identifier: StoreProducts.yearly)
     for _ in 0..<20 {
       await service.refreshEntitlements()
       if service.isPro { break }

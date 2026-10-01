@@ -69,7 +69,7 @@ struct PlannedReminder: Equatable {
   }
 
   static func messageKey(_ reminder: PlannedReminder, tier: CoachIntensity) -> String {
-    "notif.\(reminder.kind.rawValue).\(tier.rawValue).\(reminder.variant)"
+    "notif.\(reminder.kind.rawValue).\(tier.key).\(reminder.variant)"
   }
 
   // Rebuilt on foreground, language, mode, entitlement and diary changes.

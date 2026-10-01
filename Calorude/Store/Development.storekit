@@ -1,28 +1,7 @@
 {
   "identifier": "0C6625B8",
   "nonRenewingSubscriptions": [],
-  "products": [
-    {
-      "displayPrice": "1799",
-      "familyShareable": false,
-      "internalID": "30000003",
-      "localizations": [
-        {
-          "description": "Pay once. Keep PRO.",
-          "displayName": "Founder Lifetime PRO",
-          "locale": "en_US"
-        },
-        {
-          "description": "Bir kere al, PRO sende kalsın.",
-          "displayName": "Kurucu Ömür Boyu PRO",
-          "locale": "tr_TR"
-        }
-      ],
-      "productID": "com.yemeboluum.pro.founder",
-      "referenceName": "Founder Lifetime",
-      "type": "NonConsumable"
-    }
-  ],
+  "products": [],
   "settings": {
     "_applicationInternalID": "0",
     "_developerTeamID": "",

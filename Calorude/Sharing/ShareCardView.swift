@@ -147,19 +147,18 @@ struct ShareComposerView: View {
     let week = ProgressService.week(
       ending: date, entries: entries, target: profile.dailyCalorieTarget,
       proteinTarget: profile.proteinTarget)
-    let context = CoachContextBuilder.make(
-      profile: profile, stats: day, streak: streak, entries: entries)
-    let message = RoastEngine.bundled.evaluate(
-      context,
-      intensity: profile.coachIntensity, personality: .standard, isPro: store.isPro,
-      seed: Calendar.current.ordinality(of: .day, in: .era, for: date) ?? 0)
+    let context = RoastContext(stats: day)
+    let voice = CoachVoice(level: profile.coachIntensity, isPro: store.isPro)
+    let key = DayCoach.key(
+      state: DayCoach.state(for: context), voice: voice,
+      variant: DayCoach.variant(day: day.day, context: context))
     return ShareSnapshot(
       calories: day.calories, target: day.target, protein: day.protein, streak: streak,
       successfulDays: week.successful, averageCalories: week.averageCalories,
       averageProtein: week.averageProtein,
       roast: kind == .weekly
         ? l.text(week.successful >= 5 ? "weekly.good" : "weekly.build")
-        : roast ?? context.text(l.text(message.messageKey), l: l), date: date,
+        : roast ?? context.text(l.text(key), l: l), date: date,
       weightChange: ProgressService.weightTrend(weights, ending: date))
   }
   var body: some View {

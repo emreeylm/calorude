@@ -20,7 +20,7 @@ struct PaywallView: View {
           Panel {
             VStack(alignment: .leading, spacing: 14) {
               Text(l.text("paywall.modes")).font(.caption.weight(.bold)).tracking(2)
-              ForEach(["optimistic", "savage", "unhinged", "nuclear"], id: \.self) { mode in
+              ForEach(["optimistic", "savage", "unhinged", "toxic"], id: \.self) { mode in
                 VStack(alignment: .leading, spacing: 2) {
                   Text(l.text("intensity." + mode)).font(.subheadline.bold())
                   Text("“" + l.text("paywall.sample." + mode) + "”").font(.subheadline.italic())
@@ -41,9 +41,7 @@ struct PaywallView: View {
                 HStack {
                   Text(
                     l.text(
-                      product.id == StoreProducts.yearly
-                        ? "plan.yearly"
-                        : product.id == StoreProducts.monthly ? "plan.monthly" : "plan.lifetime")
+                      product.id == StoreProducts.yearly ? "plan.yearly" : "plan.monthly")
                   ).font(.headline)
                   Spacer()
                   if product.id == StoreProducts.yearly {
@@ -54,11 +52,7 @@ struct PaywallView: View {
                 }
                 Text(product.displayPrice).font(.largeTitle.bold())
                 Text(
-                  l.text(
-                    product.id == StoreProducts.yearly
-                      ? "billing.yearly"
-                      : product.id == StoreProducts.monthly ? "billing.monthly" : "billing.lifetime"
-                  )
+                  l.text(product.id == StoreProducts.yearly ? "billing.yearly" : "billing.monthly")
                 ).font(.caption)
                 if product.id == StoreProducts.yearly {
                   Text(
