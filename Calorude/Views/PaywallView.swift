@@ -71,10 +71,10 @@ struct PaywallView: View {
             }.buttonStyle(.plain).disabled(store.busy || store.isPro)
           }
           if store.busy { ProgressView() }
-          if let key = store.statusKey {
+          if let key = store.statusKey, !hidesStoreStatus {
             Text(l.text(key)).font(.footnote).foregroundStyle(.secondary)
           }
-          if store.products.isEmpty {
+          if store.products.isEmpty && !hidesStoreStatus {
             Button(l.text("retry")) { Task { await store.loadProducts() } }
           }
           Text(l.text("subscription.disclosure")).font(.caption).foregroundStyle(.secondary)
@@ -95,6 +95,14 @@ struct PaywallView: View {
       .manageSubscriptionsSheet(isPresented: $manage)
       .task { await store.loadProducts() }
     }
+  }
+  // Store screenshots (debug builds, `--shots`) show the benefits without prices or load errors.
+  private var hidesStoreStatus: Bool {
+    #if DEBUG
+      ProcessInfo.processInfo.arguments.contains("--shots")
+    #else
+      false
+    #endif
   }
 }
 enum LegalDocument: String, Identifiable {

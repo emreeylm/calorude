@@ -9,7 +9,7 @@ final class StoreScreenshotTests: XCTestCase {
     continueAfterFailure = false
     let tr = language == "tr"
     let app = XCUIApplication()
-    app.launchArguments = ["--uitesting", "-language", language]
+    app.launchArguments = ["--uitesting", "--shots", "-language", language]
     app.launch()
     let next = app.buttons["onboarding.next"]
     XCTAssertTrue(next.waitForExistence(timeout: 15))
@@ -132,24 +132,27 @@ final class StoreScreenshotTests: XCTestCase {
     continueAfterFailure = false
     let tr = language == "tr"
     let app = XCUIApplication()
-    app.launchArguments = ["--uitesting", "-language", language]
+    app.launchArguments = ["--uitesting", "--shots", "-language", language]
     app.launch()
+    let next = app.buttons["onboarding.next"]
+    XCTAssertTrue(next.waitForExistence(timeout: 15))
+    next.tap()
     let name = app.textFields["onboarding.name"]
-    XCTAssertTrue(name.waitForExistence(timeout: 15))
-    app.switches["onboarding.eligibility"].tap()
+    XCTAssertTrue(name.waitForExistence(timeout: 5))
     name.tap()
     name.typeText("Deniz\n")
-    let next = app.buttons["onboarding.next"]
-    next.tap(); next.tap(); next.tap(); next.tap()
+    for _ in 0..<5 { next.tap() }
+    app.switches["onboarding.eligibility"].tap()
+    next.tap()
+    XCTAssertTrue(app.staticTexts["onboarding.result"].waitForExistence(timeout: 15))
+    next.tap()
+    XCTAssertTrue(app.buttons["dashboard.add"].waitForExistence(timeout: 10))
     app.tabBars.buttons[tr ? "İlerleme" : "Progress"].tap()
     let pro = app.buttons["progress.reports.pro"]
     reveal(pro, in: app)
     pro.tap()
     sleep(4)
     shot(language, "7-paywall")
-    app.swipeUp()
-    sleep(1)
-    shot(language, "8-paywall-prices")
   }
   @MainActor func testPaywallTurkish() { runPaywall(language: "tr") }
   @MainActor func testPaywallEnglish() { runPaywall(language: "en") }

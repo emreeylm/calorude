@@ -4903,13 +4903,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Did you hang the target on the wall as decoration, damn it?"
+            "value" : "Did you hang the target on the wall as decoration?"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hedefi duvara tablo diye mi astın lan?"
+            "value" : "Hedefi duvara tablo diye mi astın?"
           }
         }
       }
