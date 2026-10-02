@@ -219,6 +219,34 @@ import XCTest
     }
   }
 
+  // Renders the story card of each hard style into SHOTS_DIR/<lang>/levels (skipped when unset).
+  func testRenderHardStyleStoryCards() throws {
+    guard let dir = ProcessInfo.processInfo.environment["SHOTS_DIR"] else {
+      throw XCTSkip("SHOTS_DIR not set")
+    }
+    let cases: [(MealState, Double, Double)] = [
+      (.unbalancedOver, 2210, 760), (.balancedSqueezes, 1890, 980),
+    ]
+    for language in ["tr", "en"] {
+      let l = AppLocalization(language: language)
+      let folder = "\(dir)/\(language)/levels"
+      try FileManager.default.createDirectory(atPath: folder, withIntermediateDirectories: true)
+      for level in ["savage", "unhinged", "toxic"] {
+        for (state, total, meal) in cases {
+          let reaction = MealReaction(
+            state: state, messageKey: "coach.meal.\(state.rawValue).\(level).0",
+            nutrition: NutritionPlan(calories: meal, protein: 24, carbs: 80, fat: 40),
+            facts: MealFacts(mealCalories: meal, mealProtein: 24, dayTotal: total, target: 1935),
+            meal: .dinner, date: .now)
+          let url = try MealReactionRenderer.render(reaction, l: l)
+          let target = URL(fileURLWithPath: "\(folder)/\(level)-\(state.rawValue).png")
+          try? FileManager.default.removeItem(at: target)
+          try FileManager.default.copyItem(at: url, to: target)
+        }
+      }
+    }
+  }
+
   func at(_ hour: Int) throws -> Date {
     try XCTUnwrap(
       Calendar.current.date(from: DateComponents(year: 2026, month: 3, day: 10, hour: hour)))
