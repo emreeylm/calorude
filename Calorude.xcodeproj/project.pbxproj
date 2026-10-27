@@ -26,6 +26,7 @@
 		6C53C53564095E21C5F58520 /* ProgressScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075D03329CDCA350A072524 /* ProgressScreen.swift */; };
 		6E85B049A8517EF283A086E7 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D275C0B74C162D861A628A /* DashboardView.swift */; };
 		711B4F77362F566E54514289 /* ShareCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2FE544C41E89C0811EA548 /* ShareCardView.swift */; };
+		73051AEBC2C865992F5F7F5B /* ProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7983F0FCC7A711D93070C11 /* ProgressTests.swift */; };
 		76A9DD9BC401784707242469 /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008D9CB9228DBF3DEA64992C /* CoreTests.swift */; };
 		787C5E0BCD9A5044FCA6B460 /* CustomFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA476E182903F0719E91B926 /* CustomFoodView.swift */; };
 		7AC2DE9A1276F79C995B30CF /* MealEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197F3D8E76936E14707ED9E /* MealEditorTests.swift */; };
@@ -114,6 +115,7 @@
 		E3E536B0C4711E169C8F60FB /* RoastEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoastEngine.swift; sourceTree = "<group>"; };
 		EC4AABB4F3671375A0C418B1 /* AchievementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementService.swift; sourceTree = "<group>"; };
 		F5D5665D6AB7AB8DBA738D34 /* StoreIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreIntegrationTests.swift; sourceTree = "<group>"; };
+		F7983F0FCC7A711D93070C11 /* ProgressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTests.swift; sourceTree = "<group>"; };
 		FC2FE544C41E89C0811EA548 /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				008D9CB9228DBF3DEA64992C /* CoreTests.swift */,
 				D197F3D8E76936E14707ED9E /* MealEditorTests.swift */,
 				801F4A49E899BB15815163AD /* MealReactionTests.swift */,
+				F7983F0FCC7A711D93070C11 /* ProgressTests.swift */,
 				F5D5665D6AB7AB8DBA738D34 /* StoreIntegrationTests.swift */,
 			);
 			path = CalorudeTests;
@@ -432,6 +435,7 @@
 				76A9DD9BC401784707242469 /* CoreTests.swift in Sources */,
 				7AC2DE9A1276F79C995B30CF /* MealEditorTests.swift in Sources */,
 				149D18F8CBB5C1445F888C7A /* MealReactionTests.swift in Sources */,
+				73051AEBC2C865992F5F7F5B /* ProgressTests.swift in Sources */,
 				3D1639F2D27BAEA624C3F566 /* StoreIntegrationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -562,7 +566,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = P6V2HMX86R;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -582,7 +586,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -662,7 +666,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 7;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = P6V2HMX86R;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -688,7 +692,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;

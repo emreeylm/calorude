@@ -154,6 +154,195 @@ final class StoreScreenshotTests: XCTestCase {
     sleep(4)
     shot(language, "7-paywall")
   }
+  // Hard coach styles (needs the debug-only `--shots-pro` flag): reaction, dashboard and coach card.
+  @MainActor func runHard(language: String, level: String, label: String) {
+    continueAfterFailure = false
+    let tr = language == "tr"
+    let app = XCUIApplication()
+    app.launchArguments = ["--uitesting", "--shots", "--shots-pro", "-language", language]
+    app.launch()
+    let next = app.buttons["onboarding.next"]
+    XCTAssertTrue(next.waitForExistence(timeout: 15))
+    next.tap()
+    let name = app.textFields["onboarding.name"]
+    XCTAssertTrue(name.waitForExistence(timeout: 5))
+    name.tap()
+    name.typeText("Deniz\n")
+    for _ in 0..<5 { next.tap() }
+    app.switches["onboarding.eligibility"].tap()
+    next.tap()
+    XCTAssertTrue(app.staticTexts["onboarding.result"].waitForExistence(timeout: 15))
+    next.tap()
+    let add = app.buttons["dashboard.add"]
+    XCTAssertTrue(add.waitForExistence(timeout: 10))
+
+    app.tabBars.buttons[tr ? "Ayarlar" : "Settings"].tap()
+    let intensity = app.descendants(matching: .any)["settings.intensity"].firstMatch
+    XCTAssertTrue(intensity.waitForExistence(timeout: 5))
+    intensity.tap()
+    sleep(1)
+    shot(language, "\(label)-modes")
+    app.buttons[level].firstMatch.tap()
+    let confirm = app.buttons[tr ? "Anladım, aç" : "I understand, turn on"]
+    if confirm.waitForExistence(timeout: 2) { confirm.tap() }
+    app.tabBars.buttons[tr ? "Bugün" : "Today"].tap()
+
+    func log(_ meal: String, _ foods: [(String, String, Int)], shotName: String) {
+      XCTAssertTrue(add.waitForExistence(timeout: 5))
+      add.tap()
+      XCTAssertTrue(app.buttons["mealEditor.meal." + meal].waitForExistence(timeout: 5))
+      app.buttons["mealEditor.meal." + meal].tap()
+      for (id, query, portion) in foods { addFood(app, id: id, query: query, portion: portion) }
+      app.buttons["mealEditor.save"].tap()
+      let close = app.buttons["reaction.close"]
+      XCTAssertTrue(close.waitForExistence(timeout: 8))
+      sleep(1)
+      shot(language, "\(label)-\(shotName)")
+      close.tap()
+    }
+    log("lunch", [("burger", "Burger", 300), ("fries", tr ? "Patates kız" : "Fries", 250), ("cola", tr ? "Kola" : "Cola", 330)], shotName: "reaction-lunch")
+    log("dinner", [("baklava", "Baklava", 200), ("chocolate", tr ? "Sütlü" : "Milk choc", 100)], shotName: "reaction-sweet")
+    sleep(1)
+    shot(language, "\(label)-dashboard")
+    app.swipeUp()
+    sleep(1)
+    shot(language, "\(label)-coach")
+    app.swipeDown()
+    // Past 140% of the target the day line rotates with every entry; add small snacks until the
+    // wanted line (if any) shows up, then capture the dashboard once more.
+    guard let wanted = ProcessInfo.processInfo.environment["WANTED_LINE"] else { return }
+    log("snack", [("chips", tr ? "cips" : "chips", 100)], shotName: "reaction-chips")
+    for _ in 0..<14 {
+      let hit = app.descendants(matching: .any).matching(
+        NSPredicate(format: "label CONTAINS %@", wanted)).firstMatch
+      app.swipeUp()
+      if hit.exists { break }
+      app.swipeDown()
+      log("snack", [("apple", tr ? "Elma" : "Apple", 150)], shotName: "reaction-apple")
+    }
+    sleep(1)
+    shot(language, "\(label)-wanted-coach")
+    app.swipeDown()
+    sleep(1)
+    shot(language, "\(label)-wanted-dashboard")
+  }
+  @MainActor func testHardToxicTR() { runHard(language: "tr", level: "Toksik", label: "toxic") }
+  @MainActor func testHardSavageTR() { runHard(language: "tr", level: "Sert", label: "savage") }
+  // Toxic style, signed-off store lines: logs sweet dinners until each wanted reaction text shows.
+  @MainActor func start(_ app: XCUIApplication, language: String, level: String) {
+    let tr = language == "tr"
+    app.launchArguments = ["--uitesting", "--shots", "--shots-pro", "-language", language]
+    app.launch()
+    let next = app.buttons["onboarding.next"]
+    XCTAssertTrue(next.waitForExistence(timeout: 15))
+    next.tap()
+    let name = app.textFields["onboarding.name"]
+    XCTAssertTrue(name.waitForExistence(timeout: 5))
+    name.tap()
+    name.typeText("Deniz\n")
+    for _ in 0..<5 { next.tap() }
+    app.switches["onboarding.eligibility"].tap()
+    next.tap()
+    XCTAssertTrue(app.staticTexts["onboarding.result"].waitForExistence(timeout: 15))
+    next.tap()
+    XCTAssertTrue(app.buttons["dashboard.add"].waitForExistence(timeout: 10))
+    app.tabBars.buttons[tr ? "Ayarlar" : "Settings"].tap()
+    let intensity = app.descendants(matching: .any)["settings.intensity"].firstMatch
+    XCTAssertTrue(intensity.waitForExistence(timeout: 5))
+    intensity.tap()
+    app.buttons[level].firstMatch.tap()
+    let confirm = app.buttons[tr ? "Anladım, aç" : "I understand, turn on"]
+    if confirm.waitForExistence(timeout: 2) { confirm.tap() }
+    app.tabBars.buttons[tr ? "Bugün" : "Today"].tap()
+  }
+
+  @MainActor func testHuntToxicTR() {
+    continueAfterFailure = false
+    let app = XCUIApplication()
+    start(app, language: "tr", level: "Toksik")
+    let wanted = ["dizi çekilir": "dizi", "sipariş numarası": "siparis"]
+    var found = Set<String>()
+    for _ in 0..<30 where found.count < wanted.count {
+      app.buttons["dashboard.add"].tap()
+      XCTAssertTrue(app.buttons["mealEditor.meal.dinner"].waitForExistence(timeout: 5))
+      app.buttons["mealEditor.meal.dinner"].tap()
+      addFood(app, id: "baklava", query: "Baklava", portion: 100)
+      app.buttons["mealEditor.save"].tap()
+      let close = app.buttons["reaction.close"]
+      XCTAssertTrue(close.waitForExistence(timeout: 8))
+      sleep(1)
+      for (text, tag) in wanted where !found.contains(tag) {
+        let hit = app.descendants(matching: .any).matching(
+          NSPredicate(format: "label CONTAINS %@", text)).firstMatch
+        if hit.exists {
+          shot("tr", "toxic-reaction-" + tag)
+          found.insert(tag)
+        }
+      }
+      close.tap()
+    }
+  }
+
+  // A light toxic day (1,002 kcal) plus the food search, for the plain dashboard and search shots.
+  @MainActor func testToxicLightTR() {
+    continueAfterFailure = false
+    let app = XCUIApplication()
+    start(app, language: "tr", level: "Toksik")
+    let add = app.buttons["dashboard.add"]
+    func log(_ meal: String, _ foods: [(String, String, Int)]) {
+      add.tap()
+      XCTAssertTrue(app.buttons["mealEditor.meal." + meal].waitForExistence(timeout: 5))
+      app.buttons["mealEditor.meal." + meal].tap()
+      for (id, query, portion) in foods { addFood(app, id: id, query: query, portion: portion) }
+      app.buttons["mealEditor.save"].tap()
+      let close = app.buttons["reaction.close"]
+      XCTAssertTrue(close.waitForExistence(timeout: 8))
+      close.tap()
+    }
+    log("breakfast", [("menemen", "Menemen", 200), ("simit", "Simit", 100)])
+    log("lunch", [("meatbeans", "Etli kuru", 240), ("ayran", "Ayran", 200)])
+    sleep(1)
+    shot("tr", "toxic-light-dashboard")
+    app.swipeUp()
+    sleep(1)
+    shot("tr", "toxic-light-coach")
+    app.swipeDown()
+    add.tap()
+    XCTAssertTrue(app.buttons["mealEditor.meal.dinner"].waitForExistence(timeout: 5))
+    app.buttons["mealEditor.meal.dinner"].tap()
+    let search = app.textFields["food.search"]
+    reveal(search, in: app)
+    search.tap()
+    search.typeText("Me")
+    sleep(1)
+    shot("tr", "search-me")
+  }
+  // Settings scrolled to the style menu with Toxic selected, and the search results for "Menemen".
+  @MainActor func testToxicExtrasTR() {
+    continueAfterFailure = false
+    let app = XCUIApplication()
+    start(app, language: "tr", level: "Toksik")
+    app.tabBars.buttons["Ayarlar"].tap()
+    let intensity = app.descendants(matching: .any)["settings.intensity"].firstMatch
+    XCTAssertTrue(intensity.waitForExistence(timeout: 5))
+    reveal(intensity, in: app)
+    intensity.tap()
+    sleep(1)
+    shot("tr", "toxic-modes-scrolled")
+    app.buttons["Toksik"].firstMatch.tap()
+    let confirm = app.buttons["Anladım, aç"]
+    if confirm.waitForExistence(timeout: 2) { confirm.tap() }
+    app.tabBars.buttons["Bugün"].tap()
+    app.buttons["dashboard.add"].tap()
+    XCTAssertTrue(app.buttons["mealEditor.meal.dinner"].waitForExistence(timeout: 5))
+    app.buttons["mealEditor.meal.dinner"].tap()
+    let search = app.textFields["food.search"]
+    reveal(search, in: app)
+    search.tap()
+    search.typeText("Menemen\n")
+    sleep(1)
+    shot("tr", "search-menemen")
+  }
   @MainActor func testPaywallTurkish() { runPaywall(language: "tr") }
   @MainActor func testPaywallEnglish() { runPaywall(language: "en") }
   @MainActor func testTurkish() { run(language: "tr") }

@@ -54,6 +54,12 @@ struct EntitlementRecord {
     } catch { statusKey = "store.unavailable" }
   }
   func refreshEntitlements() async {
+    #if DEBUG
+      if ProcessInfo.processInfo.arguments.contains("--shots-pro") {
+        isPro = true
+        return
+      }
+    #endif
     var granted = false
     var nextExpiration: Date?
     for await result in Transaction.currentEntitlements {
