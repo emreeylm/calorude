@@ -1,11 +1,52 @@
 # Yeme Boluum / Calorude
 
-Branding: Turkish-language devices see **Yeme Boluum**, everyone else sees **Calorude** (in-app `brand.name` and the localized `CFBundleDisplayName`; the development region is English so unmatched languages fall back to Calorude). Set the same split as localized App Store names in App Store Connect. iPhone only, portrait, version 1.0 (1).
+[![App Store](https://img.shields.io/badge/App%20Store-indir-black?logo=apple)](https://apps.apple.com/tr/app/id6817766716) ![iOS 17+](https://img.shields.io/badge/iOS-17%2B-blue) ![Swift 6](https://img.shields.io/badge/Swift-6-orange) ![Tests](https://img.shields.io/badge/unit%20tests-53-brightgreen)
+
+A calorie and macro tracker whose coach answers with a sense of humour. You log a meal, and a coach reads the day's real totals back to you in one of five styles, from Optimistic to Toxic. Live on the App Store: **[Yeme Boluum](https://apps.apple.com/tr/app/id6817766716)**.
+
+Branding: Turkish-language devices see **Yeme Boluum**, everyone else sees **Calorude** (in-app `brand.name` and the localized `CFBundleDisplayName`; the development region is English so unmatched languages fall back to Calorude). Set the same split as localized App Store names in App Store Connect. iPhone only, portrait, version 1.0.1.
 
 Native iOS 17+ nutrition tracker. SwiftUI, SwiftData, Swift Charts, StoreKit 2, UserNotifications and ImageRenderer. No backend, account, analytics, AI or third-party dependencies.
 
+<p>
+  <img src="Documentation/Screenshots/01.jpg" width="160" alt="Dashboard">
+  <img src="Documentation/Screenshots/02.jpg" width="160" alt="Coach styles">
+  <img src="Documentation/Screenshots/03.jpg" width="160" alt="Food search">
+  <img src="Documentation/Screenshots/04.jpg" width="160" alt="Daily coach comment">
+</p>
+<p>
+  <img src="Documentation/Screenshots/05.jpg" width="160" alt="Toxic coach">
+  <img src="Documentation/Screenshots/06.jpg" width="160" alt="Meal reaction">
+  <img src="Documentation/Screenshots/07.jpg" width="160" alt="Late meal reaction">
+  <img src="Documentation/Screenshots/08.jpg" width="160" alt="Coach quotes">
+</p>
+
 Open `Calorude.xcodeproj`, select the **Calorude** scheme and an iPhone simulator, then Run. Xcode 26.2 was used for development. The checked-in project works without XcodeGen; after adding files to `project.yml`, regenerate with `xcodegen generate`.
 
+## Architecture
+
+Dependencies point one way. Views read the diary with `@Query` and hand every rule (targets, streaks, coach state, reminders) to a service, and every write to a repository. The services import only Foundation, so those rules are unit tested without any UI.
+
+```mermaid
+flowchart TD
+  App["App<br/>composition root, ModelContainer"] --> Views
+  Views["Views + Components<br/>SwiftUI screens"] --> VM["ViewModels<br/>onboarding, meal editor drafts"]
+  Views --> Services
+  VM --> Services
+  VM --> Repos
+  Views --> Repos
+  Services["Services<br/>NutritionCalculator, ProgressService,<br/>AchievementService, RoastEngine (DayCoach),<br/>MealReactionEngine, TrackingCoordinator"]
+  Repos["Repositories<br/>FoodRepository, MealRepository<br/>validated, atomic writes"] --> Models
+  Services --> Models["Models<br/>SwiftData: UserProfile, FoodEntry,<br/>WeightEntry, SavedMeal, ..."]
+  Views --> Store["Store<br/>StoreService (StoreKit 2)"]
+  Views --> Sharing["Sharing<br/>story cards via ImageRenderer"]
+  App --> Notif["Notifications<br/>local meal-time reminders"]
+  Notif --> Services
+  Loc["Localization<br/>String Catalog tr / en"] -.-> Views
+  Loc -.-> Services
+```
+
+Data flow of one meal: the editor keeps a draft in `MealEditorViewModel`; Save in `FoodLogView` calls `MealRepository.commit`, which validates the draft and writes the entries with the day's target snapshot, so a later plan edit never rewrites history; `MealReactionEngine` then judges the meal against the whole day and the coach line is picked from the String Catalog by state, style and tags. `RootView` re-runs `TrackingCoordinator.rebuild` whenever the diary changes to refresh the derived daily summaries, and reschedules the reminders.
 ## Implemented
 
 - Onboarding is seven short screens: goal (lose weight, build muscle, gain weight, maintain), about you, body measurements, daily lifestyle, weekly workouts, a goal-specific habit question and an adult/safety confirmation. A 4.4-second "calculating" screen precedes the plan. There is no pace picker: the app chooses a healthy rate itself (loss about 0.5–0.75 % of body weight a week and never above 1 kg, gain 0.3 kg, muscle 0.2 kg) and still applies the calorie floors and the 20 % TDEE deficit cap, then shows the estimated weekly change and a target date. Mifflin–St Jeor BMR with an activity factor built from lifestyle plus workouts, conservative goal adjustment, energy-consistent macros (2 g/kg protein for muscle gain). Profile plan editing preserves historical entry targets.
@@ -34,15 +75,19 @@ Persisted nutrition snapshots are intentional: changing a bundled food later doe
 
 ```sh
 xcodebuild -project Calorude.xcodeproj -scheme Calorude \
-  -destination 'platform=iOS Simulator,name=iPhone 16e' test
+  -destination 'platform=iOS Simulator,name=iPhone 16e' -only-testing:CalorudeTests test
 python3 Scripts/validate_resources.py
 ```
 
-The tests cover BMR/TDEE/macros, quantities, target limits, goal validation, streak tolerance and gaps, weekly averages, time-aware coach rules, bilingual libraries, SwiftData save/cascade, verified entitlement policy and actual StoreKit test purchases/expiration. Story tests render all templates in both languages and attach the PNGs. UI tests complete onboarding, add rice/chicken/yogurt in one meal session, save, reopen, edit portions, remove a food, cancel an edit, open progress, switch languages and change appearance. Meal repository tests cover atomic validation, historical nutrition/target preservation, derived-summary updates, other meal/date isolation and stale-edit rejection. UI tests use an isolated in-memory store only in Debug; they never erase a normal installation's data.
+`CalorudeTests` runs in about three seconds (53 tests, one skipped unless `SHOTS_DIR` is set). `CalorudeUITests` drives onboarding and the meal editor end to end and also produces the App Store screenshots.
+
+The tests cover BMR/TDEE/macros, the success window, day/week aggregation with historical target snapshots, achievements and the weight trend (`ProgressTests`), quantities, target limits, goal validation, streak tolerance and gaps, weekly averages, time-aware coach rules, bilingual libraries, SwiftData save/cascade, verified entitlement policy and actual StoreKit test purchases/expiration. Story tests render all templates in both languages and attach the PNGs. UI tests complete onboarding, add rice/chicken/yogurt in one meal session, save, reopen, edit portions, remove a food, cancel an edit, open progress, switch languages and change appearance. Meal repository tests cover atomic validation, historical nutrition/target preservation, derived-summary updates, other meal/date isolation and stale-edit rejection. UI tests use an isolated in-memory store only in Debug; they never erase a normal installation's data.
 
 `Development.storekit` is a **local StoreKit test configuration**, not live App Store pricing. The scheme uses it for local Run. The default test storefront is Türkiye (TUR), locale tr_TR, using the brief’s Turkish planning values: monthly 79 and yearly 599 TRY. When testing another region, change both storefront and numeric test prices in Xcode’s StoreKit editor; the local file does not simulate App Store Connect regional price schedules. UI prices always come from StoreKit products.
 
-## Before App Store release
+## Releasing
+
+Version 1.0.1 is live. A release is: bump `MARKETING_VERSION` / `CURRENT_PROJECT_VERSION` in `project.yml` (then `xcodegen generate`), `xcodebuild archive -configuration Release`, then `xcodebuild -exportArchive -exportOptionsPlist ExportOptions.plist` (its `destination: upload` sends the build to App Store Connect). Screenshots, subtitle and keywords only change with a new version. The debug-only `--shots`, `--shots-pro` and `--uitesting` launch arguments are compiled out of Release builds.
 
 An actual App Store release still needs the owner's Apple developer team/signing, App Store Connect application and approved IAP records, App Store metadata and public support/privacy URLs. Disable the local StoreKit configuration when testing against App Store Connect. Test real sandbox restoration, refunds, billing retry/grace and interrupted/pending purchases on physical devices before submission.
 
