@@ -77,6 +77,7 @@ struct RootView: View {
     guard let profile = profiles.first else { return }
     do {
       try TrackingCoordinator.rebuild(context: context, profile: profile, entries: entries)
+      WidgetSync.update(profile: profile, entries: entries, l: l, isPro: store.isPro)
       if preferences.first?.notificationsEnabled == true {
         try await NotificationService.schedule(
           profile: profile, entries: entries, l: l, isPro: store.isPro)

@@ -24,11 +24,39 @@ targets:
   Calorude:
     type: application
     platform: iOS
-    sources: [Calorude]
+    sources: [Calorude, Shared]
+    entitlements:
+      path: Calorude/Calorude.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.yemeboluum.app]
+    dependencies:
+      - target: CalorudeWidget
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yemeboluum.app
         TARGETED_DEVICE_FAMILY: '1'
+  CalorudeWidget:
+    type: app-extension
+    platform: iOS
+    sources: [CalorudeWidget, Shared]
+    entitlements:
+      path: CalorudeWidget/CalorudeWidget.entitlements
+      properties:
+        com.apple.security.application-groups: [group.com.yemeboluum.app]
+    info:
+      path: CalorudeWidget/Info.plist
+      properties:
+        CFBundleDisplayName: Calorude
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.yemeboluum.app.widget
+        TARGETED_DEVICE_FAMILY: '1'
+        SKIP_INSTALL: YES
+        GENERATE_INFOPLIST_FILE: NO
   CalorudeTests:
     type: bundle.unit-test
     platform: iOS

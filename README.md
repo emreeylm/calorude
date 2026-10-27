@@ -1,6 +1,6 @@
 # Yeme Boluum / Calorude
 
-[![App Store](https://img.shields.io/badge/App%20Store-indir-black?logo=apple)](https://apps.apple.com/tr/app/id6817766716) ![iOS 17+](https://img.shields.io/badge/iOS-17%2B-blue) ![Swift 6](https://img.shields.io/badge/Swift-6-orange) ![Tests](https://img.shields.io/badge/unit%20tests-53-brightgreen)
+[![App Store](https://img.shields.io/badge/App%20Store-indir-black?logo=apple)](https://apps.apple.com/tr/app/id6817766716) ![iOS 17+](https://img.shields.io/badge/iOS-17%2B-blue) ![Swift 6](https://img.shields.io/badge/Swift-6-orange) ![Tests](https://img.shields.io/badge/unit%20tests-59-brightgreen)
 
 A calorie and macro tracker whose coach answers with a sense of humour. You log a meal, and a coach reads the day's real totals back to you in one of five styles, from Optimistic to Toxic. Live on the App Store: **[Yeme Boluum](https://apps.apple.com/tr/app/id6817766716)**.
 
@@ -42,11 +42,21 @@ flowchart TD
   Views --> Sharing["Sharing<br/>story cards via ImageRenderer"]
   App --> Notif["Notifications<br/>local meal-time reminders"]
   Notif --> Services
+  App --> Widget["Widget extension<br/>ring + coach line, reads a snapshot"]
+  Services -.->|"WidgetSync writes snapshot<br/>(App Group)"| Widget
   Loc["Localization<br/>String Catalog tr / en"] -.-> Views
   Loc -.-> Services
 ```
 
 Data flow of one meal: the editor keeps a draft in `MealEditorViewModel`; Save in `FoodLogView` calls `MealRepository.commit`, which validates the draft and writes the entries with the day's target snapshot, so a later plan edit never rewrites history; `MealReactionEngine` then judges the meal against the whole day and the coach line is picked from the String Catalog by state, style and tags. `RootView` re-runs `TrackingCoordinator.rebuild` whenever the diary changes to refresh the derived daily summaries, and reschedules the reminders.
+## Home screen widget
+
+A small and a medium widget in the app's theme: a lime calorie ring and the coach's line for the day, nothing else.
+
+<img src="Documentation/Screenshots/widget.png" width="420" alt="Small and medium widget">
+
+The widget never opens the SwiftData store. After every diary change `WidgetSync` renders the ring numbers and the coach line (in the in-app language and style, Pro styles only for Pro users) into a small `WidgetSnapshot` in the shared App Group (`group.com.yemeboluum.app`) and asks WidgetKit to reload. The snapshot also carries the empty-day view, so at midnight the widget resets the ring and shows an empty-day line before the app runs again. Keeping the store where it is means no migration for existing users. The views live in `Shared/WidgetViews.swift` and are also compiled into the app so tests can render them to PNG.
+
 ## Implemented
 
 - Onboarding is seven short screens: goal (lose weight, build muscle, gain weight, maintain), about you, body measurements, daily lifestyle, weekly workouts, a goal-specific habit question and an adult/safety confirmation. A 4.4-second "calculating" screen precedes the plan. There is no pace picker: the app chooses a healthy rate itself (loss about 0.5–0.75 % of body weight a week and never above 1 kg, gain 0.3 kg, muscle 0.2 kg) and still applies the calorie floors and the 20 % TDEE deficit cap, then shows the estimated weekly change and a target date. Mifflin–St Jeor BMR with an activity factor built from lifestyle plus workouts, conservative goal adjustment, energy-consistent macros (2 g/kg protein for muscle gain). Profile plan editing preserves historical entry targets.
@@ -79,7 +89,7 @@ xcodebuild -project Calorude.xcodeproj -scheme Calorude \
 python3 Scripts/validate_resources.py
 ```
 
-`CalorudeTests` runs in about three seconds (53 tests, one skipped unless `SHOTS_DIR` is set). `CalorudeUITests` drives onboarding and the meal editor end to end and also produces the App Store screenshots.
+`CalorudeTests` runs in about three seconds (59 tests; two screenshot renderers skip unless `SHOTS_DIR` is set). `CalorudeUITests` drives onboarding and the meal editor end to end and also produces the App Store screenshots.
 
 The tests cover BMR/TDEE/macros, the success window, day/week aggregation with historical target snapshots, achievements and the weight trend (`ProgressTests`), quantities, target limits, goal validation, streak tolerance and gaps, weekly averages, time-aware coach rules, bilingual libraries, SwiftData save/cascade, verified entitlement policy and actual StoreKit test purchases/expiration. Story tests render all templates in both languages and attach the PNGs. UI tests complete onboarding, add rice/chicken/yogurt in one meal session, save, reopen, edit portions, remove a food, cancel an edit, open progress, switch languages and change appearance. Meal repository tests cover atomic validation, historical nutrition/target preservation, derived-summary updates, other meal/date isolation and stale-edit rejection. UI tests use an isolated in-memory store only in Debug; they never erase a normal installation's data.
 

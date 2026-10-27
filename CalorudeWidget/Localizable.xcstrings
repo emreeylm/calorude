@@ -1,0 +1,18 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "widget.description" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Today's calories and your coach's comment." } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Bugünün kalorisi ve koçunun yorumu." } }
+      }
+    },
+    "widget.name" : {
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Calorie Coach" } },
+        "tr" : { "stringUnit" : { "state" : "translated", "value" : "Kalori Koçu" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}

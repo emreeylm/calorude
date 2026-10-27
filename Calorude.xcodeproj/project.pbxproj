@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00DA7D03903792AC78CAE299 /* CalorudeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D483F8D8D0D6122693ED1C /* CalorudeWidget.swift */; };
 		0E537F3851B7B72ADF95F324 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4282E951A82E714F7C7FA367 /* NotificationService.swift */; };
 		0E64AEFD46580F81A53A8F99 /* StoreScreenshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33281193174269A7F2F06452 /* StoreScreenshotTests.swift */; };
 		108388AD521107E25B91838A /* MealRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E5C688DD2A30293A0B492 /* MealRepository.swift */; };
 		12F7BED636F2BB4DFE88E0CE /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A05B879F6219FCD0570584E /* PreviewData.swift */; };
+		145C15BE55CD49319D503502 /* WidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB8BAB9C00004693D4F6E4 /* WidgetViews.swift */; };
 		149D18F8CBB5C1445F888C7A /* MealReactionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801F4A49E899BB15815163AD /* MealReactionTests.swift */; };
 		1DE3D5D9EC33BD5187843734 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 111B7ED704E2C750E0D16B3E /* PrivacyInfo.xcprivacy */; };
 		1EF2EBCB0C2C206D31D91D34 /* AppLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B4FC384B0CF8CED93F8CA5 /* AppLocalization.swift */; };
@@ -19,9 +21,11 @@
 		32850A98EDD154EB10D81581 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3FDD4D8FA13F240875FBC2 /* PaywallView.swift */; };
 		3D1639F2D27BAEA624C3F566 /* StoreIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D5665D6AB7AB8DBA738D34 /* StoreIntegrationTests.swift */; };
 		41EE434473679270B580AB25 /* Development.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 78C8C09E13416D99B5D461B4 /* Development.storekit */; };
+		484E528503C902B18C4B195E /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E59172CDCA9EAD3A170C2D /* WidgetSnapshot.swift */; };
 		4B1E6E8B4234D9017AB030B9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A871F77835C292323D142A71 /* SettingsView.swift */; };
 		5923BBE47DF86353D9049714 /* NutritionCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B13397ADBFCF4A53DA97E2B /* NutritionCalculator.swift */; };
 		5B93D6F5C6911B79317CAF98 /* TrackingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE71CA983FD51986997C6B0 /* TrackingCoordinator.swift */; };
+		6A99F1CE67B7DBEC3F4732FC /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 52E4709C6BFA7B04E1017CB4 /* PrivacyInfo.xcprivacy */; };
 		6BDFAE504AE90A61A451A861 /* FlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE9FB9FEF4F8310DED0ABF6 /* FlowTests.swift */; };
 		6C53C53564095E21C5F58520 /* ProgressScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5075D03329CDCA350A072524 /* ProgressScreen.swift */; };
 		6E85B049A8517EF283A086E7 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0D275C0B74C162D861A628A /* DashboardView.swift */; };
@@ -31,18 +35,24 @@
 		787C5E0BCD9A5044FCA6B460 /* CustomFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA476E182903F0719E91B926 /* CustomFoodView.swift */; };
 		7AC2DE9A1276F79C995B30CF /* MealEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D197F3D8E76936E14707ED9E /* MealEditorTests.swift */; };
 		7F2D133E74093D94439054E7 /* RoastEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E536B0C4711E169C8F60FB /* RoastEngine.swift */; };
+		80BFAC2BD0347A93EDBE7654 /* WidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CA9E3DDD8B04FB66CB59A5 /* WidgetTests.swift */; };
 		82F4AEC6715004E50060FF35 /* CoachCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C484099DE9CB78641659487 /* CoachCard.swift */; };
 		85B8D82EE8E4D91929446AFB /* CalorudeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76F8774042397EB169E8F5B /* CalorudeApp.swift */; };
 		8A265A0E2B71D0BEA3420F50 /* FoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2706C86440FBD293B398403 /* FoodRepository.swift */; };
 		8D7B00851B89290B46B218B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DD9597131CEC89AF1057B7 /* Assets.xcassets */; };
+		93572D80D1278E5BE9FB0793 /* CalorudeWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A6C57A6D99CFED21AAF3CC81 /* CalorudeWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		97D16437137089E9F443FE7B /* AchievementService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4AABB4F3671375A0C418B1 /* AchievementService.swift */; };
 		AE3AEFB7D32E20A5E0AAF708 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C3776BFE5C3303E869867E /* OnboardingViewModel.swift */; };
 		B0A2CF6F24F783E0E7997D01 /* PortionEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1B25E870ACB8D2DF6AFB5 /* PortionEditorView.swift */; };
 		B539C1A25E0F4917A7365D3D /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 41AB2421F29A100CF11C233A /* Localizable.xcstrings */; };
+		B72B1C9CC18334BC006857F5 /* WidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEB8BAB9C00004693D4F6E4 /* WidgetViews.swift */; };
+		C823E551BD49E50B88A79D14 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 71FE32ED5E000A8914F5A67F /* Localizable.xcstrings */; };
 		CD40EECCA42F8AF0EC16975F /* MealReactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E837C2BAF14FD27236654A /* MealReactionView.swift */; };
 		D7F2FAEEADE0A0C6A60FBC79 /* FoodLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2967053CDCBBCA9E8AEA3F3D /* FoodLogView.swift */; };
 		D85B50C75CD2FA3A491DCCE7 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CE65761B322C623F0783A /* Models.swift */; };
 		E383F35D4698917C690E39B1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7267303B90B1B242E5A4D8 /* OnboardingView.swift */; };
+		E77004239ADC0F0820187B39 /* WidgetSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7872D8461A2449AFAA8BBC1 /* WidgetSync.swift */; };
+		F1030B6D85EDDB8A93D11F16 /* WidgetSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E59172CDCA9EAD3A170C2D /* WidgetSnapshot.swift */; };
 		F12504894A0242502A11F2CB /* StoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1824B3A7664F3FCE815E0A /* StoreService.swift */; };
 		F16E7AE3C4D96EDFAE3DFB33 /* WeeklyRateNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F3822246158BFB08FAB0D5 /* WeeklyRateNote.swift */; };
 		F175F20F7E33EACD7AF2FD7B /* MealReactionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08830513B2AA4E9BD8A11659 /* MealReactionEngine.swift */; };
@@ -53,6 +63,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		713363CCF36950AFE77E1A45 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC4679CBC17006573E1F3872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B776DF97231F6853B8788B6;
+			remoteInfo = CalorudeWidget;
+		};
 		7B1B18CF8C05015E0BA1DD93 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BC4679CBC17006573E1F3872 /* Project object */;
@@ -69,22 +86,43 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		56C8BEFAA15D0489A9BD0408 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				93572D80D1278E5BE9FB0793 /* CalorudeWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008D9CB9228DBF3DEA64992C /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
 		08830513B2AA4E9BD8A11659 /* MealReactionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReactionEngine.swift; sourceTree = "<group>"; };
 		0BE9FB9FEF4F8310DED0ABF6 /* FlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowTests.swift; sourceTree = "<group>"; };
+		10CA9E3DDD8B04FB66CB59A5 /* WidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetTests.swift; sourceTree = "<group>"; };
 		111B7ED704E2C750E0D16B3E /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		13A1B25E870ACB8D2DF6AFB5 /* PortionEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortionEditorView.swift; sourceTree = "<group>"; };
+		16D483F8D8D0D6122693ED1C /* CalorudeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorudeWidget.swift; sourceTree = "<group>"; };
 		1B13397ADBFCF4A53DA97E2B /* NutritionCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionCalculator.swift; sourceTree = "<group>"; };
 		1B7267303B90B1B242E5A4D8 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		2967053CDCBBCA9E8AEA3F3D /* FoodLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodLogView.swift; sourceTree = "<group>"; };
 		33281193174269A7F2F06452 /* StoreScreenshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreScreenshotTests.swift; sourceTree = "<group>"; };
+		3AEB8BAB9C00004693D4F6E4 /* WidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViews.swift; sourceTree = "<group>"; };
 		41AB2421F29A100CF11C233A /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		4282E951A82E714F7C7FA367 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		5075D03329CDCA350A072524 /* ProgressScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressScreen.swift; sourceTree = "<group>"; };
+		52E4709C6BFA7B04E1017CB4 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		547E5C688DD2A30293A0B492 /* MealRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRepository.swift; sourceTree = "<group>"; };
+		62F38D4D96263F93F7C990BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		63550E2E659D3D7C4967DC38 /* CalorudeUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = CalorudeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		697028489CBD5AC066311492 /* Calorude.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Calorude.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		707FCC61B34D055ECE414953 /* Calorude.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Calorude.entitlements; sourceTree = "<group>"; };
+		71FE32ED5E000A8914F5A67F /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		72B4FC384B0CF8CED93F8CA5 /* AppLocalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLocalization.swift; sourceTree = "<group>"; };
 		72E837C2BAF14FD27236654A /* MealReactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReactionView.swift; sourceTree = "<group>"; };
 		78C8C09E13416D99B5D461B4 /* Development.storekit */ = {isa = PBXFileReference; path = Development.storekit; sourceTree = "<group>"; };
@@ -93,6 +131,7 @@
 		7E1824B3A7664F3FCE815E0A /* StoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreService.swift; sourceTree = "<group>"; };
 		7F7E099FC5CDAE7A8F538345 /* EditPlanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPlanView.swift; sourceTree = "<group>"; };
 		801F4A49E899BB15815163AD /* MealReactionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReactionTests.swift; sourceTree = "<group>"; };
+		808F0010B03FBD57755E6B26 /* CalorudeWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalorudeWidget.entitlements; sourceTree = "<group>"; };
 		846594EDC24CD6DDC45E9815 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		85F3822246158BFB08FAB0D5 /* WeeklyRateNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyRateNote.swift; sourceTree = "<group>"; };
 		89275D59058D48760037020B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -102,6 +141,7 @@
 		9A05B879F6219FCD0570584E /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 		A50A2C29D5C037455B288D38 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A5C3776BFE5C3303E869867E /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		A6C57A6D99CFED21AAF3CC81 /* CalorudeWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = CalorudeWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A871F77835C292323D142A71 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		AA3FDD4D8FA13F240875FBC2 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
 		B2706C86440FBD293B398403 /* FoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodRepository.swift; sourceTree = "<group>"; };
@@ -109,11 +149,13 @@
 		B3DD9597131CEC89AF1057B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B76F8774042397EB169E8F5B /* CalorudeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorudeApp.swift; sourceTree = "<group>"; };
 		BC1E7DE9D4F594BA1A463E16 /* foods.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = foods.json; sourceTree = "<group>"; };
+		C7872D8461A2449AFAA8BBC1 /* WidgetSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSync.swift; sourceTree = "<group>"; };
 		D197F3D8E76936E14707ED9E /* MealEditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealEditorTests.swift; sourceTree = "<group>"; };
 		DA476E182903F0719E91B926 /* CustomFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFoodView.swift; sourceTree = "<group>"; };
 		E0D275C0B74C162D861A628A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		E3E536B0C4711E169C8F60FB /* RoastEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoastEngine.swift; sourceTree = "<group>"; };
 		EC4AABB4F3671375A0C418B1 /* AchievementService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementService.swift; sourceTree = "<group>"; };
+		F4E59172CDCA9EAD3A170C2D /* WidgetSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSnapshot.swift; sourceTree = "<group>"; };
 		F5D5665D6AB7AB8DBA738D34 /* StoreIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreIntegrationTests.swift; sourceTree = "<group>"; };
 		F7983F0FCC7A711D93070C11 /* ProgressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTests.swift; sourceTree = "<group>"; };
 		FC2FE544C41E89C0811EA548 /* ShareCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCardView.swift; sourceTree = "<group>"; };
@@ -129,6 +171,15 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
+		179BE28E7ECF5D99D26A058B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F4E59172CDCA9EAD3A170C2D /* WidgetSnapshot.swift */,
+				3AEB8BAB9C00004693D4F6E4 /* WidgetViews.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		192F68C02066DE24ABE66EDF /* CalorudeTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +188,7 @@
 				801F4A49E899BB15815163AD /* MealReactionTests.swift */,
 				F7983F0FCC7A711D93070C11 /* ProgressTests.swift */,
 				F5D5665D6AB7AB8DBA738D34 /* StoreIntegrationTests.swift */,
+				10CA9E3DDD8B04FB66CB59A5 /* WidgetTests.swift */,
 			);
 			path = CalorudeTests;
 			sourceTree = "<group>";
@@ -147,6 +199,8 @@
 				893A8529F5942BA4A29E9F8B /* Calorude */,
 				192F68C02066DE24ABE66EDF /* CalorudeTests */,
 				861BBE43077CF205637673C4 /* CalorudeUITests */,
+				C257359D02B8D1CE34EC6B67 /* CalorudeWidget */,
+				179BE28E7ECF5D99D26A058B /* Shared */,
 				FF44B84E123FEB94300BCF6D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -190,6 +244,7 @@
 		893A8529F5942BA4A29E9F8B /* Calorude */ = {
 			isa = PBXGroup;
 			children = (
+				707FCC61B34D055ECE414953 /* Calorude.entitlements */,
 				8844042F49A5A1ACB21792B2 /* App */,
 				5CA3D2B785267D3019C3B02D /* Components */,
 				F24CB57711288C3FD05114B6 /* Localization */,
@@ -203,6 +258,7 @@
 				D503288AADA2EEEFB3725CEE /* Utilities */,
 				589CC8109D7647B7652B6617 /* ViewModels */,
 				ADDEADBFB37FEB0236E3D9D5 /* Views */,
+				C6D5B09B73E4A170DA432178 /* Widget */,
 			);
 			path = Calorude;
 			sourceTree = "<group>";
@@ -238,6 +294,26 @@
 				A871F77835C292323D142A71 /* SettingsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C257359D02B8D1CE34EC6B67 /* CalorudeWidget */ = {
+			isa = PBXGroup;
+			children = (
+				808F0010B03FBD57755E6B26 /* CalorudeWidget.entitlements */,
+				16D483F8D8D0D6122693ED1C /* CalorudeWidget.swift */,
+				62F38D4D96263F93F7C990BB /* Info.plist */,
+				71FE32ED5E000A8914F5A67F /* Localizable.xcstrings */,
+				52E4709C6BFA7B04E1017CB4 /* PrivacyInfo.xcprivacy */,
+			);
+			path = CalorudeWidget;
+			sourceTree = "<group>";
+		};
+		C6D5B09B73E4A170DA432178 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				C7872D8461A2449AFAA8BBC1 /* WidgetSync.swift */,
+			);
+			path = Widget;
 			sourceTree = "<group>";
 		};
 		D503288AADA2EEEFB3725CEE /* Utilities */ = {
@@ -304,6 +380,7 @@
 				697028489CBD5AC066311492 /* Calorude.app */,
 				98B4BC66E87BD6326EBC5FEA /* CalorudeTests.xctest */,
 				63550E2E659D3D7C4967DC38 /* CalorudeUITests.xctest */,
+				A6C57A6D99CFED21AAF3CC81 /* CalorudeWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -335,10 +412,12 @@
 			buildPhases = (
 				82E60672351E3938E1EEE1F8 /* Sources */,
 				EA9B4DDBFEC484A54BB99E9B /* Resources */,
+				56C8BEFAA15D0489A9BD0408 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				77B87CE97CA54120AE2600F0 /* PBXTargetDependency */,
 			);
 			name = Calorude;
 			packageProductDependencies = (
@@ -365,6 +444,24 @@
 			productReference = 63550E2E659D3D7C4967DC38 /* CalorudeUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8B776DF97231F6853B8788B6 /* CalorudeWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50A2B0CD22EA0588FA4EC409 /* Build configuration list for PBXNativeTarget "CalorudeWidget" */;
+			buildPhases = (
+				527FDFB70377CEC5FA821FB9 /* Sources */,
+				06CE57AA3943E28FB0F97B5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalorudeWidget;
+			packageProductDependencies = (
+			);
+			productName = CalorudeWidget;
+			productReference = A6C57A6D99CFED21AAF3CC81 /* CalorudeWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -387,6 +484,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3509C6BD3614C2C1B7840724;
 					};
+					8B776DF97231F6853B8788B6 = {
+						DevelopmentTeam = P6V2HMX86R;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = AA64203E865A1F21DA429E87 /* Build configuration list for PBXProject "Calorude" */;
@@ -405,6 +506,7 @@
 			projectRoot = "";
 			targets = (
 				3509C6BD3614C2C1B7840724 /* Calorude */,
+				8B776DF97231F6853B8788B6 /* CalorudeWidget */,
 				2AD7306D81C8B0B9116E5CAA /* CalorudeTests */,
 				4A8EAB444521C8AE40C5E435 /* CalorudeUITests */,
 			);
@@ -412,6 +514,15 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		06CE57AA3943E28FB0F97B5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C823E551BD49E50B88A79D14 /* Localizable.xcstrings in Resources */,
+				6A99F1CE67B7DBEC3F4732FC /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EA9B4DDBFEC484A54BB99E9B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,6 +548,17 @@
 				149D18F8CBB5C1445F888C7A /* MealReactionTests.swift in Sources */,
 				73051AEBC2C865992F5F7F5B /* ProgressTests.swift in Sources */,
 				3D1639F2D27BAEA624C3F566 /* StoreIntegrationTests.swift in Sources */,
+				80BFAC2BD0347A93EDBE7654 /* WidgetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		527FDFB70377CEC5FA821FB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00DA7D03903792AC78CAE299 /* CalorudeWidget.swift in Sources */,
+				F1030B6D85EDDB8A93D11F16 /* WidgetSnapshot.swift in Sources */,
+				145C15BE55CD49319D503502 /* WidgetViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +596,9 @@
 				209FB5A6ED689610C9B2243C /* Theme.swift in Sources */,
 				5B93D6F5C6911B79317CAF98 /* TrackingCoordinator.swift in Sources */,
 				F16E7AE3C4D96EDFAE3DFB33 /* WeeklyRateNote.swift in Sources */,
+				484E528503C902B18C4B195E /* WidgetSnapshot.swift in Sources */,
+				E77004239ADC0F0820187B39 /* WidgetSync.swift in Sources */,
+				B72B1C9CC18334BC006857F5 /* WidgetViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +614,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		77B87CE97CA54120AE2600F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B776DF97231F6853B8788B6 /* CalorudeWidget */;
+			targetProxy = 713363CCF36950AFE77E1A45 /* PBXContainerItemProxy */;
+		};
 		99F354ACFBEE8C6FC1E57E3D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3509C6BD3614C2C1B7840724 /* Calorude */;
@@ -603,6 +733,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Calorude/Calorude.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -722,10 +853,47 @@
 			};
 			name = Release;
 		};
+		B2777381F2019FE491ED0DC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CalorudeWidget/CalorudeWidget.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CalorudeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yemeboluum.app.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DB0D691F1C478644E4FD3433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CalorudeWidget/CalorudeWidget.entitlements;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CalorudeWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yemeboluum.app.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		E9C4A44279234B1645995D97 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Calorude/Calorude.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -756,6 +924,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		50A2B0CD22EA0588FA4EC409 /* Build configuration list for PBXNativeTarget "CalorudeWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2777381F2019FE491ED0DC4 /* Debug */,
+				DB0D691F1C478644E4FD3433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		57C7F71EAF6EAD7B393B94DD /* Build configuration list for PBXNativeTarget "CalorudeTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -82,3 +82,13 @@ enum DayCoach {
       "coach.day.\(state.rawValue).\(voice.level.key).\(index)"
   }
 }
+
+extension DayCoach {
+  // The line the dashboard card and the home screen widget both show for a day.
+  @MainActor static func comment(stats: DayStats, voice: CoachVoice, l: AppLocalization) -> String {
+    let context = RoastContext(stats: stats)
+    let key = key(
+      state: state(for: context), voice: voice, variant: variant(day: stats.day, context: context))
+    return context.text(l.text(key), l: l)
+  }
+}

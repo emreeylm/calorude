@@ -13,11 +13,7 @@ CoachVoice(level: profile.coachIntensity, isPro: store.isPro)
   }
 
   var body: some View {
-    let context = RoastContext(stats: stats)
-    let key = DayCoach.key(
-      state: DayCoach.state(for: context), voice: voice,
-      variant: DayCoach.variant(day: stats.day, context: context))
-    let comment = context.text(l.text(key), l: l)
+    let comment = DayCoach.comment(stats: stats, voice: voice, l: l)
     VStack(alignment: .leading, spacing: 16) {
       HStack {
         Image(systemName: "quote.bubble.fill")
