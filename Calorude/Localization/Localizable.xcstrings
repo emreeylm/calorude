@@ -3764,13 +3764,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "At most three reminders a day: breakfast (9:30 AM), lunch (1:30 PM) and dinner (8 PM). Messages are in your coach mode's voice, and a meal you've already logged sends nothing. Change notification permission in iOS Settings."
+            "value" : "Up to five meal reminders a day (9:30 AM, 1:30 PM, 4:30 PM, 8 PM, 10 PM), four water reminders (9 AM, 1 PM, 5 PM, 9 PM), a streak alert and a Sunday weekly recap. Messages are in your coach mode's voice; a meal you've already logged sends nothing, and once you reach your water goal the rest of that day's water reminders stop. Change notification permission in iOS Settings."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Günde en fazla üç hatırlatma: kahvaltı (09:30), öğle (13:30) ve akşam (20:00). Mesajlar seçtiğin koç moduyla gelir; öğünü girdiysen o saatte bildirim gitmez. Bildirim iznini iOS Ayarları'ndan değiştirebilirsin."
+            "value" : "Günde en fazla beş öğün hatırlatması (09:30, 13:30, 16:30, 20:00, 22:00), dört su hatırlatması (09:00, 13:00, 17:00, 21:00), seri uyarısı ve pazar akşamı haftalık özet gelir. Mesajlar koç modunun sesiyle gelir; kaydettiğin öğün için bildirim gitmez, su hedefini doldurunca o günün su hatırlatmaları durur. Bildirim iznini iOS Ayarlar'dan değiştirebilirsin."
           }
         }
       }
@@ -22318,6 +22318,74 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hafta bitti, %d/7 gün hedefte. Gelecek hafta da böyleyse baştan söyle, zamanımı boşa harcamayayım."
+          }
+        }
+      }
+    },
+    "notif.prompt.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Want your coach to nudge you now and then?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koçun seni arada dürtsün mü?"
+          }
+        }
+      }
+    },
+    "notif.prompt.body" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meal, water and streak reminders arrive with a bit of humor. You can turn them off anytime in Settings."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öğün, su ve seri hatırlatmaları esprili bir dille gelir. İstediğin zaman Ayarlar'dan kapatabilirsin."
+          }
+        }
+      }
+    },
+    "notif.prompt.enable" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turn on notifications"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bildirimleri aktifleştir"
+          }
+        }
+      }
+    },
+    "notif.prompt.later" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not now"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şimdi değil"
           }
         }
       }

@@ -13,6 +13,8 @@ struct DashboardView: View {
   // The last few meal comments, so the same line does not come back right away.
   @AppStorage("coach.recentMealKeys") private var recentMealKeys = ""
   @State private var showShare = false
+  @Query private var preferences: [AppPreferences]
+  @AppStorage("notif.prompt.done") private var notifPromptDone = false
   @Environment(\.scenePhase) private var scenePhase
   @State private var selectedDate = Date.now
   @State private var today = Calendar.current.startOfDay(for: .now)
@@ -46,6 +48,9 @@ struct DashboardView: View {
               Theme.interactive
             ).padding(12).background(Theme.interactive.opacity(0.10), in: Capsule()).accessibilityLabel(
               l.text("streak") + " \(streak)")
+          }
+          if let pref = preferences.first, !pref.notificationsEnabled, !notifPromptDone {
+            notificationPrompt(pref)
           }
           dayStrip
           Panel {
@@ -196,6 +201,29 @@ struct DashboardView: View {
 }
 
 extension DashboardView {
+  // Shown once after onboarding until the user answers; Settings still has the toggle.
+  private func notificationPrompt(_ pref: AppPreferences) -> some View {
+    Panel {
+      VStack(alignment: .leading, spacing: 12) {
+        Image(systemName: "bell.badge.fill").font(.title).foregroundStyle(Theme.interactive)
+        Text(l.text("notif.prompt.title")).font(.headline)
+        Text(l.text("notif.prompt.body")).font(.subheadline).foregroundStyle(.secondary)
+        PrimaryButton(title: l.text("notif.prompt.enable"), icon: "bell") {
+          Task {
+            pref.notificationsEnabled = await NotificationService.enable()
+            notifPromptDone = true
+            do { try context.save() } catch {
+              context.rollback()
+              self.error = true
+            }
+          }
+        }.accessibilityIdentifier("notif.prompt.enable")
+        Button(l.text("notif.prompt.later")) { notifPromptDone = true }
+          .font(.subheadline).foregroundStyle(.secondary).frame(maxWidth: .infinity, minHeight: 44)
+          .accessibilityIdentifier("notif.prompt.later")
+      }
+    }
+  }
   private var dayStrip: some View {
     HStack {
       Button {

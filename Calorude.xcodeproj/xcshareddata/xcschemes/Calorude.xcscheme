@@ -69,6 +69,8 @@
             ReferencedContainer = "container:Calorude.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+      </CommandLineArguments>
       <StoreKitConfigurationFileReference
          identifier = "../../Calorude/Store/Development.storekit">
       </StoreKitConfigurationFileReference>

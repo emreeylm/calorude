@@ -152,6 +152,7 @@ struct SettingsView: View {
       try context.delete(model: UserProfile.self)
       try context.save()
       UserDefaults.standard.removeObject(forKey: "coach.recentMealKeys")
+      UserDefaults.standard.removeObject(forKey: "notif.prompt.done")
       for key in UserDefaults.standard.dictionaryRepresentation().keys
       where key.hasPrefix(WaterCard.prefix) {
         UserDefaults.standard.removeObject(forKey: key)
