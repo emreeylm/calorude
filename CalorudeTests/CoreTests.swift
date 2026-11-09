@@ -61,6 +61,18 @@ import XCTest
     XCTAssertEqual(vm.target, 83)
     XCTAssertNotNil(vm.weeksToGoal)
     XCTAssertEqual(vm.plan.protein, 160)
+    // Build muscle while losing weight (100 → 90 kg): deficit, high protein, valid target.
+    vm.weight = 100
+    vm.target = 90
+    XCTAssertTrue(vm.cutting)
+    XCTAssertNil(vm.validationKey(for: .body))
+    XCTAssertLessThan(vm.plan.calories, vm.maintenance)
+    XCTAssertGreaterThan(vm.plan.protein, 1.6 * 100)  // muscle-level protein (capped at 30 % of kcal)
+    XCTAssertNotNil(vm.weeksToGoal)
+    vm.target = 100  // same weight: recomposition at maintenance
+    XCTAssertNil(vm.validationKey(for: .body))
+    XCTAssertEqual(vm.plan.calories, vm.maintenance.rounded())
+    XCTAssertNil(vm.weeksToGoal)
 
     let half = NutritionCalculator.plan(
       weight: 150, height: 195, age: 30, sex: .male, activity: .intense, goal: .lose, weekly: 0.5)
@@ -174,7 +186,8 @@ import XCTest
       EntitlementRecord(productID: "unknown", verified: true, revoked: false, expiration: future)
         .grantsAccess(at: .now))
   }
-  func testEveryCatalogFoodHasBundledPhoto() throws {
+  // Every catalog food must bundle a photo; custom foods may still use the fallback icon.
+  func testBundledFoodPhotosAreSquare256() throws {
     for food in try FoodRepository().foods {
       let image = try XCTUnwrap(UIImage(named: "food-" + food.id), food.id)
       let pixels = try XCTUnwrap(image.cgImage, food.id)
@@ -273,12 +286,14 @@ import XCTest
       food: food, grams: 100, meal: meal, date: try at(hour), target: 2000, proteinTarget: 120)
   }
   func kinds(_ plan: [PlannedReminder], on day: Date) -> [ReminderKind] {
-    plan.filter { Calendar.current.isDate($0.date, inSameDayAs: day) }.map(\.kind)
+    plan.filter { ![.water, .streak, .weekly].contains($0.kind) && Calendar.current.isDate($0.date, inSameDayAs: day) }.map(\.kind)
   }
   @MainActor func testReminderPlanForAnEmptyDay() throws {
     let plan = NotificationService.plan(entries: [], now: try at(8))
-    XCTAssertEqual(plan.count, 9)
-    XCTAssertEqual(kinds(plan, on: try at(8)), [.breakfast, .emptyNoon, .emptyEvening])
+    XCTAssertEqual(plan.filter { $0.kind != .water }.count, 15)
+    XCTAssertEqual(plan.filter { $0.kind == .water }.count, 12)
+    XCTAssertLessThanOrEqual(plan.count, 64)  // iOS keeps only 64 pending notifications
+    XCTAssertEqual(kinds(plan, on: try at(8)), [.breakfast, .emptyNoon, .snack, .emptyEvening, .night])
     XCTAssertEqual(Set(plan.map(\.id)).count, plan.count)
     XCTAssertEqual(plan.map(\.date), plan.map(\.date).sorted())
     // Variants rotate day to day so the same line never repeats on consecutive mornings.
@@ -288,23 +303,51 @@ import XCTest
     let now = try at(8)
     XCTAssertEqual(
       kinds(NotificationService.plan(entries: [try entry(.breakfast, hour: 7)], now: now), on: now),
-      [.lunch, .dinner])
+      [.lunch, .snack, .dinner, .night])
     let all = try [entry(.breakfast, hour: 7), entry(.lunch, hour: 7), entry(.dinner, hour: 7)]
     let plan = NotificationService.plan(entries: all, now: now)
-    XCTAssertEqual(kinds(plan, on: now), [])
-    XCTAssertEqual(plan.count, 6)
+    XCTAssertEqual(kinds(plan, on: now), [.snack, .night])
+    XCTAssertEqual(plan.filter { $0.kind != .water }.count, 12)
+  }
+  // A day logged exactly at target, i.e. a successful one.
+  func onTargetEntry(year: Int = 2026, month: Int = 3, day: Int) throws -> FoodEntry {
+    let food = CustomFood(name: "x", calories: 2000, protein: 0, carbs: 0, fat: 0).food
+    let date = try XCTUnwrap(
+      Calendar.current.date(from: DateComponents(year: year, month: month, day: day, hour: 12)))
+    return FoodEntry(food: food, grams: 100, meal: .lunch, date: date, target: 2000, proteinTarget: 100)
+  }
+  @MainActor func testWaterGoalSilencesTodaysWaterOnly() throws {
+    let now = try at(8)
+    let all = NotificationService.plan(entries: [], now: now).filter { $0.kind == .water }
+    let done = NotificationService.plan(entries: [], now: now, waterDone: true).filter { $0.kind == .water }
+    XCTAssertEqual(all.count - done.count, 4)  // today's four slots, tomorrow's still planned
+    XCTAssertEqual(done.count, 8)
+  }
+  @MainActor func testStreakAndWeeklyReminders() throws {
+    let two = try [onTargetEntry(day: 8), onTargetEntry(day: 9)]
+    let streak = NotificationService.plan(entries: two, now: try at(8)).filter { $0.kind == .streak }
+    XCTAssertEqual(streak.map(\.value), [2])
+    // Once today is on target the streak is no longer at risk.
+    let done = two + [try onTargetEntry(day: 10)]
+    XCTAssertTrue(NotificationService.plan(entries: done, now: try at(8)).filter { $0.kind == .streak }.isEmpty)
+    // Sunday 15 March closes the week of 9–15 March.
+    let saturday = try XCTUnwrap(
+      Calendar.current.date(from: DateComponents(year: 2026, month: 3, day: 14, hour: 8)))
+    let weekly = NotificationService.plan(entries: two, now: saturday).filter { $0.kind == .weekly }
+    XCTAssertEqual(weekly.map(\.value), [1])  // only the 9th falls inside that week
+    XCTAssertTrue(NotificationService.plan(entries: [], now: try at(8)).filter { $0.kind == .weekly }.isEmpty)
   }
   @MainActor func testReminderDueSoonIsSkipped() throws {
     let now = try at(13, 20)
     XCTAssertEqual(
-      kinds(NotificationService.plan(entries: [], now: now, days: 1), on: now), [.emptyEvening])
+      kinds(NotificationService.plan(entries: [], now: now, days: 1), on: now), [.snack, .emptyEvening, .night])
   }
   @MainActor func testEveryReminderMessageExistsForEveryTierAndLanguage() {
     for language in ["tr", "en"] {
       let l = AppLocalization(language: language)
       for kind in ReminderKind.allCases {
         for tier in CoachIntensity.allCases {
-          for variant in 0..<NotificationService.variantCount {
+          for variant in 0..<kind.variants {
             let key = NotificationService.messageKey(
               PlannedReminder(id: "x", date: .now, kind: kind, variant: variant), tier: tier)
             XCTAssertNotEqual(l.text(key), key)

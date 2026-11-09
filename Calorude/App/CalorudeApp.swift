@@ -44,11 +44,13 @@ struct RootView: View {
   @Query(sort: \FoodEntry.date) private var entries: [FoodEntry]
   @State private var refreshDay = Calendar.current.startOfDay(for: Date.now)
   @State private var syncError = false
+  @State private var waterDone = false
   private var fingerprint: TrackingFingerprint {
     TrackingFingerprint(
       entries: entries.map(FoodEntryFingerprint.init), language: l.language,
       notifications: preferences.first?.notificationsEnabled ?? false,
-      intensity: profiles.first?.coachIntensity ?? .normal, pro: store.isPro, day: refreshDay)
+      intensity: profiles.first?.coachIntensity ?? .normal, pro: store.isPro, day: refreshDay,
+      waterDone: waterDone)
   }
   var body: some View {
     Group {
@@ -60,6 +62,11 @@ struct RootView: View {
     }.preferredColorScheme(preferences.first?.appearance == "light" ? .light : .dark)
       .task { await store.start() }
       .task(id: fingerprint) { await synchronize() }
+      // @AppStorage writes (the water counter) post this; the flag only flips at the goal.
+      .onReceive(NotificationCenter.default.publisher(for: UserDefaults.didChangeNotification)) { _ in
+        refreshWater()
+      }
+      .onAppear { refreshWater() }
       .onChange(of: scenePhase) { _, phase in
         if phase == .active {
           refreshDay = Calendar.current.startOfDay(for: .now)
@@ -73,6 +80,10 @@ struct RootView: View {
         Button(l.text("ok"), role: .cancel) {}
       }
   }
+  private func refreshWater() {
+    let done = profiles.first.map { WaterCard.done(weight: $0.currentWeight) } ?? false
+    if done != waterDone { waterDone = done }
+  }
   private func synchronize() async {
     guard let profile = profiles.first else { return }
     do {
@@ -80,7 +91,8 @@ struct RootView: View {
       WidgetSync.update(profile: profile, entries: entries, l: l, isPro: store.isPro)
       if preferences.first?.notificationsEnabled == true {
         try await NotificationService.schedule(
-          profile: profile, entries: entries, l: l, isPro: store.isPro)
+          profile: profile, entries: entries, l: l, isPro: store.isPro,
+          waterDone: waterDone)
       } else {
         await NotificationService.disable()
       }

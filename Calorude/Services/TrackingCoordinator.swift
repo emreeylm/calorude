@@ -40,6 +40,7 @@ struct TrackingFingerprint: Equatable {
   var intensity: CoachIntensity
   var pro: Bool
   var day: Date
+  var waterDone: Bool
 }
 
 // Portion edits retain entry IDs, so derived records must observe nutrition values as well.

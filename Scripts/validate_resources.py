@@ -78,9 +78,9 @@ for key, entry in catalog.items():
             if re.search(r'aç kal|go hungry|starv', text, re.I):
                 assert re.search(r'kalma|kalarak|kalınca|çalışma|etme|yok|değil|don.t|no |not |isn.t|never|nothing|without', text, re.I), (key, lang, text)
 foods = json.loads((root / 'Resources/foods.json').read_text())
-assert len(foods) == 108, 'Expanded catalog must contain 108 entries'
-assert sum(f['amountUnit'] == 'g' for f in foods) == 88
-assert sum(f['amountUnit'] == 'ml' for f in foods) == 20
+assert len(foods) == 195, 'Expanded catalog must contain 195 entries'
+assert sum(f['amountUnit'] == 'g' for f in foods) == 170
+assert sum(f['amountUnit'] == 'ml' for f in foods) == 25
 assert len({f['id'] for f in foods}) == len(foods)
 for lang in ['TR', 'EN']:
     assert len({f['localizedName' + lang].casefold() for f in foods}) == len(foods)

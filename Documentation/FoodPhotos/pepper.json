@@ -1,0 +1,6 @@
+{
+  "id": "pepper",
+  "prompt": "Use case: product-mockup. Asset type: single square food photo thumbnail for an offline nutrition catalog. Subject: Yeşil biber (Green pepper). Several whole long slim pointed Turkish green peppers, not bell peppers. Match the established catalog: photorealistic studio food photography, three-quarter overhead view, soft natural upper-left light, plain charcoal #202020 tabletop backdrop, centered entire serving with roughly 12% margin. Plain small white ceramic dish or white bowl for food; plain clear glass for cold drinks. For hot drinks use a plain white cup and saucer. One serving, one subject. Real food texture, restrained natural colors. No unrelated foods, decorative garnish, utensils, hands, text, logos, packaging, collage or watermark. Square 1024 x 1024 image.",
+  "path": "/Users/emre/.codex/generated_images/01a1bf69-d790-7291-b0d9-fba64ce69a29/exec-3f00a584-ad4b-4976-bcf3-57977e51a327.png",
+  "method": "built-in image_gen"
+}

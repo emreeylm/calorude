@@ -58,9 +58,9 @@ import XCTest
     let saved = try SavedMealItem(food: custom.food, grams: 250)
     XCTAssertEqual(saved.food?.unit, "ml")
     XCTAssertEqual(saved.food?.nutrition(grams: saved.grams).calories, 100)
-    XCTAssertEqual(foods.count, 108)
-    XCTAssertEqual(foods.filter { $0.unit == "g" }.count, 88)
-    XCTAssertEqual(foods.filter { $0.unit == "ml" }.count, 20)
+    XCTAssertEqual(foods.count, 195)
+    XCTAssertEqual(foods.filter { $0.unit == "g" }.count, 170)
+    XCTAssertEqual(foods.filter { $0.unit == "ml" }.count, 25)
     for id in ["turkey", "tuna", "wholebread", "oats", "blacktea", "greentea", "proteinmilk"] {
       XCTAssertTrue(foods.contains { $0.id == id })
     }

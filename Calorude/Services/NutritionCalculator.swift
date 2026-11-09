@@ -36,7 +36,7 @@ enum NutritionCalculator {
   // Conservative product limits, not a medical prescription. No compensatory restriction.
   static func plan(
     weight: Double, height: Double, age: Int, sex: Sex, activity: Activity, goal: Goal,
-    weekly: Double
+    weekly: Double, highProtein: Bool = false
   ) -> NutritionPlan {
     let maintenance = tdee(weight: weight, height: height, age: age, sex: sex, activity: activity)
     let change = min(max(weekly, 0), goal == .lose ? 1.0 : 0.5) * 7700 / 7
@@ -48,7 +48,7 @@ enum NutritionCalculator {
     case .maintain: delta = 0
     }
     let calories = max(sex == .male ? 1500 : 1200, maintenance + delta).rounded()
-    let protein = min(weight * (goal == .muscle ? 2.0 : 1.6), calories * 0.30 / 4).rounded()
+    let protein = min(weight * (goal == .muscle || highProtein ? 2.0 : 1.6), calories * 0.30 / 4).rounded()
     let fat = (calories * 0.30 / 9).rounded()
     return NutritionPlan(
       calories: calories, protein: protein, carbs: (calories - protein * 4 - fat * 9) / 4, fat: fat)

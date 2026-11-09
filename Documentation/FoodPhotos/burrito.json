@@ -1,0 +1,6 @@
+{
+  "id": "burrito",
+  "prompt": "Use case: product-mockup. Asset type: single square food photo thumbnail for an offline nutrition catalog. Subject: Burrito (fasulye & peynir) (Bean and cheese burrito). Bean and melted cheese burrito cut in half showing filling inside a toasted tortilla. Match the established catalog: photorealistic studio food photography, three-quarter overhead view, soft natural upper-left light, plain charcoal #202020 tabletop backdrop, centered entire serving with roughly 12% margin. Plain small white ceramic dish or white bowl for food; plain clear glass for cold drinks. For hot drinks use a plain white cup and saucer. One serving, one subject. Real food texture, restrained natural colors. No unrelated foods, decorative garnish, utensils, hands, text, logos, packaging, collage or watermark. Square 1024 x 1024 image.",
+  "path": "/Users/emre/.codex/generated_images/01a1bf69-d790-7291-b0d9-fba64ce69a29/exec-f501965a-8da1-4697-ad3f-9eb172805356.png",
+  "method": "built-in image_gen"
+}

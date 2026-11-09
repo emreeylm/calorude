@@ -87,21 +87,25 @@ extension Activity {
 
   var effectiveTarget: Double { goal == .maintain ? weight : target }
   // Always automatic: the user picks a goal, the app picks a safe pace.
+  // Build muscle with a lower target = lose fat while keeping muscle: loss pace, muscle-level protein.
+  // Same target as current weight = recomposition: maintenance calories, muscle-level protein.
+  var cutting: Bool { goal == .muscle && target <= weight }
+  private var paceGoal: Goal { goal == .muscle && target <= weight ? (target < weight ? .lose : .maintain) : goal }
   var weekly: Double {
-    NutritionCalculator.healthyWeeklyRate(weight: weight, height: height, goal: goal)
+    NutritionCalculator.healthyWeeklyRate(weight: weight, height: height, goal: paceGoal)
   }
   var maintenance: Double {
     NutritionCalculator.tdee(weight: weight, height: height, age: age, sex: sex, activity: activity)
   }
   var plan: NutritionPlan {
     NutritionCalculator.plan(
-      weight: weight, height: height, age: age, sex: sex, activity: activity, goal: goal,
-      weekly: weekly)
+      weight: weight, height: height, age: age, sex: sex, activity: activity, goal: paceGoal,
+      weekly: weekly, highProtein: cutting)
   }
   // The pace that survives the calorie floors and the 20 % deficit cap.
   var estimatedWeeklyChange: Double {
     NutritionCalculator.estimatedWeeklyChange(
-      maintenance: maintenance, calories: plan.calories, goal: goal)
+      maintenance: maintenance, calories: plan.calories, goal: paceGoal)
   }
   var weeksToGoal: Int? {
     guard goal != .maintain, estimatedWeeklyChange >= 0.05 else { return nil }
@@ -133,6 +137,8 @@ extension Activity {
       switch goal {
       case .lose:
         if target >= weight { return "validation.target.lose" }
+        return targetBMI >= 18.5 ? nil : "validation.target.bmi"
+      case .muscle where target <= weight:
         return targetBMI >= 18.5 ? nil : "validation.target.bmi"
       case .muscle, .gain:
         if target <= weight { return "validation.target.gain" }

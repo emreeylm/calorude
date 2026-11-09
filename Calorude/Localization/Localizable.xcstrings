@@ -2727,13 +2727,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Good morning! Your breakfast plate is wondering, and so am I. What's on it?"
+            "value" : "Good morning! Your plate is curious, and so am I. Tea or coffee, toast or pastry?"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Günaydın! Kahvaltı tabağın merak ediyor, ben de. Ne var o tabakta?"
+            "value" : "Günaydın! Tabağın merak ediyor, ben de. Çay mı kahve mi, simit mi poğaça mı?"
           }
         }
       }
@@ -2767,7 +2767,7 @@
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sabah sabah dedektif gibi düşünüyorum: çay mı, simit mi? Bana bir ipucu bırak."
+            "value" : "Sabah sabah dedektif oldum: çay mı, simit mi? Bana bir ipucu bırak."
           }
         }
       }
@@ -2778,13 +2778,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Good morning, champ! Start the day with a good breakfast, great things are coming today!"
+            "value" : "Morning, champ! Stories that start with eggs always end well. What's on the plate?"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Günaydın şampiyon! Güne güzel bir kahvaltıyla başla, bugün harika şeyler olacak!"
+            "value" : "Günaydın şampiyon! Güne yumurtayla başlayan hikâyeler hep mutlu biter. Tabakta ne var?"
           }
         }
       }
@@ -2795,13 +2795,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "New day, new breakfast! Keep your energy up, I'm proud of you."
+            "value" : "People who eat breakfast start the day 1-0 up. I keep the scoreboard, log it!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Yeni bir gün, yeni bir kahvaltı! Enerjin yerinde olsun, ben seninle gurur duyuyorum."
+            "value" : "Kahvaltı yapan insan güne 1-0 önde başlar. Skor tabelasını ben tutuyorum, yaz bakalım!"
           }
         }
       }
@@ -2812,13 +2812,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Breakfast energy puts color in the day. I believe in you today!"
+            "value" : "I think I smell fresh bread. Is that you cooking? Come log it!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kahvaltı enerjisi güne renk katar. Bugün sana inanıyorum!"
+            "value" : "Simit kokusu burnuma geldi sanki. Yoksa sen mi hazırlıyorsun? Gel, kaydedelim!"
           }
         }
       }
@@ -2829,13 +2829,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Did you have breakfast or are you getting by on coffee? The silence isn't reassuring."
+            "value" : "Did you have breakfast, or are we calling coffee a 'meal' now? Be honest, nobody's listening."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kahvaltı mı yaptın, yoksa kahveyle idare mi ediyorsun? Sessizlik pek güven vermiyor."
+            "value" : "Kahvaltı mı yaptın, yoksa kahveye 'öğün' mü diyoruz artık? Dürüst ol, kimse duymuyor."
           }
         }
       }
@@ -2846,13 +2846,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "It's morning and there's no word from your plate. This much mystery smells like an excuse."
+            "value" : "No word from your plate. Either it was so good you went quiet or so bad you're embarrassed. Log both."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sabah oldu, tabağından ses yok. Bu kadar gizem sadece bahane kokuyor."
+            "value" : "Tabağından ses yok. Ya çok güzeldi sustun ya çok kötüydü utandın. İkisini de yaz."
           }
         }
       }
@@ -2863,13 +2863,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "If breakfast didn't happen, say so; if it did, say so too. You're the one missing in action."
+            "value" : "Saying 'I'll log it later' in the morning is the adult version of 'I'll do homework tomorrow'."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kahvaltı yapılmadıysa söyle, yapıldıysa da söyle. Ortalıkta olmayan sen oluyorsun."
+            "value" : "Sabah sabah 'sonra yazarım' demek, ödevi yarın yapacağım demenin yetişkin hâli."
           }
         }
       }
@@ -2880,13 +2880,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Breakfast time! You either ate or didn't, and you're silent either way. End this embarrassing silent movie."
+            "value" : "BREAKFAST! Did you or didn't you, this silence is driving me nuts. Log something, please!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kahvaltı saati! Ya yedin ya yemedin, ikisinde de sessizsin. Bu rezil sessiz filmi bitir."
+            "value" : "KAHVALTI! Yedin mi yemedin mi, bu sessizlik beni delirtiyor. Bir şey yaz, ne olur!"
           }
         }
       }
@@ -2897,13 +2897,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Mystery plate, empty screen, first thing in the morning. If I start guessing, you won't like it."
+            "value" : "Dreamt of your plate last night. It was empty. Woke up, still empty. Fix it."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sabah sabah tabak meçhul, ekran bomboş. Tahmin yürütmeye başlarsam hiç hoşuna gitmez."
+            "value" : "Dün gece rüyamda tabağını gördüm. İçi boştu. Uyandım, hâlâ boş. Düzelt şunu."
           }
         }
       }
@@ -2914,13 +2914,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "What was at breakfast, a state secret? You're keeping me in suspense."
+            "value" : "What was at breakfast, a state secret? I'm opening a file, you need to give a statement."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kahvaltıda ne vardı, devlet sırrı mı? Merak ettiriyorsun."
+            "value" : "Kahvaltıda ne vardı, devlet sırrı mı? Dosyayı açıyorum, ifade vermen lazım."
           }
         }
       }
@@ -2931,35 +2931,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dinner time. As the day winds down, I wanted a peek at your plate."
+            "value" : "It's evening. The last meal decides how the day ends, so I'm curious. What's on the menu?"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Akşam yemeği saati. Gün biterken tabağında ne var, bir bakayım dedim."
+            "value" : "Akşam oldu. Son öğün günün sonunu belirler, o yüzden merak ettim. Menüde ne var?"
           }
         }
       }
     },
     "notif.dinner.normal.1" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "It's evening. The last meal decides how the day ends, so I'm curious."
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Akşam oldu. Son öğün günün sonunu belirler, o yüzden merak ettim."
-          }
-        }
-      }
-    },
-    "notif.dinner.normal.2" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -2976,19 +2959,36 @@
         }
       }
     },
+    "notif.dinner.normal.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dinner time. I smell something from the kitchen but hear nothing from the log."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akşam yemeği saati. Mutfaktan koku geliyor ama kayıttan ses gelmiyor."
+          }
+        }
+      }
+    },
     "notif.dinner.optimistic.0" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dinner time! Make a good plate and end the day beautifully."
+            "value" : "Dinner time! Closing the day with a good plate is like cherry on top!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Akşam yemeği zamanı! Güzel bir tabak hazırla, günü güzel kapat."
+            "value" : "Akşam yemeği zamanı! Günü güzel bir tabakla kapatmak, sonuna kiraz koymak gibi!"
           }
         }
       }
@@ -2999,13 +2999,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "You made it to the end of the day, great! Fill up well and wake up energized."
+            "value" : "You made it to the end of the day, great! Eat up, log it, wake up fresh!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Günün sonuna geldin, harika! Karnını güzel doyur, yarına enerjik uyan."
+            "value" : "Günün sonuna geldin, harika! Karnını doyur, yaz, yarına enerjik uyan!"
           }
         }
       }
@@ -3016,13 +3016,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "You can be proud of yourself today. Enjoy dinner, almost done!"
+            "value" : "The day's final is here and the screen is yours. Eat dinner, then log it yourself! 😄"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bugün kendinle gurur duyabilirsin. Akşam yemeğini keyifle ye, çok az kaldı!"
+            "value" : "Bugünün finali geldi, ekran sende. Akşam yemeğini ye, kaydı bana bırakma, sen yap! 😄"
           }
         }
       }
@@ -3033,13 +3033,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "It's evening and there's no word on the last meal. Leaving the day half done doesn't suit you."
+            "value" : "It's evening and no word on the last meal. Leftovers count too, just so you know."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Akşam oldu ve son öğünden ses yok. Günü yarım bırakmak sana yakışmıyor."
+            "value" : "Akşam oldu, son öğünden haber yok. 'Kalan' yemekler de sayılıyor, bilgin olsun."
           }
         }
       }
@@ -3067,13 +3067,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Has dinner slipped to 'later' again? Later never comes."
+            "value" : "Has dinner slipped to 'later' again? That later never comes, I checked the calendar."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Akşam yemeği yine 'sonra'ya mı kaldı? O sonra hiç gelmiyor."
+            "value" : "Akşam yemeği yine 'sonra'ya mı kaldı? O sonra hiç gelmiyor, takvime baktım."
           }
         }
       }
@@ -3084,13 +3084,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dinner time! I hear noise from the kitchen but nothing from you."
+            "value" : "DINNER! I hear noise from the kitchen but nothing from you. Is the pot talking now?"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Akşam yemeği saati! Mutfaktan ses geliyor ama senden ses yok."
+            "value" : "AKŞAM YEMEĞİ! Mutfaktan ses geliyor ama senden ses yok. Tencere mi konuşuyor artık?"
           }
         }
       }
@@ -3141,7 +3141,7 @@
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Akşam oldu ve bugün hiç ses çıkmadı. Bir şeyler yedin mi, yoksa bugün oksijenle mi idare ettin?"
+            "value" : "Akşam oldu ve bugün hiç ses çıkmadı. Bir şeyler yedin mi, yoksa oksijenle mi idare ettin?"
           }
         }
       }
@@ -3186,13 +3186,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Today was quiet but dinner is still in your hands! Make a nice plate and pull the day together."
+            "value" : "Today was quiet but dinner is still in your hands! A nice plate saves the day!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bugün sessiz geçti ama akşam yemeği hâlâ elinde! Güzel bir tabak hazırla, günü toparla."
+            "value" : "Bugün sessiz geçti ama akşam yemeği hâlâ elinde! Güzel bir tabak, günü kurtarır!"
           }
         }
       }
@@ -3203,13 +3203,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "You might have had a busy day. No worries, dinner saves it!"
+            "value" : "You might have had a busy day, no worries! Dinner rescues it from zero!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Yoğun bir gün geçirmiş olabilirsin. Önemli değil, akşam yemeğiyle gün kurtulur!"
+            "value" : "Yoğun bir gün geçirmiş olabilirsin, sorun değil! Akşam yemeğiyle gün sıfırdan kurtulur!"
           }
         }
       }
@@ -3220,13 +3220,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No problem, sometimes days slip away. Restart with dinner, I'm here!"
+            "value" : "Sometimes days just flow past. Restart with dinner, I'm right here!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sorun değil, bazen günler kaçıp gider. Akşam yemeğiyle yeniden başla, buradayım!"
+            "value" : "Bazen günler su gibi akıp gider. Akşam yemeğiyle yeniden başla, ben buradayım!"
           }
         }
       }
@@ -3254,13 +3254,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "The day is over and the report is blank. Like not handing in your assignment. At least eat dinner and be honest tomorrow."
+            "value" : "The day is over and the report is blank. Like not handing in your assignment. At least eat dinner."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Gün bitti, rapor boş. Dönem ödevini teslim etmemek gibi. Bari akşam yemeğini ye, yarın dürüst ol."
+            "value" : "Gün bitti, rapor boş. Dönem ödevini teslim etmemek gibi. Bari akşam yemeğini ye."
           }
         }
       }
@@ -3305,13 +3305,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zero sound, zero effort, zero excuses left. A shameful day. Eat dinner and do better tomorrow."
+            "value" : "Zero sound, zero effort, zero excuses. A legendary day! Eat dinner and do better tomorrow."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sıfır ses, sıfır çaba, sıfır bahane bırakmışsın. Rezil bir gün. Akşam yemeğini ye, yarın düzel."
+            "value" : "Sıfır ses, sıfır çaba, sıfır bahane. Efsane bir gün! Akşam yemeğini ye, yarın düzel."
           }
         }
       }
@@ -3390,13 +3390,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "It's quiet so far but the day is still lovely! Eat something, get your energy back, I'm here."
+            "value" : "Quiet so far, but the day is a blank page! Eat something and let's write the first line!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Şimdilik sessizlik var ama gün hâlâ güzel! Bir şeyler ye, enerjin yerine gelsin, ben buradayım."
+            "value" : "Şimdilik sessizlik var ama gün hâlâ bembeyaz bir sayfa! Bir şeyler ye, ilk satırı yazalım!"
           }
         }
       }
@@ -3407,13 +3407,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "It's noon and you owe yourself a good meal. Eat, rest, and carry on!"
+            "value" : "It's noon and you owe yourself a good meal. Paying the debt is free, I'll keep the books!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öğle oldu, kendine güzel bir yemek borcun var. Ye, dinlen, güne devam!"
+            "value" : "Öğle oldu, kendine güzel bir yemek borcun var. Borcu ödemek bedava, kaydı da ben tutarım!"
           }
         }
       }
@@ -3424,13 +3424,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A quiet morning doesn't mean a bad day. Lunch fixes everything!"
+            "value" : "A quiet morning doesn't mean a bad day. Lunch fixes everything, promise!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sessiz bir sabah kötü bir gün demek değil. Öğle yemeği her şeyi toparlar!"
+            "value" : "Sessiz bir sabah kötü bir gün demek değil. Öğle yemeği her şeyi toparlar, söz!"
           }
         }
       }
@@ -3447,7 +3447,7 @@
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öğle olmuş, hâlâ tek ses yok. Açlık grevi mi yapıyorsun? Kimse seni dinlemiyor, git ye."
+            "value" : "Öğle olmuş, hâlâ tek ses yok. Açlık grevi mi? Kimse seni dinlemiyor, git ye."
           }
         }
       }
@@ -3492,13 +3492,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Are you on a hunger strike today, or scared of me? It's noon and not a sound. Go eat something!"
+            "value" : "IT'S NOON, NOT A SOUND. Hunger strike, or are you scared of me? Go eat something!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bugün açlık grevi mi yapıyorsun, yoksa benden mi korkuyorsun? Öğle oldu, tek ses yok. Git bir şeyler ye!"
+            "value" : "ÖĞLE OLDU, TEK SES YOK. Açlık grevi mi yapıyorsun, yoksa benden mi korkuyorsun? Git bir şey ye!"
           }
         }
       }
@@ -3532,7 +3532,7 @@
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öğleye kadar ses yok. Ya aç dolaşıyorsun ya da gizli gizli yiyorsun. İkisi de rezil, ye."
+            "value" : "Öğleye kadar ses yok. Ya aç dolaşıyorsun ya gizli gizli yiyorsun. İkisi de rezil, ye."
           }
         }
       }
@@ -3543,35 +3543,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "It's lunchtime. I'm curious about the surprise on your plate."
+            "value" : "It's lunchtime. I'm curious about the surprise on your plate: wrap, salad, or 'just coffee'?"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öğle oldu. Tabağındaki sürprizi merak ediyorum."
+            "value" : "Öğle oldu. Tabağındaki sürprizi merak ediyorum, dürüm mü salata mı yoksa 'sadece kahve' mi?"
           }
         }
       }
     },
     "notif.lunch.normal.1" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lunchtime and I still haven't heard a thing. A wrap, a salad, or just good intentions?"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Öğle yemeği vakti ve ben hâlâ haber alamadım. Dürüm mü, salata mı, yoksa sadece iyi niyet mi?"
-          }
-        }
-      }
-    },
-    "notif.lunch.normal.2" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -3588,19 +3571,36 @@
         }
       }
     },
+    "notif.lunch.normal.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check your plate like you check your inbox: anything in there? Tell me about it."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesaj kutusuna bakar gibi tabağına bak, bir şey var mı? Varsa bana da söyle."
+          }
+        }
+      }
+    },
     "notif.lunch.optimistic.0" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lunch energy time! Have a good meal and fuel the second half of the day!"
+            "value" : "Lunch energy time! A good plate is turbo for the second half of the day!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öğle enerjisi zamanı! Güzel bir yemek yiyip günün ikinci yarısına gaz ver!"
+            "value" : "Öğle enerjisi zamanı! Güzel bir tabak, günün ikinci yarısına turbo gibi gelir!"
           }
         }
       }
@@ -3611,13 +3611,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "You deserve a good lunch. Take care of yourself, your day is going great."
+            "value" : "You deserve a great lunch. Eat it, log it, I'll give you a standing ovation!"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Güzel bir öğle yemeği hak ediyorsun. Kendine iyi bak, günün harika gidiyor."
+            "value" : "Güzel bir öğle yemeği hak ediyorsun. Ye, yaz, ayakta alkışlayacağım!"
           }
         }
       }
@@ -3628,13 +3628,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "It's noon and you're in form! Enjoy your meal and we'll meet the evening together."
+            "value" : "It's noon and you're in form! Enjoy your meal, and log it, it makes me happy."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öğle oldu, formdasın! Yemeğini keyifle ye, akşamı birlikte karşılayalım."
+            "value" : "Öğle oldu, formdasın! Yemeğini keyifle ye, kaydı da bana bırak, ben mutluyum."
           }
         }
       }
@@ -3645,13 +3645,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lunch has come and gone. I don't know what you ate and you seem to have forgotten too."
+            "value" : "Lunch has come and gone. Did you forget what you ate, or do you not want to remember?"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öğle geçti. Ne yediğini bilmiyorum, sen de unutmuşa benziyorsun."
+            "value" : "Öğle geçti. Ne yediğini unuttun mu yoksa hatırlamak mı istemiyorsun?"
           }
         }
       }
@@ -3662,13 +3662,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "I don't like lunch being brushed past in silence. Whatever's on that plate, there's nothing to hide."
+            "value" : "Brushing lunch past in silence is the shadiest move. Whatever's on that plate, log it. I won't judge. Much."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öğleyi sessizce geçiştirmek hoşuma gitmiyor. Tabaktaki ne olursa olsun gizlenecek bir şey yok."
+            "value" : "Öğleyi sessizce geçiştirmek en şüpheli hamle. Tabaktaki ne olursa olsun yaz, yargılamıyorum. Biraz."
           }
         }
       }
@@ -3679,13 +3679,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Has lunch become a secret? This much mystery shows you're on the defensive."
+            "value" : "Has lunch become a secret? This much mystery says there were fries on that plate."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öğle yemeği bir sır mı oldu? Bu kadar gizem, savunmaya geçtiğini gösteriyor."
+            "value" : "Öğle yemeği bir sır mı oldu? Bu kadar gizem, tabağında patates kızartması olduğunu gösterir."
           }
         }
       }
@@ -3696,13 +3696,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Where's your lunch? Either you ate and went quiet or you skipped and you're proud. Both are embarrassing."
+            "value" : "LUNCH! Where's your lunch? Either you ate and went quiet or you skipped and you're proud. Both are embarrassing."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öğle yemeğin nerede? Ya yedin ve sustun ya yemedin ve gururlanıyorsun. İkisi de rezil."
+            "value" : "ÖĞLE! Öğle yemeğin nerede? Ya yedin ve sustun ya yemedin ve gururlanıyorsun. İkisi de rezil."
           }
         }
       }
@@ -3713,13 +3713,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "It's noon and I hear nothing from you. If you try to remember tonight and just make things up, I'll know."
+            "value" : "It's noon and I hear nothing. If you make it up tonight from memory, I'll know. I have eyes."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Saat öğle, senden ses yok. Akşam hatırlamaya çalışıp uydurursan hemen anlarım."
+            "value" : "Saat öğle, senden ses yok. Akşam hatırlamaya çalışıp uydurursan hemen anlarım, bende göz var."
           }
         }
       }
@@ -3730,13 +3730,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "You've joined the caravan of noon silence. I wonder how long this embarrassment will last."
+            "value" : "You've joined the noon-silence caravan. Know where it's headed? Tonight's hunger."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öğle sessizliği kervanına katıldın. Bu rezillik nereye kadar sürecek merak ediyorum."
+            "value" : "Öğle sessizliği kervanına katıldın. Bu kervan nereye gidiyor biliyor musun? Akşam açlığına."
           }
         }
       }
@@ -4002,13 +4002,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "A slight surplus with high protein"
+            "value" : "High protein, calories set around your target weight"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hafif kalori fazlası ve yüksek protein"
+            "value" : "Yüksek protein, kalori hedef kilona göre ayarlanır"
           }
         }
       }
@@ -7113,13 +7113,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Not a word since breakfast. Are you scared of me? I don't bite, I just judge mercilessly."
+            "value" : "Every morning it's 'proper breakfast tomorrow'. I checked the calendar, that tomorrow never arrives."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kahvaltıdan sonra ses vermiyorsun. Benden mi korkuyorsun? Isırmam, sadece acımasızca yargılarım."
+            "value" : "Her sabah 'yarın düzgün kahvaltı' diyorsun. Takvime baktım, o yarın hiç gelmemiş."
           }
         }
       }
@@ -7130,13 +7130,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Every morning you make promises and vanish at the first chance. Did today's first escape start at breakfast?"
+            "value" : "Skipping breakfast and saying 'not even hungry' till noon isn't a personality trait, it's an escape plan."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Her sabah söz veriyorsun, ilk fırsatta kayboluyorsun. Bugünün ilk kaçışı kahvaltıyla mı başladı?"
+            "value" : "Kahvaltıyı atlayıp öğlene kadar 'hiç aç değilim' demek bir kişilik özelliği değil, kaçış planı."
           }
         }
       }
@@ -7147,13 +7147,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Was breakfast eaten, or is it 'I'll check later' again? Your record is clear: that 'later' never comes."
+            "value" : "It's morning and the screen is empty. Your goals are waiting for you, and you're still waiting on the pillow."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kahvaltı yapıldı mı, yoksa yine 'sonra bakarım' mı? Sicilin ortada, o 'sonra' hiç gelmiyor."
+            "value" : "Sabah oldu, ekran boş. Hedeflerin seni bekliyor, sen de hâlâ yastığı."
           }
         }
       }
@@ -7181,13 +7181,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "It's evening and your record is clear: you always let the last meal pass in silence. How about breaking that shameful tradition today?"
+            "value" : "Your record is clear: you always let the last meal pass in silence. Want to break that shameful tradition today?"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Akşam oldu, sicilin ortada: son öğünü hep sessiz geçiyorsun. Bugün bu rezil geleneği bozmaya ne dersin?"
+            "value" : "Sicilin ortada: son öğünü hep sessiz geçiyorsun. Bugün bu rezil geleneği bozsan?"
           }
         }
       }
@@ -7215,13 +7215,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Not a sound today. Hunger strike, or are you scared of me? Either way you wasted today. Go eat, be different tomorrow."
+            "value" : "Not a sound today. You wasted it. Go eat, be different tomorrow."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bugün tek ses çıkmadı. Açlık grevi mi, yoksa benden mi korkuyorsun? Hangisi olursa olsun bugünü çöpe attın. Git ye, yarın farklı ol."
+            "value" : "Bugün tek ses çıkmadı. Bugünü çöpe attın. Git ye, yarın farklı ol."
           }
         }
       }
@@ -7266,13 +7266,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "It's noon and still not a sound. Hunger strike, or are you scared of me? Either way it's a pathetic escape. Go eat."
+            "value" : "It's noon and still not a sound. Hunger strike, or scared of me? Either way it's a pathetic escape. Go eat."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öğle oldu ve hâlâ tek ses yok. Açlık grevi mi, yoksa benden mi korkuyorsun? Hangisi olursa olsun aciz bir kaçış. Git ye."
+            "value" : "Öğle oldu, hâlâ tek ses yok. Açlık grevi mi, benden korkmak mı? İkisi de aciz bir kaçış. Git ye."
           }
         }
       }
@@ -7300,35 +7300,18 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Silence all morning. Hiding, not eating or forgetting; all three describe you. Go eat."
+            "value" : "Silence all morning. Hiding, not eating or forgetting; all three describe you."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bütün sabah ses yok. Ya saklanıyorsun ya yemiyorsun ya unutuyorsun. Üçü de seni tarif ediyor. Git ye."
+            "value" : "Bütün sabah ses yok. Ya saklanıyorsun ya yemiyorsun ya unutuyorsun. Üçü de seni tarif ediyor."
           }
         }
       }
     },
     "notif.lunch.toxic.0" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No word on lunch because you're either lazy or scared of me. Both suit you."
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Öğle yemeğinden haber yok çünkü ya tembelsin ya da benden korkuyorsun. İkisi de sana yakışıyor."
-          }
-        }
-      }
-    },
-    "notif.lunch.toxic.1" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -7345,19 +7328,36 @@
         }
       }
     },
+    "notif.lunch.toxic.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can't even last until lunch, and you'll last until logging? Pathetic."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öğle yemeğine kadar bile dayanamıyorsun, kaydetmeye mi dayanacaksın? Ayıp."
+          }
+        }
+      }
+    },
     "notif.lunch.toxic.2" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Lunch has passed and you're still nowhere to be seen. The road to your goal is moving just as quietly."
+            "value" : "Lunch is over and you're still missing. The road to your goal is moving as quietly as you are."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öğle geçti ve sen hâlâ ortalıkta yoksun. Hedefine giden yol da bu kadar sessiz ilerliyor."
+            "value" : "Öğle geçti, hâlâ ortalarda yoksun. Hedefine giden yol da senin gibi sessiz ilerliyor."
           }
         }
       }
@@ -20703,6 +20703,1621 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "That portion isn't a meal, it's a three-day menu."
+          }
+        }
+      }
+    },
+    "notif.snack.optimistic.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4:30 pm, snack time! Fruit, yogurt, a handful of nuts… smart choices await!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat 16.30, atıştırmalık vakti! Meyve, yoğurt, bir avuç fındık… Akıllı seçimler seni bekliyor!"
+          }
+        }
+      }
+    },
+    "notif.snack.optimistic.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afternoon energy dips, so I came to give you a boost. Grab a snack and log it!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öğleden sonra enerjisi düşüyor, ben de sana gaz vermeye geldim. Bir şeyler atıştır, yaz!"
+          }
+        }
+      }
+    },
+    "notif.snack.optimistic.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A small snack prevents a big evening disaster. Come on, you've got this!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Küçük bir atıştırma büyük bir akşam kazasını önler. Hadi, sen kazanırsın!"
+          }
+        }
+      }
+    },
+    "notif.snack.normal.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afternoon slump kicked in? What's with the tea? Biscuits, seeds, anything?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öğleden sonra krizi başladı mı? Çay yanına ne eşlik etti? Kuru pasta, çekirdek, bir şey mi?"
+          }
+        }
+      }
+    },
+    "notif.snack.normal.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "If someone's loitering at the kitchen door at 4:30, I'm here too. If you grabbed anything, log it."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "16.30'da mutfağın kapısında bekleyen biri varsa ben de buradayım. Bir şey aldıysan yaz."
+          }
+        }
+      }
+    },
+    "notif.snack.normal.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snacks sneak into your day. I'm a secret agent, tell me."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atıştırmalıklar hesaba gizlice girer. Ben gizli ajanım, söyle bana."
+          }
+        }
+      }
+    },
+    "notif.snack.savage.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Said 'just one' and saw the bottom of the bag? Log it, tell me everything."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öğleden sonra 'sadece bir tane' diyerek paketin dibini gördün mü? Yaz, bana anlat."
+          }
+        }
+      }
+    },
+    "notif.snack.savage.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "People who say snacks 'don't count' top the statistics. They count, log it."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atıştırmalık 'sayılmaz' diyenler istatistikte hep ilk sırada. Sayılır, yaz."
+          }
+        }
+      }
+    },
+    "notif.snack.savage.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "There was something with the tea, I know it. Biscuits? No log, but I have my suspicions."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çay yanında bir şey vardı, biliyorum. Kuru pasta mıydı? Kayıt yok, kanıt var."
+          }
+        }
+      }
+    },
+    "notif.snack.unhinged.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4:30! Snack o'clock! Who ate what? I'm not blaming anyone, just demanding answers!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "16.30! Atıştırmalık saati! Kim ne yedi? Ben kimseyi suçlamıyorum, sadece cevap istiyorum!"
+          }
+        }
+      }
+    },
+    "notif.snack.unhinged.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You opened the cupboard, closed it, opened it again. I know, I was there. What did you grab?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dolabı açtın, kapattın, tekrar açtın. Biliyorum, ben de oradaydım. Ne aldın?"
+          }
+        }
+      }
+    },
+    "notif.snack.unhinged.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afternoon, tea brewed, plate empty. Empty? Why empty? WHERE DID IT GO?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öğleden sonra, çay demli, tabak boş. Boş mu? Neden boş? NEREYE GİTTİ?"
+          }
+        }
+      }
+    },
+    "notif.snack.toxic.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4:30. The hand that said 'just one' is reaching for the third. I'm keeping count."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "16.30. 'Sadece bir tane' diyen elin üçüncüsüne uzanıyor. Hesabı ben tutuyorum."
+          }
+        }
+      }
+    },
+    "notif.snack.toxic.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not logging snacks doesn't erase them. It just makes you a liar."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atıştırmalıkları kaydetmemek onları yok etmez. Sadece seni yalancı yapar."
+          }
+        }
+      }
+    },
+    "notif.snack.toxic.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The afternoon is testing your willpower. I have the results and they're not good. What if you just logged it?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öğleden sonra iradeni test ediyorlar. Sonuçlar elimde, hiç iyi değil. Yazsan ne olur?"
+          }
+        }
+      }
+    },
+    "notif.night.optimistic.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The day is wrapping up! You owe yourself a 'well done'. A last look?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gün bitiyor! Bugün için kendine bir 'aferin' borcun var. Son bir bakış atalım mı?"
+          }
+        }
+      }
+    },
+    "notif.night.optimistic.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The night kitchen is closing! You did great today, finish the log and sleep easy."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gece mutfağı kapanmak üzere! Bugün güzel bir iş çıkardın, kaydı tamamla, rahat uyu."
+          }
+        }
+      }
+    },
+    "notif.night.optimistic.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tomorrow is a new day! Take a glance before closing today's book, all in place?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yarın yeni bir gün! Bugünün defterini kapatmadan bir göz at, her şey yerinde mi?"
+          }
+        }
+      }
+    },
+    "notif.night.normal.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 pm, the fridge light is a dangerous light. If you grabbed something, log it; if not, well done."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gece 22.00, buzdolabı ışığı tehlikeli bir ışıktır. Bir şey aldıysan yaz, almadıysan aferin."
+          }
+        }
+      }
+    },
+    "notif.night.normal.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The day's last ping: any missing meal? Midnight snacks count too, log it."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Günün son bildirimi: eksik bir öğün var mı? Gece atıştırması da sayılır, yaz gitsin."
+          }
+        }
+      }
+    },
+    "notif.night.normal.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shall we check the book before bed? Don't wonder 'what did I eat' tomorrow morning."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uyumadan önce deftere bir göz atalım mı? Yarın sabah 'ne yemiştim' diye düşünme."
+          }
+        }
+      }
+    },
+    "notif.night.savage.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "It's 10 pm and if you're still in the kitchen, stop talking to the fridge. Late-night snacks count."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "22.00 ve hâlâ mutfaktasan buzdolabıyla konuşmayı kes. Gece atıştırması da sayılıyor."
+          }
+        }
+      }
+    },
+    "notif.night.savage.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Late-night fridge date: you think nobody saw, but I hear everything. Log it."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gece buzdolabı randevusu: kimse görmedi sanıyorsun ama ben her şeyi duyuyorum. Yaz."
+          }
+        }
+      }
+    },
+    "notif.night.savage.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The day's last ping: if you left anything out, say so now. Late confessions are invalid."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Günün son bildirimi: eksik yaptığın bir şey varsa şimdi söyle, sonra söylenen itiraf geçersiz."
+          }
+        }
+      }
+    },
+    "notif.night.unhinged.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 PM! The fridge light is on, your conscience isn't. What did you grab? Speak!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GECE 22.00! Buzdolabının ışığı yanıyor, vicdanın yanmıyor. Ne aldın? Söyle!"
+          }
+        }
+      }
+    },
+    "notif.night.unhinged.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Does a midnight snack count? IT COUNTS! Log it, log it, log it!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gece yarısı atıştırması sayılır mı? SAYILIR! Yaz, yaz, yaz!"
+          }
+        }
+      }
+    },
+    "notif.night.unhinged.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This is the day's last notification. Tomorrow is another story. But close that book first, it's bugging me."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Günün son bildirimi bu. Yarın başka hikâye. Ama önce şu defteri kapat, gözüm kalıyor."
+          }
+        }
+      }
+    },
+    "notif.night.toxic.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 pm and you're still in front of the fridge. Your goal is asleep and you're awake. Bad combo."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "22.00 ve sen hâlâ buzdolabının önündesin. Hedefin uykuda, sen uyanık. Fena bir kombinasyon."
+          }
+        }
+      }
+    },
+    "notif.night.toxic.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Midnight snacks test your daily honesty. Results: you failed. At least log it."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gece atıştırmalıkları günlük dürüstlüğünü sınar. Sonuçlar: kaldın. Yaz bari."
+          }
+        }
+      }
+    },
+    "notif.night.toxic.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The day's last ping: I'm writing to remind you of your goal, though you'll choose the fridge anyway. Log it."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Günün son bildirimi: hedefini hatırlatmak için yazıyorum, sen yine de buzdolabını seç. Yaz."
+          }
+        }
+      }
+    },
+    "notif.water.optimistic.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hydration time, champ! A glass of water is the nicest thank-you note your body can get. 💧"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hidrasyon vakti şampiyon! Bir bardak su, vücuduna yazılmış en güzel teşekkür mektubu. 💧"
+          }
+        }
+      }
+    },
+    "notif.water.optimistic.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't forget your water, bro! Even one sip says you're today's hero."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su içmeyi unutma brom! Bir yudum bile bugünün kahramanı sensin dedirtir."
+          }
+        }
+      }
+    },
+    "notif.water.optimistic.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One glass of water, zero calories, infinite love. Let's drink up, I'm right here!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir bardak su, sıfır kalori, sonsuz sevgi. Hadi içelim, ben buradayım!"
+          }
+        }
+      }
+    },
+    "notif.water.optimistic.3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your kidneys are applauding. One more glass and it's a standing ovation!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Böbreklerin sana alkış tutuyor, bir bardak daha duyarlarsa standing ovation verecekler!"
+          }
+        }
+      }
+    },
+    "notif.water.optimistic.4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "People who drink water see the day brighter. Ready to shine? 🌟"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su içen insan güne daha parlak bakıyor. Parlamaya hazır mısın? 🌟"
+          }
+        }
+      }
+    },
+    "notif.water.optimistic.5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You're doing great! Now fill that glass, this is the watery chapter of the story."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Harika gidiyorsun! Şimdi o bardağı doldur, bu da hikâyenin su dolu bölümü."
+          }
+        }
+      }
+    },
+    "notif.water.normal.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forgot to drink water? No biggie, I remembered. Glass in hand yet?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su içmeyi mi unuttun? Önemli değil, ben hatırladım. Bardak elinde mi?"
+          }
+        }
+      }
+    },
+    "notif.water.normal.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hourly water break! Fill the glass, take a sip, carry on. 💧"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat başı su molası! Bardağı doldur, bir yudum al, sonra devam. 💧"
+          }
+        }
+      }
+    },
+    "notif.water.normal.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reminder: your body is 60% water. The rest is getting by on coffee."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hatırlatma: vücudunun %60'ı sudur. Geri kalanı da kahveyle idare ediyor."
+          }
+        }
+      }
+    },
+    "notif.water.normal.3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don't ignore water, bro, it never did anything to you. Shall we have a glass?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suyu es geçme brom, o sana hiçbir şey yapmadı. Bir bardak içelim mi?"
+          }
+        }
+      }
+    },
+    "notif.water.normal.4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How are things with dehydration? I'd say not great, a glass of water would help."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dehidrasyonla aran nasıl? Ben iyi görünmüyor diyorum, bir bardak su iyi gelir."
+          }
+        }
+      }
+    },
+    "notif.water.normal.5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This notification brought you water. The real one is on you, the kitchen is that way."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu bildirim sana su getirdi. Gerçek olanı sen getireceksin, mutfak o tarafta."
+          }
+        }
+      }
+    },
+    "notif.water.savage.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How many glasses of water today? No need to say, I can tell from your face."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugün kaç bardak su içtin? Rakamı söylemene gerek yok, yüzünden anlıyorum."
+          }
+        }
+      }
+    },
+    "notif.water.savage.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coffee isn't water. Tea isn't water. No, soda isn't water either. Go drink water."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kahve su sayılmaz. Çay da sayılmaz. Hayır, gazoz da sayılmaz. Git su iç."
+          }
+        }
+      }
+    },
+    "notif.water.savage.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Even a cactus drinks more water than you. Grab a glass, don't lose to a cactus."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaktüs bile senden daha çok su içiyor. Bir bardak al, kaktüse yenilme."
+          }
+        }
+      }
+    },
+    "notif.water.savage.3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You're always looking at your phone but never at your glass. Are these your priorities?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sürekli telefona bakıyorsun ama bardağa hiç bakmıyorsun. Öncelikler bunlar mı?"
+          }
+        }
+      }
+    },
+    "notif.water.savage.4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For every hour you skip water, your kidneys file a separate complaint with me."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su içmediğin her saat için böbreğin bana ayrı ayrı şikâyet yazıyor."
+          }
+        }
+      }
+    },
+    "notif.water.savage.5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The glass is empty and so am I. Fill it up and put us both at ease."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bardak boş, ben de boşta. Doldur şunu, ikimizin de içi rahat etsin."
+          }
+        }
+      }
+    },
+    "notif.water.unhinged.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WATER! WATER! WATER! This is a water notification, grab your glass and READ, no, DRINK!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SU! SU! SU! Bu bildirim bir su bildirimidir, bardağını al ve OKU, hayır İÇ!"
+          }
+        }
+      }
+    },
+    "notif.water.unhinged.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An hour has passed and you haven't had water. I'm writing it in my notebook and I'm not erasing it."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir saat geçti ve sen su içmedin. Bunu defterime yazıyorum, bu yazıyı da silmiyorum."
+          }
+        }
+      }
+    },
+    "notif.water.unhinged.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You forgot to drink water?! There are things worth forgetting: an ex, a password, a birthday. NOT WATER."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su içmeyi mi unuttun?! Unutulacak şeyler var: eski sevgili, şifre, doğum günü. SU DEĞİL."
+          }
+        }
+      }
+    },
+    "notif.water.unhinged.3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "My eyes are tired of staring at that empty glass. Fill it, drink it, let us find peace."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gözlerim yoruldu bu bardağın boşluğuna bakmaktan. Doldur, iç, huzura erelim."
+          }
+        }
+      }
+    },
+    "notif.water.unhinged.4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thirst signal: your head is foggy, your soul is dry, my notifications are wet. DRINK IT."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Susuzluk sinyali: kafan bulanık, ruhun kuru, bildirimlerim ıslak. İÇ ŞUNU."
+          }
+        }
+      }
+    },
+    "notif.water.unhinged.5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I'm a notification, I can't drink water. You can. Appreciate this inequality."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ben bir bildirimim, su içemem. Sen içebilirsin. Bu eşitsizliği değerlendir."
+          }
+        }
+      }
+    },
+    "notif.water.toxic.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can't even manage a glass of water an hour, how will you reach your goals? Go drink one."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat başı su içmeyi bile beceremiyorsun, hedeflerine nasıl ulaşacaksın? Git bir bardak iç."
+          }
+        }
+      }
+    },
+    "notif.water.toxic.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Same notification every hour, same excuse every hour. Is drinking water hard too? Drink."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Her saat aynı bildirim, her saat aynı bahane. Su içmek de mi zor? İç."
+          }
+        }
+      }
+    },
+    "notif.water.toxic.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "It's not just your kidneys that are dry, your willpower is too. You can water both at once."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Susuz kalan sadece böbreklerin değil, iraden de. İkisini birden sulayabilirsin."
+          }
+        }
+      }
+    },
+    "notif.water.toxic.3" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I looked at your glass, it's no different from a desert. Is this your water discipline?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bardağa baktım, çölden farkı yok. Bu mu senin su disiplinin?"
+          }
+        }
+      }
+    },
+    "notif.water.toxic.4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A person who forgets water and lives on coffee runs on stubbornness, not life energy. Drink."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su içmeyi unutup kahveyle yaşayan insan, hayat enerjisiyle değil inatla ayakta. İç."
+          }
+        }
+      }
+    },
+    "notif.water.toxic.5" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You're reading this but not reaching for the glass. I remind, you refuse. Shameful."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu bildirimi okuyorsun ama bardağa uzanmıyorsun. Ben hatırlatıyorum, sen reddediyorsun. Ayıp."
+          }
+        }
+      }
+    },
+    "water.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Water"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Su"
+          }
+        }
+      }
+    },
+    "water.count" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d / %d glasses"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d / %d bardak"
+          }
+        }
+      }
+    },
+    "water.add" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add a glass of water"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir bardak su ekle"
+          }
+        }
+      }
+    },
+    "water.remove" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove a glass of water"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir bardak su çıkar"
+          }
+        }
+      }
+    },
+    "weight.progress" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d%% of the way to your goal"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hedefe giden yolun %d%%'i tamam"
+          }
+        }
+      }
+    },
+    "notif.streak.optimistic.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d days on target and counting, let's crown this streak today! 🔥"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d gündür hedefindesin, bu seriyi bugün de taçlandıralım! 🔥"
+          }
+        }
+      }
+    },
+    "notif.streak.optimistic.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your streak is at %d days and shining. Add today, the record is yours!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serin %d gün oldu ve parlıyor. Bugünü de ekle, rekor sende!"
+          }
+        }
+      }
+    },
+    "notif.streak.optimistic.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A %d-day streak isn't easy to earn. Put today in your pocket with dinner!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d günlük seri kolay kazanılmıyor. Akşam yemeğiyle bugünü de cebine at!"
+          }
+        }
+      }
+    },
+    "notif.streak.normal.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You have a %d-day streak but today isn't on target yet. Your streak is waiting, bro."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d günlük serin var ama bugün henüz hedefte değilsin. Serin bekliyor brom."
+          }
+        }
+      }
+    },
+    "notif.streak.normal.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Streak alert: %d days! Log today so it doesn't break."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seri alarmı: %d gün! Bugünü kaydet, bozulmasın."
+          }
+        }
+      }
+    },
+    "notif.streak.normal.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d days in a row. If today makes it, I'll write a poem. Don't make me."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d gün üst üste. Bugün de olursa ben bir şiir yazacağım, yazdırma beni."
+          }
+        }
+      }
+    },
+    "notif.streak.savage.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A %d-day streak can go to waste overnight. Today's still blank, explain yourself."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d günlük seri bir gecede çöpe gidebilir. Bugün hâlâ boş, hesap ver."
+          }
+        }
+      }
+    },
+    "notif.streak.savage.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You put in %d days of work and you're not going to waste it by skipping one log, right? Show some nerve."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d gün emek verdin, bugün tek bir kayıtla bozmayacaksın değil mi? Cesaretin var mı bakalım."
+          }
+        }
+      }
+    },
+    "notif.streak.savage.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Streak at %d days. If it breaks, don't cry, I warned you."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seri %d gün. Bozulursa ağlama, ben uyarmıştım."
+          }
+        }
+      }
+    },
+    "notif.streak.unhinged.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "STREAK %d DAYS! DON'T BREAK IT! OR IT'S NOTIFICATION AFTER NOTIFICATION!"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SERİ %d GÜN! BOZMA! BOZARSAN BİLDİRİM ÜSTÜNE BİLDİRİM!"
+          }
+        }
+      }
+    },
+    "notif.streak.unhinged.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your fire's been lit for %d days, try to put it out and you'll get burned. Log today."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d gündür ateşin yanıyor, söndürmeye kalkarsan yanarsın. Bugünü kaydet."
+          }
+        }
+      }
+    },
+    "notif.streak.unhinged.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dreamt of your %d-day streak and you left today blank. I woke up crying."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rüyamda %d günlük serini gördüm, bugünü boş bırakmıştın, uyanıp ağladım."
+          }
+        }
+      }
+    },
+    "notif.streak.toxic.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This streak lasted %d days, will you end it today? Take something to the end for once."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d gün sürdü bu seri, bugün bitirecek misin? Bir kere de bir işi sonuna kadar götür."
+          }
+        }
+      }
+    },
+    "notif.streak.toxic.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You're not even looking for an excuse to break a %d-day streak, you've got one ready. Prove me wrong."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d günlük serini bozmak için bahane aramıyorsun, zaten hazır. Kanıtla bakalım ki yanlışım."
+          }
+        }
+      }
+    },
+    "notif.streak.toxic.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Streak %d days, today zero. Math is merciless."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seri %d gün, bugün sıfır. Matematik acımasız."
+          }
+        }
+      }
+    },
+    "notif.weekly.optimistic.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weekly report card: %d/7 days on target! New week, new chance, I'm with you."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haftanın karnesi: %d/7 gün hedefte! Yeni hafta, yeni fırsat, ben yanındayım."
+          }
+        }
+      }
+    },
+    "notif.weekly.optimistic.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You hit the target %d days this week! Hit Monday too and we're set. 🎯"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hafta %d gün hedefi vurdun! Bir de pazartesiyi vur, tamamdır. 🎯"
+          }
+        }
+      }
+    },
+    "notif.weekly.optimistic.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d/7 days! A bit better each week, and it's you doing it, not me."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d/7 gün! Her hafta biraz daha iyi, bunu ben değil sen yapıyorsun."
+          }
+        }
+      }
+    },
+    "notif.weekly.normal.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weekly recap: %d/7 days on target. Tomorrow is a clean page, Monday is yours."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haftalık özet: %d/7 gün hedefteydin. Yarın temiz sayfa, pazartesi sendedir."
+          }
+        }
+      }
+    },
+    "notif.weekly.normal.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You were on target %d days this week. Numbers don't lie, and neither do I."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hafta %d gün hedefte kaldın. Rakamlar yalan söylemez, ben de söylemem."
+          }
+        }
+      }
+    },
+    "notif.weekly.normal.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunday evening report: %d/7. Details are in the Progress tab, grab a coffee and take a look."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pazar akşamı raporu: %d/7. Detaylar Gelişim sekmesinde, kahveni al ve bak."
+          }
+        }
+      }
+    },
+    "notif.weekly.savage.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Week's over: %d/7. Your report card is out, I'm not calling your parents but I'm thinking about it."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hafta bitti: %d/7. Karne çıktı, anne babanı çağırmıyorum ama düşünüyorum."
+          }
+        }
+      }
+    },
+    "notif.weekly.savage.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d/7 days on target. You know the story of the other days, and so do I."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d/7 gün hedefte. Geri kalan günlerin hikâyesini sen de biliyorsun, ben de."
+          }
+        }
+      }
+    },
+    "notif.weekly.savage.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d days this week. When Monday comes, the excuses will clock in again."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu hafta %d gün oldu. Pazartesi gelince bahaneler yeniden mesaiye başlayacak."
+          }
+        }
+      }
+    },
+    "notif.weekly.unhinged.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "WEEKLY REPORT: %d/7!!! Celebrate or mourn, your call, I'm crying."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HAFTALIK KARNE: %d/7!!! Kutlamak mı yas tutmak mı, karar senin, ben ağlıyorum."
+          }
+        }
+      }
+    },
+    "notif.weekly.unhinged.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d/7 days on target. I'm closing the week, lighting a candle, sending a notification."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d/7 gün hedeftesin. Haftayı kapatıyorum, mum yakıyorum, bildirim gönderiyorum."
+          }
+        }
+      }
+    },
+    "notif.weekly.unhinged.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weekend report: %d/7. Put it in Excel, looked at the chart, lost sleep."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hafta sonu raporu: %d/7. Excel'e girdim, grafiğe baktım, uykum kaçtı."
+          }
+        }
+      }
+    },
+    "notif.weekly.toxic.0" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weekly result: %d/7. I won't say the rest, it's not worth saying."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haftalık sonuç: %d/7. Gerisini söylemeyeceğim, söylemeye değmez."
+          }
+        }
+      }
+    },
+    "notif.weekly.toxic.1" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d/7 days. This number describes you, I'm just reading it out."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d/7 gün. Bu rakam seni anlatıyor, ben sadece okuyorum."
+          }
+        }
+      }
+    },
+    "notif.weekly.toxic.2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Week over, %d/7 days on target. If next week looks the same, say so now so I don't waste my time."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hafta bitti, %d/7 gün hedefte. Gelecek hafta da böyleyse baştan söyle, zamanımı boşa harcamayayım."
           }
         }
       }

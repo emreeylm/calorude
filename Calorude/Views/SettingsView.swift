@@ -152,6 +152,10 @@ struct SettingsView: View {
       try context.delete(model: UserProfile.self)
       try context.save()
       UserDefaults.standard.removeObject(forKey: "coach.recentMealKeys")
+      for key in UserDefaults.standard.dictionaryRepresentation().keys
+      where key.hasPrefix(WaterCard.prefix) {
+        UserDefaults.standard.removeObject(forKey: key)
+      }
       Task { await NotificationService.disable() }
     } catch {
       context.rollback()

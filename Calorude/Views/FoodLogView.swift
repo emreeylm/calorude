@@ -78,6 +78,9 @@ struct FoodLogView: View {
           if !vm.currentItems.isEmpty { draftSection }
           VStack(alignment: .leading, spacing: 12) {
             stepTitle("foodScreen.stepFood")
+            Button(l.text("custom.create"), systemImage: "plus.circle.fill") {
+              if store.isPro || custom.count < 10 { showCustom = true } else { showPaywall = true }
+            }.font(.subheadline.bold()).padding(.vertical, 2)
             HStack(spacing: 12) {
               Image(systemName: "magnifyingglass").foregroundStyle(Theme.interactive)
               TextField(l.text("search.food"), text: $query).focused($searchFocused)
@@ -118,9 +121,6 @@ struct FoodLogView: View {
             if filtered.isEmpty {
               Text(l.text("search.empty")).foregroundStyle(.secondary).padding()
             }
-            Button(l.text("custom.create"), systemImage: "plus.circle.fill") {
-              if store.isPro || custom.count < 10 { showCustom = true } else { showPaywall = true }
-            }.font(.subheadline.bold()).padding(.vertical, 10)
           }
           savedMealsSection
           Text(l.text("food.estimates")).font(.caption).foregroundStyle(.secondary)

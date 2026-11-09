@@ -25,6 +25,13 @@ struct ProgressScreen: View {
       : Calendar.current.date(
         byAdding: .day, value: -(range - 1), to: Calendar.current.startOfDay(for: .now))!
   }
+  // Share of the way from the starting weight to the target; nil when there is no distance to cover.
+  var goalProgress: Int? {
+    let span = profile.startingWeight - profile.targetWeight
+    guard abs(span) >= 0.5 else { return nil }
+    let done = (profile.startingWeight - (weights.last?.weight ?? profile.currentWeight)) / span
+    return Int((min(max(done, 0), 1) * 100).rounded())
+  }
   var recent: [DayStats] { days.filter { $0.day >= cutoff } }
   var week: WeeklyStats {
     ProgressService.week(
@@ -68,6 +75,11 @@ struct ProgressScreen: View {
                   "change", (weights.last?.weight ?? profile.currentWeight) - profile.startingWeight
                 )
               }
+              if let percent = goalProgress {
+                ProgressView(value: Double(percent) / 100).tint(Theme.interactive)
+                Text(String(format: l.text("weight.progress"), percent)).font(.caption.bold())
+                  .foregroundStyle(Theme.interactive)
+              }
               if weights.count > 1 {
                 Chart(weights.filter { $0.date >= cutoff }) { entry in
                   LineMark(
@@ -76,6 +88,8 @@ struct ProgressScreen: View {
                   PointMark(
                     x: .value(l.text("date"), entry.date), y: .value(l.text("weight"), entry.weight)
                   ).foregroundStyle(Theme.interactive)
+                  RuleMark(y: .value(l.text("targetWeight"), profile.targetWeight))
+                    .foregroundStyle(Theme.carbs).lineStyle(StrokeStyle(dash: [4, 4]))
                 }.chartYScale(domain: .automatic(includesZero: false)).frame(height: 190)
                   .accessibilityLabel(
                     l.text("chart.weight.summary") + " "

@@ -90,6 +90,7 @@ struct DashboardView: View {
             mealEditor = MealEditorRoute(meal: .lunch)
           }
           .accessibilityIdentifier("dashboard.add")
+          WaterCard(day: selectedDate, weight: profile.currentWeight).id(WaterCard.key(selectedDate))
           CoachCard(profile: profile, stats: stats)
           HStack {
             Text(l.text("yourMeals")).font(.title2.bold())
@@ -270,4 +271,46 @@ struct DeletedEntry: Identifiable {
 struct MealEditorRoute: Identifiable {
   let id = UUID()
   let meal: MealType
+}
+
+// Glasses of water per day, kept in UserDefaults: a counter does not need the diary database.
+struct WaterCard: View {
+  let day: Date
+  let weight: Double
+  @AppStorage private var glasses: Int
+  @Environment(AppLocalization.self) private var l
+  static let prefix = "water.glasses."
+  static func key(_ day: Date) -> String {
+    prefix + day.formatted(.iso8601.year().month().day())
+  }
+  init(day: Date, weight: Double) {
+    self.day = day
+    self.weight = weight
+    _glasses = AppStorage(wrappedValue: 0, WaterCard.key(day))
+  }
+  // About 30 ml per kg in 250 ml glasses, kept between 6 and 12.
+  private var goal: Int { Self.goal(weight: weight) }
+  static func goal(weight: Double) -> Int { min(max(Int((weight * 30 / 250).rounded()), 6), 12) }
+  static func done(weight: Double, day: Date = .now) -> Bool {
+    UserDefaults.standard.integer(forKey: key(day)) >= goal(weight: weight)
+  }
+  var body: some View {
+    Panel {
+      HStack(spacing: 14) {
+        Image(systemName: "drop.fill").font(.title2).foregroundStyle(Theme.protein)
+        VStack(alignment: .leading, spacing: 8) {
+          Text(l.text("water.title")).font(.headline)
+          Text(String(format: l.text("water.count"), glasses, goal)).font(.subheadline)
+            .foregroundStyle(.secondary)
+          ProgressView(value: min(Double(glasses) / Double(goal), 1)).tint(Theme.protein)
+        }
+        Button { glasses = max(glasses - 1, 0) } label: {
+          Image(systemName: "minus.circle").font(.title2).frame(width: 44, height: 44)
+        }.disabled(glasses == 0).accessibilityLabel(l.text("water.remove"))
+        Button { glasses = min(glasses + 1, 30) } label: {
+          Image(systemName: "plus.circle.fill").font(.title).frame(width: 44, height: 44)
+        }.accessibilityLabel(l.text("water.add")).accessibilityIdentifier("water.add")
+      }.buttonStyle(.plain).foregroundStyle(Theme.protein)
+    }.sensoryFeedback(.increase, trigger: glasses)
+  }
 }
